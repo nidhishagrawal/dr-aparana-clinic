@@ -1,0 +1,118 @@
+# Dr. Aparana Ghosh - Gynecologist Clinic Website
+
+## Project Overview
+This is a Next.js 14 medical clinic website for Dr. Aparana Ghosh, a gynecologist in Chembur, Mumbai. The website showcases gynecological services, treatments, patient testimonials, and health tips.
+
+## Tech Stack
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **State Management**: React (no global state needed currently)
+
+## Project Structure
+```
+draparana/
+├── app/
+│   ├── components/          # Reusable React components
+│   │   ├── Navbar.tsx       # Navigation with Call/WhatsApp CTAs
+│   │   └── Footer.tsx       # Footer with contact info
+│   ├── about/
+│   │   └── page.tsx         # About Doctor page
+│   ├── services/
+│   │   ├── page.tsx         # Services listing page
+│   │   └── [service]/       # Individual service pages
+│   ├── contact/
+│   │   └── page.tsx         # Contact page with Google Maps
+│   ├── testimonials/
+│   │   └── page.tsx         # Patient testimonials
+│   ├── treatments/
+│   │   └── page.tsx         # Before/After treatments gallery
+│   ├── blog/
+│   │   └── page.tsx         # Health tips blog
+│   ├── layout.tsx           # Root layout with Navbar/Footer
+│   ├── page.tsx             # Homepage
+│   └── globals.css          # Global styles
+├── package.json
+├── tsconfig.json
+└── tailwind.config.js
+```
+
+## Key Features
+- Medical clinic website for gynecologist
+- Service pages: Laser Hair Reduction, Cosmetic Gynecology, HIFU, HRT, Scar Reduction
+- Contact page with Google Maps integration
+- Patient testimonials section
+- Before/After treatment gallery
+- Health tips blog
+- Mobile-responsive design
+- Clear Call-to-Action buttons (Call Now, WhatsApp)
+
+## Coding Conventions
+- Use TypeScript for type safety
+- Use Tailwind CSS utility classes for styling
+- Use Lucide React for icons
+- All pages use Next.js App Router
+- Metadata exported for SEO
+- Contact information: Phone, WhatsApp, Email, Address
+- Medical/healthcare color scheme (blue tones)
+
+## Important Notes
+- Contact phone: Update `+919876543210` throughout
+- WhatsApp: Update WhatsApp links
+- Email: Update `info@draparana.com`
+- Address: Update clinic address in Footer
+- Google Maps: Replace placeholder embed code
+- All prices/services in Indian context (Mumbai, Chembur)
+- Medical terminology and patient-friendly language
+
+## Component Patterns
+- Use 'use client' directive for client components
+- Use Link from next/link for navigation
+- Use Image from next/image for optimized images
+- Metadata exported for SEO optimization
+- Contact info managed via helper functions
+
+## Styling Guidelines
+- Primary colors: Medical blue (#0284c7, #0369a1)
+- Success color: Green (#16a34a) for WhatsApp buttons
+- Use rounded-full for buttons
+- Use rounded-2xl for cards
+- Professional, clean medical theme
+- High contrast for accessibility
+
+## SEO Requirements
+- Each page has proper meta title and description
+- Keywords: gynecologist Chembur, services Mumbai, etc.
+- Structured content with H1, H2, H3 headings
+- 600-1000 words per service page
+- Image alt tags for accessibility
+- Patient-friendly language
+
+## Contact Information Structure
+- Phone: Clickable tel: links
+- WhatsApp: Clickable wa.me links
+- Email: Clickable mailto: links
+- Address: Full clinic address
+- Clinic hours: Displayed in footer and contact page
+
+## Service Pages Structure
+Each service page should include:
+- Hero section with title
+- Detailed description (600-1000 words)
+- Benefits list
+- Treatment process
+- Why choose us section
+- Call-to-action for booking
+
+## Medical Website Best Practices
+- Professional, trustworthy design
+- Clear appointment booking CTAs
+- Easy contact methods (phone, WhatsApp)
+- Patient testimonials for trust
+- Before/After photos (with consent)
+- Health tips/blog for SEO
+- Mobile-first responsive design
+- Fast loading times
+- Accessible design (WCAG compliant)
+
