@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import DoctorImage from './components/DoctorImage'
 import BabyGifImage from './components/BabyGifImage'
@@ -6,6 +7,18 @@ import BookAppointment from './components/BookAppointment'
 import VisionMission from './components/VisionMission'
 import PatientEducation from './components/PatientEducation'
 import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
+  description: 'Expert gynecologist Dr. Aparana Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and maternal care in Chembur, Mumbai. Book your appointment today.',
+  keywords: 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai',
+  openGraph: {
+    title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai',
+    description: 'Expert gynecologist offering comprehensive women\'s health care in Chembur, Mumbai.',
+    type: 'website',
+    images: ['/images/dr-aparana-ghosh.jpg'],
+  },
+}
 
 export default function Home() {
   return (
@@ -36,7 +49,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <a 
                   href="tel:+919876543210"
-                  className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
                 >
                   <Phone className="w-5 h-5" />
                   Call Now
@@ -45,119 +58,98 @@ export default function Home() {
                   href="https://wa.me/919876543210"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  WhatsApp Appointment
+                  WhatsApp
                 </a>
+                <Link 
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-full hover:bg-primary-50 transition-all font-medium"
+                >
+                  Book Appointment <ArrowRight className="w-5 h-5" />
+                </Link>
               </div>
             </div>
-            <div className="relative">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-200 shadow-xl">
-                <DoctorImage
-                  src="/images/dr-aparana-ghosh.jpg"
-                  alt="Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+            <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+              <DoctorImage
+                src="/images/dr-aparana-ghosh.jpg"
+                alt="Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Services */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+      {/* Features Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Specialized Services</h2>
-            <p className="text-lg text-gray-600">Comprehensive <strong className="text-primary-600">gynecological care</strong> and advanced treatments</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+            <p className="text-lg text-gray-600">Comprehensive care for all your women&apos;s health needs</p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Gynecology Services - Primary */}
-            <Link href="/services/hrt-treatment" className="group bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border-2 border-primary-200">
-              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary-700 transition-colors">
-                <Award className="w-8 h-8 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: Award, title: 'Expert Care', desc: 'Experienced gynecologist with advanced qualifications' },
+              { icon: CheckCircle, title: 'Premium Quality', desc: 'Handcrafted with finest materials' },
+              { icon: Clock, title: 'Lifetime Warranty', desc: 'Protected against defects' },
+              { icon: Users, title: 'Free Shipping', desc: 'On orders over ₹40,000' },
+            ].map((feature, index) => (
+              <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                  <feature.icon className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{feature.title}</h3>
+                <p className="text-gray-600">{feature.desc}</p>
               </div>
-              <div className="inline-block px-2 py-1 bg-primary-600 text-white text-xs font-medium rounded mb-2">Primary</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">HRT Treatment</h3>
-              <p className="text-gray-600 mb-4">Hormone replacement therapy for managing menopause symptoms, hormonal imbalances, and improving overall gynecological health.</p>
-              <span className="text-primary-600 font-medium flex items-center gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <Link href="/services/hifu-incontinence" className="group bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border-2 border-primary-200">
-              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary-700 transition-colors">
-                <Award className="w-8 h-8 text-white" />
-              </div>
-              <div className="inline-block px-2 py-1 bg-primary-600 text-white text-xs font-medium rounded mb-2">Primary</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">HIFU for Urinary Incontinence</h3>
-              <p className="text-gray-600 mb-4">Non-invasive gynecological treatment for urinary incontinence using advanced HIFU technology.</p>
-              <span className="text-primary-600 font-medium flex items-center gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
-
-            <Link href="/services/general-gynecology" className="group bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border-2 border-primary-200">
-              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary-700 transition-colors">
-                <Award className="w-8 h-8 text-white" />
-              </div>
-              <div className="inline-block px-2 py-1 bg-primary-600 text-white text-xs font-medium rounded mb-2">Primary</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">General Gynecology</h3>
-              <p className="text-gray-600 mb-4">Comprehensive gynecological consultations, routine check-ups, and treatment for all women&apos;s health concerns.</p>
-              <span className="text-primary-600 font-medium flex items-center gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
-
-            {/* Cosmetic Services - Secondary */}
-            <Link href="/services/cosmetic-gynecology" className="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100">
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-gray-200 transition-colors">
-                <Award className="w-8 h-8 text-gray-600" />
-              </div>
-              <div className="inline-block px-2 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded mb-2">Also Available</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Cosmetic Gynecology</h3>
-              <p className="text-gray-600 mb-4">Advanced cosmetic procedures to enhance feminine wellness and confidence.</p>
-              <span className="text-primary-600 font-medium flex items-center gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
-
-            <Link href="/services/laser-hair-reduction" className="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100">
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-gray-200 transition-colors">
-                <Award className="w-8 h-8 text-gray-600" />
-              </div>
-              <div className="inline-block px-2 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded mb-2">Also Available</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Laser Hair Reduction</h3>
-              <p className="text-gray-600 mb-4">Permanent hair removal with advanced laser technology for smooth, hair-free skin.</p>
-              <span className="text-primary-600 font-medium flex items-center gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
-
-            <Link href="/services/scar-reduction" className="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100">
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-gray-200 transition-colors">
-                <Award className="w-8 h-8 text-gray-600" />
-              </div>
-              <div className="inline-block px-2 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded mb-2">Also Available</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Scar & Stretch Mark Reduction</h3>
-              <p className="text-gray-600 mb-4">Advanced treatments to reduce scars and stretch marks for smoother skin.</p>
-              <span className="text-primary-600 font-medium flex items-center gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
-
-            <Link href="/services" className="group bg-gradient-to-br from-primary-600 to-primary-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-white">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
-                <ArrowRight className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">View All Services</h3>
-              <p className="text-white/90 mb-4">Explore our complete range of gynecological and cosmetic treatments.</p>
-              <span className="text-white font-medium flex items-center gap-2">
-                See All Services <ArrowRight className="w-4 h-4" />
-              </span>
+      {/* Services Overview */}
+      <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p className="text-lg text-gray-600">Comprehensive gynecological and cosmetic services</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              { name: 'General Gynecology', desc: 'Complete women\'s health care', href: '/services', primary: true },
+              { name: 'Laser Hair Reduction', desc: 'Safe and effective hair removal', href: '/services/laser-hair-reduction', primary: true },
+              { name: 'Cosmetic Gynecology', desc: 'Advanced cosmetic procedures', href: '/services', primary: true },
+              { name: 'HIFU Treatment', desc: 'Non-invasive urinary incontinence treatment', href: '/services', primary: false },
+              { name: 'HRT Treatment', desc: 'Hormone replacement therapy', href: '/services', primary: false },
+              { name: 'Maternal Care', desc: 'Complete pregnancy and delivery care', href: '/services', primary: false },
+            ].map((service, index) => (
+              <Link
+                key={index}
+                href={service.href}
+                className={`group p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border ${
+                  service.primary
+                    ? 'bg-gradient-to-br from-primary-50 to-primary-100 border-primary-200'
+                    : 'bg-white border-gray-100'
+                }`}
+              >
+                <h3 className={`text-xl font-bold mb-2 ${service.primary ? 'text-primary-700' : 'text-gray-900'} group-hover:text-primary-600 transition-colors`}>
+                  {service.name}
+                </h3>
+                <p className="text-gray-600 mb-4">{service.desc}</p>
+                <span className={`inline-flex items-center gap-2 text-sm font-medium ${service.primary ? 'text-primary-700' : 'text-primary-600'} group-hover:gap-3 transition-all`}>
+                  Learn More <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link 
+              href="/services"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
+            >
+              View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -181,6 +173,14 @@ export default function Home() {
               <p>
                 Dr. Aparana Ghosh has worked as a <strong className="text-primary-600">gynaecologist</strong> at many reputed hospitals and clinics in Chembur. As a result, she has acquired considerable knowledge and hands-on experience in treating and managing patients with gynaecological issues.
               </p>
+            </div>
+            <div className="text-center mt-8">
+              <Link 
+                href="/about"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
+              >
+                Learn More About Dr. Aparana <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>
@@ -328,29 +328,34 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Schedule Your Appointment?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Book your consultation today and take the first step towards better health
+            Take the first step towards better women&apos;s health. Contact us today to book your consultation.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap justify-center gap-4">
             <a 
               href="tel:+919876543210"
-              className="flex items-center gap-2 px-8 py-4 bg-white text-primary-600 rounded-full hover:bg-gray-100 transition-all font-medium"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 rounded-full hover:bg-gray-100 transition-all font-medium"
             >
               <Phone className="w-5 h-5" />
-              Call: +91 98765 43210
+              Call Now
             </a>
             <a 
               href="https://wa.me/919876543210"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
             >
               <MessageCircle className="w-5 h-5" />
-              WhatsApp Appointment
+              WhatsApp
             </a>
+            <Link 
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all font-medium"
+            >
+              Contact Us <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>
     </div>
   )
 }
-

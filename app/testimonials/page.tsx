@@ -1,8 +1,15 @@
+import type { Metadata } from 'next'
 import { Star, Quote } from 'lucide-react'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Patient Testimonials - Dr. Aparana Ghosh | Reviews from Satisfied Patients',
-  description: 'Read testimonials from patients who have received treatment from Dr. Aparana Ghosh. Real experiences and reviews from our clinic in Chembur, Mumbai.',
+  description: 'Read testimonials and reviews from patients who have received treatment from Dr. Aparana Ghosh. Real experiences from laser hair reduction, cosmetic gynecology, and other treatments at our clinic in Chembur, Mumbai.',
+  keywords: 'Dr. Aparana Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur',
+  openGraph: {
+    title: 'Patient Testimonials - Dr. Aparana Ghosh Clinic',
+    description: 'Read real testimonials from satisfied patients of Dr. Aparana Ghosh.',
+    type: 'website',
+  },
 }
 
 const testimonials = [

@@ -1,9 +1,17 @@
+import type { Metadata } from 'next'
 import DoctorImage from '../components/DoctorImage'
 import { Award, GraduationCap, Users, Heart, CheckCircle } from 'lucide-react'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'About Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai',
-  description: 'Learn about Dr. Aparana Ghosh, a renowned gynecologist specializing in cosmetic gynecology, laser treatments, and women\'s health in Chembur, Mumbai.',
+  description: 'Learn about Dr. Aparana Ghosh (MBBS, MD - Obstetrics & Gynecology), a renowned gynecologist with FMAS fellowship specializing in cosmetic gynecology, laser treatments, HIFU, and comprehensive women\'s health care in Chembur, Mumbai.',
+  keywords: 'Dr. Aparana Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications',
+  openGraph: {
+    title: 'About Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai',
+    description: 'Learn about Dr. Aparana Ghosh, a renowned gynecologist specializing in comprehensive women\'s health care in Chembur, Mumbai.',
+    type: 'profile',
+    images: ['/images/dr-aparana-ghosh.jpg'],
+  },
 }
 
 export default function AboutPage() {

@@ -80,31 +80,60 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <Link href="/" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              <Link 
+                href="/" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Home
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              <Link 
+                href="/about" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 About Doctor
               </Link>
-              <Link href="/services" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              <Link 
+                href="/services" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Services
               </Link>
-              <Link href="/treatments" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              <Link 
+                href="/treatments" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Treatments
               </Link>
-              <Link href="/testimonials" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              <Link 
+                href="/testimonials" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Testimonials
               </Link>
-              <Link href="/blog" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              <Link 
+                href="/blog" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Health Tips
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              <Link 
+                href="/contact" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Contact
               </Link>
               <div className="flex gap-3 pt-4 border-t border-gray-200">
                 <a 
                   href="tel:+919876543210"
                   className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   <Phone className="w-4 h-4" />
                   Call Now
@@ -114,6 +143,7 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   <MessageCircle className="w-4 h-4" />
                   WhatsApp

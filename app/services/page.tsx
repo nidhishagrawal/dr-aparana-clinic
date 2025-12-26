@@ -1,9 +1,16 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Award } from 'lucide-react'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Services - Dr. Aparana Ghosh | Gynecologist Services in Chembur, Mumbai',
-  description: 'Comprehensive gynecological services including laser hair reduction, cosmetic gynecology, HIFU for incontinence, HRT treatment, and scar reduction in Chembur, Mumbai.',
+  description: 'Comprehensive gynecological services including laser hair reduction, cosmetic gynecology, HIFU for incontinence, HRT treatment, scar reduction, and general gynecology in Chembur, Mumbai. Book your appointment today.',
+  keywords: 'gynecologist services Chembur, laser hair reduction Mumbai, cosmetic gynecology, HIFU treatment, HRT treatment Mumbai, women health services, gynecological treatments',
+  openGraph: {
+    title: 'Gynecologist Services - Dr. Aparana Ghosh Clinic, Chembur, Mumbai',
+    description: 'Comprehensive gynecological services including laser hair reduction, cosmetic gynecology, HIFU, and more in Chembur, Mumbai.',
+    type: 'website',
+  },
 }
 
 const services = [
