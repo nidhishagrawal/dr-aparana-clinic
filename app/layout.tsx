@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   keywords: [
     'gynecologist Chembur',
     'best gynecologist Mumbai',
-    'Dr. Aparana Ghosh',
+    'Dr. Aparna Ghosh',
     'women health clinic Chembur',
     'laser hair reduction Mumbai',
     'cosmetic gynecology Mumbai',
@@ -22,11 +22,16 @@ export const metadata: Metadata = {
     'HRT treatment Mumbai',
     'obstetrician Chembur',
     'gynecologist near me',
-    'women specialist chembur Mumbai',
+    'women specialist chemburMumbai',
     'pregnancy care Chembur',
     'maternal care Mumbai',
-    'gynecological surgery Mumbai'
+    'gynecological surgery Mumbai',
+    'safe abortions Mumbai',
+    'safe abortion Chembur',
   ],
+  other: {
+    'keywords': 'gynecologist Chembur, best gynecologist Mumbai, Dr. Aparana Ghosh, women health clinic Chembur, laser hair reduction Mumbai, cosmetic gynecology Mumbai, HIFU urinary incontinence treatment, HRT treatment Mumbai, obstetrician Chembur, gynecologist near me, women specialist chemburMumbai, pregnancy care Chembur, maternal care Mumbai, gynecological surgery Mumbai'
+  },
   authors: [{ name: 'Dr. Aparana Ghosh' }],
   creator: 'Dr. Aparana Ghosh',
   publisher: 'Dr. Aparana Ghosh Clinic',

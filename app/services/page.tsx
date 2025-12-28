@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Services - Dr. Aparana Ghosh | Gynecologist Services in Chembur, Mumbai',
   description: 'Comprehensive gynecological services including laser hair reduction, cosmetic gynecology, HIFU for incontinence, HRT treatment, scar reduction, and general gynecology in Chembur, Mumbai. Book your appointment today.',
   keywords: 'gynecologist services Chembur, laser hair reduction Mumbai, cosmetic gynecology, HIFU treatment, HRT treatment Mumbai, women health services, gynecological treatments',
+  other: {
+    'keywords': 'gynecologist services Chembur, laser hair reduction Mumbai, cosmetic gynecology, HIFU treatment, HRT treatment Mumbai, women health services, gynecological treatments'
+  },
   openGraph: {
     title: 'Gynecologist Services - Dr. Aparana Ghosh Clinic, Chembur, Mumbai',
     description: 'Comprehensive gynecological services including laser hair reduction, cosmetic gynecology, HIFU, and more in Chembur, Mumbai.',
@@ -32,8 +35,29 @@ const services = [
   {
     id: 'hifu-incontinence',
     title: 'HIFU for Urinary Incontinence',
-    description: 'Non-invasive gynecological treatment for urinary incontinence using advanced HIFU technology. Effective solution without surgery.',
-    keywords: 'HIFU urinary incontinence Mumbai, treatment for urine leakage Chembur',
+    description: 'Non-invasive gynecological treatment for urinary incontinence and vaginal tightening using advanced HIFU technology. Effective solution without surgery.',
+    keywords: 'HIFU urinary incontinence Mumbai, vaginal tightening Chembur, treatment for urine leakage',
+    primary: true,
+  },
+  {
+    id: 'hifu-skin-tightening',
+    title: 'HIFU for Skin Tightening',
+    description: 'Advanced HIFU treatment for tightening sagging skin of face, neck, underarms, and belly fat. Non-invasive cosmetic procedure for firmer, younger-looking skin.',
+    keywords: 'HIFU skin tightening Mumbai, face tightening Chembur, belly fat reduction',
+    primary: true,
+  },
+  {
+    id: 'high-risk-pregnancy',
+    title: 'High-Risk Pregnancy Care',
+    description: 'Expert care for high-risk pregnancies and deliveries, ensuring best outcomes for both mother and baby. Comprehensive monitoring and management.',
+    keywords: 'high risk pregnancy Mumbai, expert obstetrician Chembur, pregnancy care',
+    primary: true,
+  },
+  {
+    id: 'hysterectomy-fibroid',
+    title: 'Hysterectomy & Fibroid Removal',
+    description: 'Expert surgical procedures including hysterectomy and removal of large fibroids. Notable achievement: Successfully removed 3.8 kg (23 cm) fibroid in a 50-minute procedure at Surya Hospital, Chembur.',
+    keywords: 'hysterectomy Mumbai, fibroid removal Chembur, large fibroid surgery, myomectomy',
     primary: true,
   },
   // Secondary Cosmetic Services
@@ -97,6 +121,12 @@ export default function ServicesPage() {
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {service.description}
                   </p>
+                  {service.id === 'hysterectomy-fibroid' && (
+                    <div className="bg-primary-100 rounded-lg p-3 mb-4 border border-primary-200">
+                      <p className="text-xs font-semibold text-primary-700 mb-1">📋 Notable Case Study:</p>
+                      <p className="text-xs text-gray-700">Successfully removed 3.8 kg (23 cm) fibroid in 50 minutes at Surya Hospital, Chembur (Sept 2023)</p>
+                    </div>
+                  )}
                   <span className="text-primary-600 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
                     Learn More <ArrowRight className="w-4 h-4" />
                   </span>

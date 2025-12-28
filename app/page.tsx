@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
   description: 'Expert gynecologist Dr. Aparana Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and maternal care in Chembur, Mumbai. Book your appointment today.',
   keywords: 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai',
+  other: {
+    'keywords': 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai'
+  },
   openGraph: {
     title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai',
     description: 'Expert gynecologist offering comprehensive women\'s health care in Chembur, Mumbai.',
@@ -118,11 +121,14 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
+              { name: 'High-Risk Pregnancy Care', desc: 'Expert care for high-risk pregnancies and deliveries', href: '/services', primary: true },
+              { name: 'Hysterectomy & Fibroid Removal', desc: 'Expert surgical procedures including large fibroids (up to 3.8 kg)', href: '/services', primary: true },
+              { name: 'HIFU for Urinary Incontinence', desc: 'Non-invasive treatment for incontinence and vaginal tightening', href: '/services', primary: true },
+              { name: 'HIFU for Skin Tightening', desc: 'Tightening sagging skin of face, neck, underarms, belly', href: '/services', primary: true },
               { name: 'General Gynecology', desc: 'Complete women\'s health care', href: '/services', primary: true },
-              { name: 'Laser Hair Reduction', desc: 'Safe and effective hair removal', href: '/services/laser-hair-reduction', primary: true },
-              { name: 'Cosmetic Gynecology', desc: 'Advanced cosmetic procedures', href: '/services', primary: true },
-              { name: 'HIFU Treatment', desc: 'Non-invasive urinary incontinence treatment', href: '/services', primary: false },
               { name: 'HRT Treatment', desc: 'Hormone replacement therapy', href: '/services', primary: false },
+              { name: 'Laser Hair Reduction', desc: 'Safe and effective hair removal', href: '/services/laser-hair-reduction', primary: false },
+              { name: 'Cosmetic Gynecology', desc: 'Advanced cosmetic procedures', href: '/services', primary: false },
               { name: 'Maternal Care', desc: 'Complete pregnancy and delivery care', href: '/services', primary: false },
             ].map((service, index) => (
               <Link
@@ -162,16 +168,19 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">About Dr. Aparana Ghosh</h2>
             <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
               <p>
-                Dr. Aparana Ghosh (MBBS, MD - Obstetrics & Gynecology) is an experienced gynecologist in Chembur, Mumbai, taking care of all related health concerns at every stage for women.
+                Dr. Aparana Ghosh (MBBS, MD - Obstetrics & Gynecology) is an experienced gynecologist in Chembur, Mumbai, with <strong className="text-primary-600">23 years of experience</strong> in the field of gynecology and Obstetrics. She takes care of all related health concerns at every stage for women.
               </p>
               <p>
-                She has done her Masters at prestigious medical institutions. She worked in world-class hospitals and has extensive experience in treating patients with gynecological issues.
+                Dr. Aparana Ghosh passed out MBBS from <strong className="text-primary-600">RGMC (Rajiv Gandhi Medical College)</strong> in <strong className="text-primary-600">1998</strong>. She completed her post-graduation (MD) from the prestigious <strong className="text-primary-600">KEM Hospital (King Edward Memorial Hospital)</strong> in <strong className="text-primary-600">2002</strong>, one of Mumbai&apos;s most renowned medical institutions.
               </p>
               <p>
-                Extremely passionate about <strong className="text-primary-600">women&apos;s health and gynecology</strong>, an expert in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex gynaecological issues. She also offers cosmetic gynecology and laser treatments as additional services. She offers the latest and most cutting-edge treatments for various gynaecological conditions. She has also counselled women on maintaining good health and staying active considering their busy lifestyles.
+                With over two decades of experience, Dr. Aparana Ghosh has worked in world-class hospitals and has extensive experience in treating patients with gynecological issues. She is extremely passionate about <strong className="text-primary-600">women&apos;s health and gynecology</strong>, and is an expert in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex gynaecological issues. She also offers cosmetic gynecology and laser treatments as additional services.
               </p>
               <p>
-                Dr. Aparana Ghosh has worked as a <strong className="text-primary-600">gynaecologist</strong> at many reputed hospitals and clinics in Chembur. As a result, she has acquired considerable knowledge and hands-on experience in treating and managing patients with gynaecological issues.
+                Dr. Aparana Ghosh has extensive expertise in dealing with <strong className="text-primary-600">high-risk pregnancy and deliveries</strong>, ensuring the best outcomes for both mother and baby. She is also an expert in <strong className="text-primary-600">hysterectomy</strong>, specializing in the removal of uterus with huge fibroids. Her notable achievement includes successfully removing a massive <strong className="text-primary-600">3.8 kg (23 cm) fibroid</strong> in a swift <strong className="text-primary-600">50-minute procedure</strong> at Surya Hospital, Chembur in September 2023, demonstrating exceptional surgical expertise.
+              </p>
+              <p>
+                Dr. Aparana Ghosh is an expert in <strong className="text-primary-600">urinary incontinence treatment</strong> using advanced HIFU technology. HIFU is used for vaginal tightening and incontinence treatment, as well as for tightening sagging skin of face, neck, underarms, and belly fat. Throughout her career, she has worked at many reputed hospitals and clinics in Chembur, including Surya Hospital, making her one of the most trusted gynecologists in the area.
               </p>
             </div>
             <div className="text-center mt-8">

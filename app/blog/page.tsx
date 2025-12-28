@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Health Tips & Blog - Dr. Aparana Ghosh | Women\'s Health Articles',
   description: 'Read health tips and articles about women\'s health, gynecology, menopause, laser treatments, and wellness from Dr. Aparana Ghosh\'s clinic in Chembur, Mumbai.',
   keywords: 'women health tips, gynecology blog, health articles Mumbai, women wellness tips, gynecologist health advice',
+  other: {
+    'keywords': 'women health tips, gynecology blog, health articles Mumbai, women wellness tips, gynecologist health advice'
+  },
   openGraph: {
     title: 'Health Tips & Blog - Dr. Aparana Ghosh',
     description: 'Expert health tips and articles about women\'s health and wellness.',

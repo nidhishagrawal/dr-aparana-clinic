@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Contact Dr. Aparana Ghosh - Gynecologist Clinic in Chembur, Mumbai',
   description: 'Contact Dr. Aparana Ghosh\'s clinic in Chembur, Mumbai. Book your appointment via phone (+91-9876543210) or WhatsApp. Find our location, clinic hours, and contact information.',
   keywords: 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp',
+  other: {
+    'keywords': 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp'
+  },
   openGraph: {
     title: 'Contact Dr. Aparana Ghosh - Gynecologist Clinic in Chembur, Mumbai',
     description: 'Book your appointment with Dr. Aparana Ghosh. Contact us via phone or WhatsApp.',

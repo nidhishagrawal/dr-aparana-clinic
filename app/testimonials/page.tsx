@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Patient Testimonials - Dr. Aparana Ghosh | Reviews from Satisfied Patients',
   description: 'Read testimonials and reviews from patients who have received treatment from Dr. Aparana Ghosh. Real experiences from laser hair reduction, cosmetic gynecology, and other treatments at our clinic in Chembur, Mumbai.',
   keywords: 'Dr. Aparana Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur',
+  other: {
+    'keywords': 'Dr. Aparana Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur'
+  },
   openGraph: {
     title: 'Patient Testimonials - Dr. Aparana Ghosh Clinic',
     description: 'Read real testimonials from satisfied patients of Dr. Aparana Ghosh.',

@@ -33,7 +33,7 @@ export default function StructuredData() {
     name: 'Dr. Aparana Ghosh',
     alternateName: 'Dr. Aparana Ghosh',
     jobTitle: 'Gynecologist',
-    description: 'Expert gynecologist (MBBS, MD - Obstetrics & Gynecology) with FMAS fellowship, specializing in comprehensive women\'s health care, cosmetic gynecology, and advanced treatments.',
+    description: 'Expert gynecologist (MBBS from RGMC 1998, MD from KEM Hospital 2002) with 23 years of experience in gynecology and Obstetrics, specializing in comprehensive women\'s health care, cosmetic gynecology, and advanced treatments.',
     url: 'https://draparana.com', // Update with your actual domain
     image: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
     telephone: '+919876543210', // Update with actual phone number
@@ -49,9 +49,15 @@ export default function StructuredData() {
     medicalSpecialty: [
       'Gynecology',
       'Obstetrics',
+      'High-Risk Pregnancy',
+      'Hysterectomy',
+      'Fibroid Removal',
+      'Urinary Incontinence Treatment',
+      'HIFU Treatment',
+      'Vaginal Tightening',
+      'Skin Tightening',
       'Cosmetic Gynecology',
       'Laser Hair Reduction',
-      'HIFU Treatment',
       'HRT Treatment',
     ],
     credential: [
