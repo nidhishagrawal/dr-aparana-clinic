@@ -25,7 +25,10 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Dr. Aparana Ghosh</h1>
-          <p className="text-xl text-gray-600">Expert Gynecologist & Cosmetic Surgeon</p>
+          <p className="text-xl text-gray-600">
+            Expert Gynecologist Surgeon & Obstetrician<br />
+            Cosmetic Gynecologist
+          </p>
         </div>
       </section>
 
@@ -37,7 +40,7 @@ export default function AboutPage() {
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-200 shadow-xl">
                 <DoctorImage
                   src="/images/dr-aparana-ghosh.jpg"
-                  alt="Dr. Aparana Ghosh - Expert Gynecologist & Cosmetic Surgeon"
+                  alt="Dr. Aparana Ghosh - Expert Gynecologist Surgeon & Obstetrician, Cosmetic Gynecologist"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
