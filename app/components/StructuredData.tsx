@@ -63,7 +63,6 @@ export default function StructuredData() {
     credential: [
       'MBBS',
       'MD - Obstetrics & Gynecology',
-      'FMAS (Fellowship in Minimally Invasive Surgeries)',
     ],
     worksFor: {
       '@type': 'MedicalOrganization',

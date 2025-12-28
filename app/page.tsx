@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai',
     description: 'Expert gynecologist offering comprehensive women\'s health care in Chembur, Mumbai.',
     type: 'website',
-    images: ['/images/dr-aparana-ghosh.jpg'],
+    images: ['/images/Aparna_Ghosh_Home_Page.jpeg'],
   },
 }
 
@@ -29,7 +29,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-50 via-white to-primary-100 py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full mb-6">
                 <Award className="w-4 h-4" />
@@ -41,9 +41,6 @@ export default function Home() {
               <div className="mb-6">
                 <p className="text-xl font-semibold text-primary-600 mb-2">
                   MBBS, MD - Obstetrics & Gynecology
-                </p>
-                <p className="text-lg text-gray-600">
-                  FMAS (Fellowship in Minimally Invasive Surgeries)
                 </p>
               </div>
               <p className="text-xl text-gray-600 mb-8">
@@ -74,12 +71,13 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-[500px] md:h-[600px] max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden border-0 bg-white">
               <DoctorImage
-                src="/images/dr-aparana-ghosh.jpg"
+                src="/images/Aparna_Ghosh_Home_Page.jpeg"
                 alt="Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai"
                 priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, 400px"
+                className="object-cover object-center"
               />
             </div>
           </div>

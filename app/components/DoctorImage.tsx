@@ -35,6 +35,7 @@ export default function DoctorImage({ src, alt, priority = false, sizes, classNa
       sizes={sizes}
       onError={() => setImageError(true)}
       unoptimized={process.env.NODE_ENV === 'development'}
+      style={{ border: 'none', outline: 'none' }}
     />
   )
 }

@@ -51,7 +51,6 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Dr. Aparana Ghosh</h2>
               <p className="text-lg font-semibold text-primary-600 mb-4">
                 MBBS (RGMC, 1998) | MD - Obstetrics & Gynecology (KEM Hospital, 2002)<br />
-                FMAS (Fellowship in Minimally Invasive Surgeries)<br />
                 <span className="text-base text-gray-600 font-normal">23 Years of Experience</span>
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
@@ -87,7 +86,6 @@ export default function AboutPage() {
                   <h3 className="font-bold text-lg mb-2">Medical Education</h3>
                   <p className="text-gray-600"><strong>MBBS</strong> - RGMC (Rajiv Gandhi Medical College), 1998</p>
                   <p className="text-gray-600"><strong>MD - Obstetrics & Gynecology</strong> - KEM Hospital (King Edward Memorial Hospital), 2002</p>
-                  <p className="text-gray-600">FMAS (Fellowship in Minimally Invasive Surgeries)</p>
                 </div>
               </div>
               
