@@ -4,15 +4,15 @@ import CaseStoryImage from '../components/CaseStoryImage'
 import { Award, GraduationCap, Users, Heart, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai',
-  description: 'Learn about Dr. Aparana Ghosh (MBBS from RGMC 1998, MD from KEM Hospital 2002), a renowned gynecologist with 23 years of experience in gynecology and Obstetrics, specializing in cosmetic gynecology, laser treatments, HIFU, and comprehensive women\'s health care in Chembur, Mumbai.',
-  keywords: 'Dr. Aparana Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications',
+  title: 'About Dr. Aparna Ghosh - Expert Gynecologist in Chembur, Mumbai',
+  description: 'Learn about Dr. Aparna Ghosh (MBBS from RGMC 1998, MD from KEM Hospital 2002), a renowned gynecologist with 23 years of experience in gynecology and Obstetrics, specializing in cosmetic gynecology, laser treatments, HIFU, and comprehensive women\'s health care in Chembur, Mumbai.',
+  keywords: 'Dr. Aparna Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications',
   other: {
-    'keywords': 'Dr. Aparana Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications'
+    'keywords': 'Dr. Aparna Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications'
   },
   openGraph: {
-    title: 'About Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai',
-    description: 'Learn about Dr. Aparana Ghosh, a renowned gynecologist specializing in comprehensive women\'s health care in Chembur, Mumbai.',
+    title: 'About Dr. Aparna Ghosh - Expert Gynecologist in Chembur, Mumbai',
+    description: 'Learn about Dr. Aparna Ghosh, a renowned gynecologist specializing in comprehensive women\'s health care in Chembur, Mumbai.',
     type: 'profile',
     images: ['/images/dr-aparana-ghosh.jpg'],
   },
@@ -24,7 +24,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Dr. Aparana Ghosh</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Dr. Aparna Ghosh</h1>
           <p className="text-xl text-gray-600">
             Expert Gynecologist Surgeon & Obstetrician<br />
             Cosmetic Gynecologist
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-200 shadow-xl">
                 <DoctorImage
                   src="/images/dr-aparana-ghosh.jpg"
-                  alt="Dr. Aparana Ghosh - Expert Gynecologist Surgeon & Obstetrician, Cosmetic Gynecologist"
+                  alt="Dr. Aparna Ghosh - Expert Gynecologist Surgeon & Obstetrician, Cosmetic Gynecologist"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -48,16 +48,16 @@ export default function AboutPage() {
             </div>
             
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Dr. Aparana Ghosh</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Dr. Aparna Ghosh</h2>
               <p className="text-lg font-semibold text-primary-600 mb-4">
                 MBBS (RGMC, 1998) | MD - Obstetrics & Gynecology (KEM Hospital, 2002)<br />
                 <span className="text-base text-gray-600 font-normal">23 Years of Experience</span>
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                Dr. Aparana Ghosh is an experienced gynecologist in Chembur, Mumbai, with <strong className="text-primary-600">23 years of experience</strong> in gynecology and Obstetrics. She completed her MBBS from <strong className="text-primary-600">RGMC (Rajiv Gandhi Medical College)</strong> in <strong className="text-primary-600">1998</strong> and MD from the prestigious <strong className="text-primary-600">KEM Hospital</strong> in <strong className="text-primary-600">2002</strong>.
+                Dr. Aparna Ghosh is an experienced gynecologist in Chembur, Mumbai, with <strong className="text-primary-600">23 years of experience</strong> in gynecology and Obstetrics. She completed her MBBS from <strong className="text-primary-600">RGMC (Rajiv Gandhi Medical College)</strong> in <strong className="text-primary-600">1998</strong> and MD from the prestigious <strong className="text-primary-600">KEM Hospital</strong> in <strong className="text-primary-600">2002</strong>.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                With extensive experience in world-class hospitals, Dr. Aparana Ghosh specializes in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, PCOD/PCOS, and other complex issues. She is an expert in <strong className="text-primary-600">high-risk pregnancy and deliveries</strong>, <strong className="text-primary-600">hysterectomy</strong> (notably removing a <strong className="text-primary-600">3.8 kg fibroid</strong> at Surya Hospital), and <strong className="text-primary-600">urinary incontinence treatment</strong> using advanced HIFU technology.
+                With extensive experience in world-class hospitals, Dr. Aparna Ghosh specializes in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, PCOD/PCOS, and other complex issues. She is an expert in <strong className="text-primary-600">high-risk pregnancy and deliveries</strong>, <strong className="text-primary-600">hysterectomy</strong> (notably removing a <strong className="text-primary-600">3.8 kg fibroid</strong> at Surya Hospital), and <strong className="text-primary-600">urinary incontinence treatment</strong> using advanced HIFU technology.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 She also offers cosmetic gynecology, HIFU for vaginal tightening and skin tightening, and laser treatments. Throughout her career at reputed hospitals including Surya Hospital, Chembur, she has counselled countless women on maintaining good health, making her one of the most trusted gynecologists in the area.
@@ -128,7 +128,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start mb-6">
                 <div>
                   <p className="text-lg leading-relaxed mb-4">
-                    Dr. Aparana Ghosh at Surya Hospitals, Chembur, performed a swift <strong className="text-primary-600">50-minute surgical procedure</strong> to remove a massive <strong className="text-primary-600">3.8 kg fibroid</strong>, which measured <strong className="text-primary-600">23 cm</strong>. This was the cause of a two-year history of abdominal distention and a palpable lump.
+                    Dr. Aparna Ghosh at Surya Hospitals, Chembur, performed a swift <strong className="text-primary-600">50-minute surgical procedure</strong> to remove a massive <strong className="text-primary-600">3.8 kg fibroid</strong>, which measured <strong className="text-primary-600">23 cm</strong>. This was the cause of a two-year history of abdominal distention and a palpable lump.
                   </p>
                   <p className="text-lg leading-relaxed">
                     On <strong>September 21, 2023</strong>, a skilled surgical team made a Pfannensteil incision. The mass, weighing <strong className="text-primary-600">3.780 kg</strong> and described as posterior multilobulated, was meticulously extracted. The procedure utilized a strategic injection of vasopressin to avoid opening the uterine cavity.
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-lg border-2 border-primary-200">
                   <CaseStoryImage
                     src="/images/case-story-myomectomy.jpg"
-                    alt="Dr. Aparana Ghosh with 3.8 kg fibroid removed at Surya Hospital, Chembur"
+                    alt="Dr. Aparna Ghosh with 3.8 kg fibroid removed at Surya Hospital, Chembur"
                   />
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function AboutPage() {
                   Post-procedure examination of the uterus, both tubes, and ovaries indicated normalcy. The procedure had <strong className="text-primary-600">minimal blood loss</strong> and stands as a testament to the expertise and dedication of the medical team at Surya Hospitals, Chembur.
                 </p>
                 <div className="mt-4 pt-4 border-t border-gray-200">
-                  <p className="text-sm text-gray-600"><strong>Surgeon:</strong> Dr. Aparana Ghosh Shinde</p>
+                  <p className="text-sm text-gray-600"><strong>Surgeon:</strong> Dr. Aparna Ghosh Shinde</p>
                   <p className="text-sm text-gray-600"><strong>Hospital:</strong> Surya Hospitals, Chembur</p>
                   <p className="text-sm text-gray-600"><strong>Date:</strong> September 21, 2023</p>
                 </div>

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* About */}
           <div>
-            <h3 className="font-bold text-xl mb-4">Dr. Aparana Ghosh</h3>
+            <h3 className="font-bold text-xl mb-4">Dr. Aparna Ghosh</h3>
             <p className="text-gray-400 text-sm mb-4">
               Expert gynecologist providing comprehensive women&apos;s health care and cosmetic gynecology services in Chembur, Mumbai.
             </p>
@@ -145,7 +145,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Dr. Aparana Ghosh. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Dr. Aparna Ghosh. All rights reserved.</p>
         </div>
       </div>
     </footer>

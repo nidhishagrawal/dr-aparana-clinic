@@ -1,6 +1,6 @@
-# Dr. Aparana Ghosh - Gynecologist Clinic Website
+# Dr. Aparna Ghosh - Gynecologist Clinic Website
 
-A modern, SEO-optimized website for Dr. Aparana Ghosh's gynecology clinic in Chembur, Mumbai.
+A modern, SEO-optimized website for Dr. Aparna Ghosh's gynecology clinic in Chembur, Mumbai.
 
 ## 🚀 Quick Start
 

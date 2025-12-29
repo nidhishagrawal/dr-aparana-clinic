@@ -1,11 +1,11 @@
 # Website Updates - Matching Reference Style
 
-Based on the reference website (https://www.dradititrivedi.com/index.php), I've updated Dr. Aparana Ghosh's website to match a similar professional medical website template.
+Based on the reference website (https://www.dradititrivedi.com/index.php), I've updated Dr. Aparna Ghosh's website to match a similar professional medical website template.
 
 ## ✅ New Features Added
 
 ### 1. **Enhanced Hero Section**
-- Doctor name prominently displayed: "Dr. Aparana Ghosh"
+- Doctor name prominently displayed: "Dr. Aparna Ghosh"
 - Credentials shown: MBBS, MD - Obstetrics & Gynecology, FMAS
 - Professional introduction text
 - Call and WhatsApp buttons
@@ -103,7 +103,7 @@ Based on the reference website (https://www.dradititrivedi.com/index.php), I've 
 
 ## ✨ Result
 
-The website now has a professional medical website structure similar to the reference site, while maintaining Dr. Aparana Ghosh's unique services and branding. All features are functional and ready to use!
+The website now has a professional medical website structure similar to the reference site, while maintaining Dr. Aparna Ghosh's unique services and branding. All features are functional and ready to use!
 
 ---
 

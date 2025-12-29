@@ -107,7 +107,7 @@ site:dr-aparana-clinic.vercel.app
 
 ### Method 3: Check Individual Pages
 Search for:
-- `site:dr-aparana-clinic.vercel.app "Dr. Aparana Ghosh"`
+- `site:dr-aparana-clinic.vercel.app "Dr. Aparna Ghosh"`
 - `site:dr-aparana-clinic.vercel.app gynecologist Chembur`
 
 ---

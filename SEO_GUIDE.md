@@ -76,7 +76,7 @@ Your website now has comprehensive SEO optimization:
 
 1. **Create/Claim**: https://business.google.com
 2. **Add Information**:
-   - Business name: "Dr. Aparana Ghosh Clinic"
+   - Business name: "Dr. Aparna Ghosh Clinic"
    - Address: Your clinic address
    - Phone: Your phone number
    - Category: "Gynecologist"
@@ -149,7 +149,7 @@ export default function FAQ() {
 3. **Add to Footer**:
    ```tsx
    <address>
-     Dr. Aparana Ghosh Clinic<br />
+     Dr. Aparna Ghosh Clinic<br />
      [Your Address], Chembur, Mumbai - 400071<br />
      Phone: +91-9876543210
    </address>
@@ -277,7 +277,7 @@ export default function FAQ() {
 ### Primary Keywords:
 1. "best gynecologist in Chembur"
 2. "gynecologist Chembur Mumbai"
-3. "Dr. Aparana Ghosh"
+3. "Dr. Aparna Ghosh"
 4. "women health clinic Chembur"
 5. "gynecologist near me"
 

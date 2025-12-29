@@ -1,9 +1,9 @@
-# 📸 How to Add Dr. Aparana Ghosh Photo
+# 📸 How to Add Dr. Aparna Ghosh Photo
 
 ## Quick Steps
 
 ### Step 1: Get the Photo
-- You have the photo of Dr. Aparana Ghosh (the one showing her in white lab coat)
+- You have the photo of Dr. Aparna Ghosh (the one showing her in white lab coat)
 - Make sure it's a good quality image
 
 ### Step 2: Save the Photo

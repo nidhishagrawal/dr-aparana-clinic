@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import { CheckCircle, Clock, Award } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Laser Hair Reduction in Chembur, Mumbai | Dr. Aparana Ghosh',
-  description: 'Permanent laser hair reduction treatment in Chembur, Mumbai. Safe, effective, and long-lasting results. Expert treatment by Dr. Aparana Ghosh. Book your consultation today.',
+  title: 'Laser Hair Reduction in Chembur, Mumbai | Dr. Aparna Ghosh',
+  description: 'Permanent laser hair reduction treatment in Chembur, Mumbai. Safe, effective, and long-lasting results. Expert treatment by Dr. Aparna Ghosh. Book your consultation today.',
   keywords: 'laser hair reduction Chembur, laser hair removal Mumbai, permanent hair removal, laser treatment Chembur, hair reduction clinic Mumbai',
   other: {
     'keywords': 'laser hair reduction Chembur, laser hair removal Mumbai, permanent hair removal, laser treatment Chembur, hair reduction clinic Mumbai'
   },
   openGraph: {
-    title: 'Laser Hair Reduction - Dr. Aparana Ghosh Clinic, Chembur',
+    title: 'Laser Hair Reduction - Dr. Aparna Ghosh Clinic, Chembur',
     description: 'Safe and effective laser hair reduction treatment in Chembur, Mumbai.',
     type: 'website',
   },

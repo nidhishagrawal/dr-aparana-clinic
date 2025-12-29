@@ -27,7 +27,7 @@ export default function BookAppointment() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Book Appointment</h2>
-            <p className="text-lg text-gray-600">Schedule your consultation with Dr. Aparana Ghosh</p>
+            <p className="text-lg text-gray-600">Schedule your consultation with Dr. Aparna Ghosh</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

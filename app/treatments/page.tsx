@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Before & After Treatments - Dr. Aparana Ghosh | Treatment Results Gallery',
-  description: 'View before and after photos of treatments performed by Dr. Aparana Ghosh. See real results from laser hair reduction, cosmetic gynecology, HIFU, and other procedures at our clinic in Chembur, Mumbai.',
+  title: 'Before & After Treatments - Dr. Aparna Ghosh | Treatment Results Gallery',
+  description: 'View before and after photos of treatments performed by Dr. Aparna Ghosh. See real results from laser hair reduction, cosmetic gynecology, HIFU, and other procedures at our clinic in Chembur, Mumbai.',
   keywords: 'before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur',
   other: {
     'keywords': 'before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur'
   },
   openGraph: {
-    title: 'Before & After Treatments - Dr. Aparana Ghosh',
+    title: 'Before & After Treatments - Dr. Aparna Ghosh',
     description: 'View real treatment results and before/after photos from our clinic.',
     type: 'website',
   },

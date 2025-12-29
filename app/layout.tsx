@@ -7,10 +7,10 @@ import StructuredData from './components/StructuredData'
 export const metadata: Metadata = {
   metadataBase: new URL('https://draparana.com'), // Update with your actual domain
   title: {
-    default: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
-    template: '%s | Dr. Aparana Ghosh'
+    default: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
+    template: '%s | Dr. Aparna Ghosh'
   },
-  description: 'Expert gynecologist Dr. Aparana Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and more in Chembur, Mumbai. Book your appointment today.',
+  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and more in Chembur, Mumbai. Book your appointment today.',
   keywords: [
     'gynecologist Chembur',
     'best gynecologist Mumbai',
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     'safe abortion Chembur',
   ],
   other: {
-    'keywords': 'gynecologist Chembur, best gynecologist Mumbai, Dr. Aparana Ghosh, women health clinic Chembur, laser hair reduction Mumbai, cosmetic gynecology Mumbai, HIFU urinary incontinence treatment, HRT treatment Mumbai, obstetrician Chembur, gynecologist near me, women specialist chemburMumbai, pregnancy care Chembur, maternal care Mumbai, gynecological surgery Mumbai'
+    'keywords': 'gynecologist Chembur, best gynecologist Mumbai, Dr. Aparna Ghosh, women health clinic Chembur, laser hair reduction Mumbai, cosmetic gynecology Mumbai, HIFU urinary incontinence treatment, HRT treatment Mumbai, obstetrician Chembur, gynecologist near me, women specialist chemburMumbai, pregnancy care Chembur, maternal care Mumbai, gynecological surgery Mumbai'
   },
-  authors: [{ name: 'Dr. Aparana Ghosh' }],
-  creator: 'Dr. Aparana Ghosh',
-  publisher: 'Dr. Aparana Ghosh Clinic',
+  authors: [{ name: 'Dr. Aparna Ghosh' }],
+  creator: 'Dr. Aparna Ghosh',
+  publisher: 'Dr. Aparna Ghosh Clinic',
   formatDetection: {
     email: false,
     address: false,
@@ -44,21 +44,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://draparana.com', // Update with your actual domain
-    siteName: 'Dr. Aparana Ghosh Clinic',
-    title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai',
-    description: 'Expert gynecologist Dr. Aparana Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
+    siteName: 'Dr. Aparna Ghosh Clinic',
+    title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
+    description: 'Expert gynecologist Dr. Aparna Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
     images: [
       {
         url: '/images/dr-aparana-ghosh.jpg',
         width: 1200,
         height: 630,
-        alt: 'Dr. Aparana Ghosh - Expert Gynecologist',
+        alt: 'Dr. Aparna Ghosh - Expert Gynecologist',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai',
+    title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
     description: 'Expert gynecologist offering comprehensive women\'s health care in Chembur, Mumbai.',
     images: ['/images/dr-aparana-ghosh.jpg'],
   },

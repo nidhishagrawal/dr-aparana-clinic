@@ -1,4 +1,4 @@
-# 🚀 How to Run Dr. Aparana Website Locally
+# 🚀 How to Run Dr. Aparna Website Locally
 
 ## Quick Start (3 Steps)
 

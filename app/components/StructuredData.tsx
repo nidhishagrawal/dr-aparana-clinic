@@ -2,11 +2,11 @@ export default function StructuredData() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalOrganization',
-    name: 'Dr. Aparana Ghosh Clinic',
+    name: 'Dr. Aparna Ghosh Clinic',
     url: 'https://draparana.com', // Update with your actual domain
     logo: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
     image: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
-    description: 'Expert gynecologist Dr. Aparana Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
+    description: 'Expert gynecologist Dr. Aparna Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Clinic Address, Chembur', // Update with actual address
@@ -30,8 +30,8 @@ export default function StructuredData() {
   const doctorSchema = {
     '@context': 'https://schema.org',
     '@type': 'Physician',
-    name: 'Dr. Aparana Ghosh',
-    alternateName: 'Dr. Aparana Ghosh',
+    name: 'Dr. Aparna Ghosh',
+    alternateName: 'Dr. Aparna Ghosh',
     jobTitle: 'Gynecologist',
     description: 'Expert gynecologist (MBBS from RGMC 1998, MD from KEM Hospital 2002) with 23 years of experience in gynecology and Obstetrics, specializing in comprehensive women\'s health care, cosmetic gynecology, and advanced treatments.',
     url: 'https://draparana.com', // Update with your actual domain
@@ -66,7 +66,7 @@ export default function StructuredData() {
     ],
     worksFor: {
       '@type': 'MedicalOrganization',
-      name: 'Dr. Aparana Ghosh Clinic',
+      name: 'Dr. Aparna Ghosh Clinic',
     },
     areaServed: {
       '@type': 'City',
@@ -77,7 +77,7 @@ export default function StructuredData() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
-    name: 'Dr. Aparana Ghosh Clinic',
+    name: 'Dr. Aparna Ghosh Clinic',
     image: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
     '@id': 'https://draparana.com',
     url: 'https://draparana.com',

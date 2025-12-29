@@ -2,7 +2,7 @@
 
 ## Doctor Photo
 
-Please add Dr. Aparana Ghosh's photo here:
+Please add Dr. Aparna Ghosh's photo here:
 
 **File name**: `dr-aparana-ghosh.jpg` (or `.png`)
 

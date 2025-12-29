@@ -9,14 +9,14 @@ import PatientEducation from './components/PatientEducation'
 import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
-  description: 'Expert gynecologist Dr. Aparana Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and maternal care in Chembur, Mumbai. Book your appointment today.',
+  title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
+  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and maternal care in Chembur, Mumbai. Book your appointment today.',
   keywords: 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai',
   other: {
     'keywords': 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai'
   },
   openGraph: {
-    title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai',
+    title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
     description: 'Expert gynecologist offering comprehensive women\'s health care in Chembur, Mumbai.',
     type: 'website',
     images: ['/images/Aparna_Ghosh_Home_Page.jpeg'],
@@ -36,7 +36,7 @@ export default function Home() {
                 <span className="text-sm font-medium">Expert Gynecologist</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-                Dr. Aparana Ghosh
+                Dr. Aparna Ghosh
               </h1>
               <div className="mb-6">
                 <p className="text-xl font-semibold text-primary-600 mb-2">
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="relative h-[500px] md:h-[600px] max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden border-0 bg-white">
               <DoctorImage
                 src="/images/Aparna_Ghosh_Home_Page.jpeg"
-                alt="Dr. Aparana Ghosh - Expert Gynecologist in Chembur, Mumbai"
+                alt="Dr. Aparna Ghosh - Expert Gynecologist in Chembur, Mumbai"
                 priority
                 sizes="(max-width: 768px) 100vw, 400px"
                 className="object-cover object-center"
@@ -324,7 +324,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Dr. Aparana Ghosh</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Dr. Aparna Ghosh</h2>
               <p className="text-lg text-gray-600">Expert Gynecologist & Obstetrician</p>
             </div>
             
@@ -394,12 +394,12 @@ export default function Home() {
                 <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                   <div className="space-y-5 text-gray-700">
                     <p className="text-base leading-relaxed">
-                      Dr. Aparana Ghosh is an experienced gynecologist in Chembur, Mumbai, with <span className="text-primary-600 font-semibold">23 years of experience</span> in gynecology and Obstetrics. She completed her MBBS from <span className="text-primary-600 font-semibold">RGMC (Rajiv Gandhi Medical College)</span> in <span className="text-primary-600 font-semibold">1998</span> and MD from the prestigious <span className="text-primary-600 font-semibold">KEM Hospital</span> in <span className="text-primary-600 font-semibold">2002</span>.
+                      Dr. Aparna Ghosh is an experienced gynecologist in Chembur, Mumbai, with <span className="text-primary-600 font-semibold">23 years of experience</span> in gynecology and Obstetrics. She completed her MBBS from <span className="text-primary-600 font-semibold">RGMC (Rajiv Gandhi Medical College)</span> in <span className="text-primary-600 font-semibold">1998</span> and MD from the prestigious <span className="text-primary-600 font-semibold">KEM Hospital</span> in <span className="text-primary-600 font-semibold">2002</span>.
                     </p>
                     
                     <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-5 border-l-4 border-primary-500">
                       <p className="text-base text-gray-700 leading-relaxed">
-                        With extensive experience in world-class hospitals, Dr. Aparana Ghosh specializes in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex issues. She is an expert in <span className="text-primary-600 font-semibold">high-risk pregnancy and deliveries</span>, <span className="text-primary-600 font-semibold">hysterectomy</span> (notably removing a <span className="text-primary-600 font-semibold">3.8 kg fibroid</span> at Surya Hospital), and <span className="text-primary-600 font-semibold">urinary incontinence treatment</span> using advanced HIFU technology.
+                        With extensive experience in world-class hospitals, Dr. Aparna Ghosh specializes in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex issues. She is an expert in <span className="text-primary-600 font-semibold">high-risk pregnancy and deliveries</span>, <span className="text-primary-600 font-semibold">hysterectomy</span> (notably removing a <span className="text-primary-600 font-semibold">3.8 kg fibroid</span> at Surya Hospital), and <span className="text-primary-600 font-semibold">urinary incontinence treatment</span> using advanced HIFU technology.
                       </p>
                     </div>
                     
@@ -425,7 +425,7 @@ export default function Home() {
                 href="/about"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-full hover:from-primary-700 hover:to-primary-800 transition-all font-medium shadow-lg hover:shadow-xl"
               >
-                Learn More About Dr. Aparana <ArrowRight className="w-5 h-5" />
+                Learn More About Dr. Aparna <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -438,14 +438,14 @@ export default function Home() {
       {/* Vision Mission Values */}
       <VisionMission />
 
-      {/* Baby Treatments Section */}
+      {/* Pregnancy & Maternal Care Section */}
       <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
               <Baby className="w-8 h-8 text-primary-600" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Baby & Maternal Care</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pregnancy & Maternal Care</h2>
             <p className="text-lg text-gray-600">Comprehensive care for expecting mothers and newborns</p>
           </div>
 
@@ -471,14 +471,14 @@ export default function Home() {
               <div className="relative aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 overflow-hidden">
                 <BabyGifImage
                   src="/images/baby-treatment-2.gif"
-                  alt="Newborn Care Treatment"
+                  alt="Prenatal Care Treatment"
                   gradient="from-blue-200 to-cyan-200"
                   placeholder="Baby Treatment GIF 2"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">Newborn Care</h3>
-                <p className="text-gray-600 text-sm">Expert care for your little one</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Prenatal Care</h3>
+                <p className="text-gray-600 text-sm">Comprehensive monitoring and care during pregnancy</p>
               </div>
             </div>
 
@@ -523,17 +523,17 @@ export default function Home() {
               {
                 name: 'Priya Sharma',
                 treatment: 'Laser Hair Reduction',
-                text: 'Excellent experience with laser hair reduction. Dr. Aparana is very professional and the results are amazing. Highly recommended!',
+                text: 'Excellent experience with laser hair reduction. Dr. Aparna is very professional and the results are amazing. Highly recommended!',
               },
               {
                 name: 'Anita Desai',
                 treatment: 'Cosmetic Gynecology',
-                text: 'Dr. Aparana provided exceptional care throughout my treatment. She is knowledgeable, compassionate, and the clinic is well-equipped.',
+                text: 'Dr. Aparna provided exceptional care throughout my treatment. She is knowledgeable, compassionate, and the clinic is well-equipped.',
               },
               {
                 name: 'Sunita Patel',
                 treatment: 'HIFU Treatment',
-                text: 'The HIFU treatment for incontinence has changed my life. Dr. Aparana explained everything clearly and the procedure was comfortable.',
+                text: 'The HIFU treatment for incontinence has changed my life. Dr. Aparna explained everything clearly and the procedure was comfortable.',
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">

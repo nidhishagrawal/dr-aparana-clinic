@@ -11,14 +11,14 @@ Place the case story image at:
 
 - **File Name**: `case-story-myomectomy.jpg`
 - **Location**: `/Users/nidhish.agrawal/draparana/public/images/`
-- **Description**: Photo showing Dr. Aparana Ghosh with the removed 3.8 kg fibroid at Surya Hospital, Chembur
+- **Description**: Photo showing Dr. Aparna Ghosh with the removed 3.8 kg fibroid at Surya Hospital, Chembur
 
 ## Image Requirements
 
 - **Format**: JPG or PNG
 - **Recommended Size**: 600x800px (portrait orientation)
 - **File Size**: Under 500KB (optimize if larger)
-- **Content**: Should show Dr. Aparana Ghosh holding the removed fibroid
+- **Content**: Should show Dr. Aparna Ghosh holding the removed fibroid
 
 ## How to Add
 

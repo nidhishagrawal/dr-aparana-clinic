@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import { Star, Quote } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Patient Testimonials - Dr. Aparana Ghosh | Reviews from Satisfied Patients',
-  description: 'Read testimonials and reviews from patients who have received treatment from Dr. Aparana Ghosh. Real experiences from laser hair reduction, cosmetic gynecology, and other treatments at our clinic in Chembur, Mumbai.',
-  keywords: 'Dr. Aparana Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur',
+  title: 'Patient Testimonials - Dr. Aparna Ghosh | Reviews from Satisfied Patients',
+  description: 'Read testimonials and reviews from patients who have received treatment from Dr. Aparna Ghosh. Real experiences from laser hair reduction, cosmetic gynecology, and other treatments at our clinic in Chembur, Mumbai.',
+  keywords: 'Dr. Aparna Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur',
   other: {
-    'keywords': 'Dr. Aparana Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur'
+    'keywords': 'Dr. Aparna Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur'
   },
   openGraph: {
-    title: 'Patient Testimonials - Dr. Aparana Ghosh Clinic',
-    description: 'Read real testimonials from satisfied patients of Dr. Aparana Ghosh.',
+    title: 'Patient Testimonials - Dr. Aparna Ghosh Clinic',
+    description: 'Read real testimonials from satisfied patients of Dr. Aparna Ghosh.',
     type: 'website',
   },
 }
@@ -20,37 +20,37 @@ const testimonials = [
     name: 'Priya Sharma',
     treatment: 'Laser Hair Reduction',
     rating: 5,
-    text: 'Excellent experience with laser hair reduction. Dr. Aparana is very professional and the results are amazing. Highly recommended!',
+    text: 'Excellent experience with laser hair reduction. Dr. Aparna is very professional and the results are amazing. Highly recommended!',
   },
   {
     name: 'Anita Desai',
     treatment: 'Cosmetic Gynecology',
     rating: 5,
-    text: 'Dr. Aparana provided exceptional care throughout my treatment. She is knowledgeable, compassionate, and the clinic is well-equipped.',
+    text: 'Dr. Aparna provided exceptional care throughout my treatment. She is knowledgeable, compassionate, and the clinic is well-equipped.',
   },
   {
     name: 'Sunita Patel',
     treatment: 'HIFU Treatment',
     rating: 5,
-    text: 'The HIFU treatment for incontinence has changed my life. Dr. Aparana explained everything clearly and the procedure was comfortable.',
+    text: 'The HIFU treatment for incontinence has changed my life. Dr. Aparna explained everything clearly and the procedure was comfortable.',
   },
   {
     name: 'Meera Joshi',
     treatment: 'HRT Treatment',
     rating: 5,
-    text: 'Dr. Aparana helped me manage my menopause symptoms effectively. Her approach is holistic and she takes time to understand patient concerns.',
+    text: 'Dr. Aparna helped me manage my menopause symptoms effectively. Her approach is holistic and she takes time to understand patient concerns.',
   },
   {
     name: 'Rekha Nair',
     treatment: 'Scar Reduction',
     rating: 5,
-    text: 'Amazing results with scar reduction treatment. The clinic is clean, staff is friendly, and Dr. Aparana is an expert in her field.',
+    text: 'Amazing results with scar reduction treatment. The clinic is clean, staff is friendly, and Dr. Aparna is an expert in her field.',
   },
   {
     name: 'Kavita Rao',
     treatment: 'General Consultation',
     rating: 5,
-    text: 'Best gynecologist in Chembur! Dr. Aparana is patient, listens carefully, and provides excellent medical advice. Very satisfied with the care.',
+    text: 'Best gynecologist in Chembur! Dr. Aparna is patient, listens carefully, and provides excellent medical advice. Very satisfied with the care.',
   },
 ]
 

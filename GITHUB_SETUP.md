@@ -11,7 +11,7 @@ You need to **create the repository on GitHub first** before pushing.
 
 2. **Fill in details**:
    - **Repository name**: `dr-aparana-clinic`
-   - **Description**: "Dr. Aparana Ghosh Clinic Website"
+   - **Description**: "Dr. Aparna Ghosh Clinic Website"
    - **Visibility**: Choose **Public** (required for free hosting)
    - **Important**: **DO NOT** check "Add a README file"
    - **DO NOT** add .gitignore or license

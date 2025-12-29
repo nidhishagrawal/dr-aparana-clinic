@@ -17,7 +17,7 @@ export default function Navbar() {
               <span className="text-white font-bold text-xl">DA</span>
             </div>
             <div>
-              <h1 className="font-bold text-xl text-gray-900">Dr. Aparana Ghosh</h1>
+              <h1 className="font-bold text-xl text-gray-900">Dr. Aparna Ghosh</h1>
               <p className="text-xs text-gray-600">Expert Gynecologist</p>
             </div>
           </Link>

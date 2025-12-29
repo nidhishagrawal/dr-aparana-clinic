@@ -5,7 +5,7 @@
 ### Step 1: Create GitHub Repository (1 min)
 1. Go to: https://github.com/new
 2. Repository name: `dr-aparana-clinic`
-3. Description: "Dr. Aparana Ghosh Clinic Website"
+3. Description: "Dr. Aparna Ghosh Clinic Website"
 4. Make it **Public** (required for free hosting)
 5. **DO NOT** check "Initialize with README"
 6. Click "Create repository"
