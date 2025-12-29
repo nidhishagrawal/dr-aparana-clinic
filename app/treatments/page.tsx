@@ -28,8 +28,26 @@ export default function TreatmentsPage() {
       <section className="py-20 bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Baby Delivery */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+              <div className="relative aspect-video bg-white">
+                <Image
+                  src="/images/treatments/treatment1.png"
+                  alt="Baby Delivery - Before & After"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={process.env.NODE_ENV === 'development'}
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">Baby Delivery</h3>
+                <p className="text-gray-600 text-sm">Real treatment results</p>
+              </div>
+            </div>
+
             {/* Placeholder for before/after images */}
-            {[1, 2, 3, 4, 5].map((item) => (
+            {[2, 3, 4].map((item) => (
               <div key={item} className="bg-gray-100 rounded-2xl overflow-hidden">
                 <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                   <span className="text-gray-500">Before & After Image {item}</span>
@@ -41,14 +59,32 @@ export default function TreatmentsPage() {
               </div>
             ))}
             
+            {/* Treatment Result 5 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+              <div className="relative aspect-video bg-white">
+                <Image
+                  src="/images/treatments/beforeandafter_treatment5.png"
+                  alt="GLUTATHIONE + CARBON PEEL FACIAL - Before & After Treatment Results"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={process.env.NODE_ENV === 'development'}
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">GLUTATHIONE + CARBON PEEL FACIAL</h3>
+                <p className="text-gray-600 text-sm">Glutathione brightens from within while the Carbon Peel Facial cleanses, tightens, and restores instant glow.</p>
+              </div>
+            </div>
+            
             {/* Treatment Result 6 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-              <div className="relative aspect-video bg-gray-100">
+              <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/beforeandafter_treatment6.png"
                   alt="Laser Scar Reduction - Before & After Treatment Results"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   unoptimized={process.env.NODE_ENV === 'development'}
                 />

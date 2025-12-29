@@ -23,6 +23,7 @@ const blogPosts = [
     excerpt: 'Learn about menopause symptoms and effective management strategies for a smoother transition.',
     date: '2024-01-15',
     category: 'Women\'s Health',
+    image: '/images/blog/blog1.png',
   },
   {
     id: 2,
@@ -80,23 +81,25 @@ export default function BlogPage() {
                 href={`/blog/${post.id}`}
                 className="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100"
               >
-                <div className="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
-                  {post.category}
-                </div>
-                <h2 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary-600 transition-colors">
-                  {post.title}
-                </h2>
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {post.excerpt}
-                </p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Calendar className="w-4 h-4" />
-                    <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                <div>
+                  <div className="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
+                    {post.category}
                   </div>
-                  <span className="text-primary-600 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
-                    Read More <ArrowRight className="w-4 h-4" />
-                  </span>
+                  <h2 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary-600 transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <Calendar className="w-4 h-4" />
+                      <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                    </div>
+                    <span className="text-primary-600 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+                      Read More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </div>
                 </div>
               </Link>
             ))}
