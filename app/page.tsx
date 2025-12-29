@@ -519,13 +519,13 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Video Testimonial */}
+            {/* Video Testimonial 1 */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               <div className="relative aspect-video bg-gray-900">
                 <video
                   src="/video/customer_review.mp4"
                   controls
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   playsInline
                 >
                   Your browser does not support the video tag.
@@ -545,13 +545,61 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Video Testimonial 2 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+              <div className="relative aspect-video bg-gray-900">
+                <video
+                  src="/video/review2.mp4"
+                  controls
+                  className="w-full h-full object-contain"
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <Quote className="w-8 h-8 text-primary-200 mb-4" />
+                <p className="text-gray-700 mb-4 leading-relaxed">Watch our patient share their experience</p>
+                <div className="border-t border-gray-100 pt-4">
+                  <p className="font-bold text-gray-900">Patient Review</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Video Testimonial 3 - Priya Sharma */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+              <div className="relative aspect-video bg-gray-900">
+                <video
+                  src="/video/customer_review.mp4"
+                  controls
+                  className="w-full h-full object-contain"
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <Quote className="w-8 h-8 text-primary-200 mb-4" />
+                <p className="text-gray-700 mb-4 leading-relaxed">Watch our patient share their experience</p>
+                <div className="border-t border-gray-100 pt-4">
+                  <p className="font-bold text-gray-900">Priya Sharma</p>
+                  <p className="text-sm text-gray-600">Laser Hair Reduction</p>
+                </div>
+              </div>
+            </div>
+
             {/* Text Testimonials */}
             {[
-              {
-                name: 'Priya Sharma',
-                treatment: 'Laser Hair Reduction',
-                text: 'Excellent experience with laser hair reduction. Dr. Aparna is very professional and the results are amazing. Highly recommended!',
-              },
               {
                 name: 'Anita Desai',
                 treatment: 'Cosmetic Gynecology',

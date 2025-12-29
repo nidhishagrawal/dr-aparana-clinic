@@ -62,28 +62,28 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Our Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/laser-hair-reduction" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Laser Hair Reduction
+                <Link href="/services#gynecology" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Hysterectomy Specialist
                 </Link>
               </li>
               <li>
-                <Link href="/services/cosmetic-gynecology" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Cosmetic Gynecology
+                <Link href="/services#preventive-womens-health" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Pap Smear & Cervical Cancer Screening
                 </Link>
               </li>
               <li>
-                <Link href="/services/hifu-incontinence" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  HIFU for Incontinence
+                <Link href="/services#high-risk-pregnancy" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Medical & Surgical Abortion Services
                 </Link>
               </li>
               <li>
-                <Link href="/services/hrt-treatment" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  HRT Treatment
+                <Link href="/services#high-risk-pregnancy" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Antenatal Care for High-Risk Pregnancies
                 </Link>
               </li>
               <li>
-                <Link href="/services/scar-reduction" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Scar & Stretch Mark Reduction
+                <Link href="/services#cosmetic-gynecology" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  HIFU for Urinary Incontinence & Vaginal Tightening
                 </Link>
               </li>
             </ul>
