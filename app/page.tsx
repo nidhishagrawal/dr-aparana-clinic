@@ -446,7 +446,7 @@ export default function Home() {
               <Baby className="w-8 h-8 text-primary-600" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pregnancy & Maternal Care</h2>
-            <p className="text-lg text-gray-600">Comprehensive care for expecting mothers and newborns</p>
+            <p className="text-lg text-gray-600">Comprehensive care for expecting mothers throughout pregnancy</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -540,8 +540,7 @@ export default function Home() {
                 <Quote className="w-8 h-8 text-primary-200 mb-4" />
                 <p className="text-gray-700 mb-4 leading-relaxed">Watch our patient share their experience</p>
                 <div className="border-t border-gray-100 pt-4">
-                  <p className="font-bold text-gray-900">Patient Review</p>
-                  <p className="text-sm text-gray-600">Video Testimonial</p>
+                  <p className="font-bold text-gray-900">Victoria Merchant</p>
                 </div>
               </div>
             </div>
