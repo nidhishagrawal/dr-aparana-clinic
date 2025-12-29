@@ -8,7 +8,6 @@ export default function BookAppointment() {
     name: '',
     phone: '',
     email: '',
-    department: '',
     doctor: '',
     message: ''
   })
@@ -17,7 +16,7 @@ export default function BookAppointment() {
     e.preventDefault()
     // Here you would typically send the form data to your backend
     // For now, we'll use WhatsApp or phone
-    const message = `Appointment Request:\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nDepartment: ${formData.department}\nMessage: ${formData.message}`
+    const message = `Appointment Request:\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nMessage: ${formData.message}`
     const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
@@ -133,24 +132,6 @@ export default function BookAppointment() {
                       placeholder="your@email.com"
                     />
                   </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Department
-                  </label>
-                  <select
-                    value={formData.department}
-                    onChange={(e) => setFormData({...formData, department: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  >
-                    <option value="">Select Department</option>
-                    <option value="gynecology">Gynecology</option>
-                    <option value="cosmetic-gynecology">Cosmetic Gynecology</option>
-                    <option value="laser-treatment">Laser Treatment</option>
-                    <option value="hrt">HRT Treatment</option>
-                    <option value="general">General Consultation</option>
-                  </select>
                 </div>
 
                 <div>

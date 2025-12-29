@@ -6,7 +6,7 @@ import StatsSection from './components/StatsSection'
 import BookAppointment from './components/BookAppointment'
 import VisionMission from './components/VisionMission'
 import PatientEducation from './components/PatientEducation'
-import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors } from 'lucide-react'
+import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Dr. Aparana Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
@@ -111,63 +111,62 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
+      <section className="py-16 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive gynecological and cosmetic services tailored to your needs</p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Our Services</h2>
+            <p className="text-base text-gray-600 max-w-2xl mx-auto">Comprehensive gynecological and cosmetic services</p>
           </div>
           
-          <div className="max-w-7xl mx-auto space-y-16">
+          <div className="max-w-7xl mx-auto space-y-8">
             {/* Gynecology */}
-            <div className="relative">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Stethoscope className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
+                  <Stethoscope className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary-700">Gynecology</h3>
-                  <p className="text-gray-600 text-sm">Expert gynecological care</p>
-                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-primary-700">Gynecology</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-4">
                 {[
-                  { name: 'Hysterectomy Specialist', href: '/services' },
-                  { name: 'Fibroid & Ovarian Cyst Surgery', href: '/services' },
-                  { name: 'Laparoscopic Gynec Surgery', href: '/services' },
-                  { name: 'Infertility & PCOS Management', href: '/services' },
-                  { name: 'Menstrual & Hormonal Disorders', href: '/services' },
-                  { name: 'Uterus Removal (Hysterectomy)', href: '/services' },
+                  { name: 'Hysterectomy Specialist', href: '/services', color: 'blue' },
+                  { name: 'Fibroid & Ovarian Cyst Surgery', href: '/services', color: 'blue' },
+                  { name: 'Laparoscopic Gynec Surgery', href: '/services', color: 'blue' },
+                  { name: 'Infertility & PCOS Management', href: '/services', color: 'blue' },
+                  { name: 'Menstrual & Hormonal Disorders', href: '/services', color: 'blue' },
+                  { name: 'Uterus Removal (Hysterectomy)', href: '/services', color: 'blue' },
                 ].map((service, index) => (
                   <Link
                     key={index}
                     href={service.href}
-                    className="group relative p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500 hover:border-blue-600 hover:-translate-y-1"
+                    className="group p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-all border border-blue-100 hover:border-blue-300"
                   >
-                    <div className="flex items-start justify-between mb-3">
-                      <h4 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors pr-2">
-                        {service.name}
-                      </h4>
-                      <ArrowRight className="w-5 h-5 text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                    </div>
-                    <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 rounded-full"></div>
+                    <h4 className="text-sm font-medium text-gray-800 group-hover:text-blue-700 transition-colors leading-tight">
+                      {service.name}
+                    </h4>
                   </Link>
                 ))}
+              </div>
+              <div className="flex justify-end mt-4">
+                <Link 
+                  href="/services#gynecology"
+                  className="flex items-center gap-2 px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-all group"
+                >
+                  <span className="text-sm font-medium">View More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
 
             {/* Preventive & Women's Health */}
-            <div className="relative">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Heart className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-md">
+                  <Heart className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary-700">Preventive & Women&apos;s Health</h3>
-                  <p className="text-gray-600 text-sm">Proactive health screening</p>
-                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-primary-700">Preventive & Women&apos;s Health</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
                 {[
                   { name: 'Pap Smear & Cervical Cancer Screening', href: '/services' },
                   { name: 'HPV Vaccination', href: '/services' },
@@ -176,32 +175,34 @@ export default function Home() {
                   <Link
                     key={index}
                     href={service.href}
-                    className="group relative p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-green-500 hover:border-green-600 hover:-translate-y-1"
+                    className="group p-3 bg-green-50 rounded-lg hover:bg-green-100 transition-all border border-green-100 hover:border-green-300"
                   >
-                    <div className="flex items-start justify-between mb-3">
-                      <h4 className="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors pr-2">
-                        {service.name}
-                      </h4>
-                      <ArrowRight className="w-5 h-5 text-green-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                    </div>
-                    <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-green-500 to-green-600 transition-all duration-300 rounded-full"></div>
+                    <h4 className="text-sm font-medium text-gray-800 group-hover:text-green-700 transition-colors">
+                      {service.name}
+                    </h4>
                   </Link>
                 ))}
+              </div>
+              <div className="flex justify-end mt-4">
+                <Link 
+                  href="/services#preventive-womens-health"
+                  className="flex items-center gap-2 px-4 py-2 bg-green-50 hover:bg-green-100 text-green-700 rounded-lg transition-all group"
+                >
+                  <span className="text-sm font-medium">View More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
 
             {/* High-Risk Pregnancy (Obstetrics) */}
-            <div className="relative">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Baby className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center shadow-md">
+                  <Baby className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary-700">High-Risk Pregnancy (Obstetrics)</h3>
-                  <p className="text-gray-600 text-sm">Specialized maternal care</p>
-                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-primary-700">High-Risk Pregnancy (Obstetrics)</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                 {[
                   { name: 'Antenatal Care for High-Risk Pregnancies', href: '/services' },
                   { name: 'Normal Vaginal Delivery', href: '/services' },
@@ -211,32 +212,34 @@ export default function Home() {
                   <Link
                     key={index}
                     href={service.href}
-                    className="group relative p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-pink-500 hover:border-pink-600 hover:-translate-y-1"
+                    className="group p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-all border border-pink-100 hover:border-pink-300"
                   >
-                    <div className="flex items-start justify-between mb-3">
-                      <h4 className="text-lg font-semibold text-gray-900 group-hover:text-pink-600 transition-colors pr-2">
-                        {service.name}
-                      </h4>
-                      <ArrowRight className="w-5 h-5 text-pink-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                    </div>
-                    <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-pink-500 to-pink-600 transition-all duration-300 rounded-full"></div>
+                    <h4 className="text-sm font-medium text-gray-800 group-hover:text-pink-700 transition-colors leading-tight">
+                      {service.name}
+                    </h4>
                   </Link>
                 ))}
+              </div>
+              <div className="flex justify-end mt-4">
+                <Link 
+                  href="/services#high-risk-pregnancy"
+                  className="flex items-center gap-2 px-4 py-2 bg-pink-50 hover:bg-pink-100 text-pink-700 rounded-lg transition-all group"
+                >
+                  <span className="text-sm font-medium">View More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
 
             {/* Cosmetic Gynecology */}
-            <div className="relative">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Sparkles className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md">
+                  <Sparkles className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary-700">Cosmetic Gynecology</h3>
-                  <p className="text-gray-600 text-sm">Advanced aesthetic treatments</p>
-                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-primary-700">Cosmetic Gynecology</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
                 {[
                   { name: 'HIFU for Urinary Incontinence & Vaginal Tightening', href: '/services' },
                   { name: 'Vaginal Rejuvenation', href: '/services' },
@@ -245,36 +248,38 @@ export default function Home() {
                   <Link
                     key={index}
                     href={service.href}
-                    className="group relative p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500 hover:border-purple-600 hover:-translate-y-1"
+                    className="group p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-all border border-purple-100 hover:border-purple-300"
                   >
-                    <div className="flex items-start justify-between mb-3">
-                      <h4 className="text-lg font-semibold text-gray-900 group-hover:text-purple-600 transition-colors pr-2">
-                        {service.name}
-                      </h4>
-                      <ArrowRight className="w-5 h-5 text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                    </div>
-                    <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 rounded-full"></div>
+                    <h4 className="text-sm font-medium text-gray-800 group-hover:text-purple-700 transition-colors">
+                      {service.name}
+                    </h4>
                   </Link>
                 ))}
+              </div>
+              <div className="flex justify-end mt-4">
+                <Link 
+                  href="/services#cosmetic-gynecology"
+                  className="flex items-center gap-2 px-4 py-2 bg-purple-50 hover:bg-purple-100 text-purple-700 rounded-lg transition-all group"
+                >
+                  <span className="text-sm font-medium">View More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
 
             {/* General Facial Aesthetics */}
-            <div className="relative">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Scissors className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-md">
+                  <Scissors className="w-6 h-6 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary-700">General Facial Aesthetics</h3>
-                  <p className="text-gray-600 text-sm">Beauty and skincare solutions</p>
-                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-primary-700">General Facial Aesthetics</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
                 {[
                   { name: 'Acne Treatment', href: '/services' },
                   { name: 'Carbon Peel (Laser Facial)', href: '/services' },
-                  { name: 'Microneedling & PRP (Platelet-Rich Plasma)', href: '/services' },
+                  { name: 'Microneedling & PRP', href: '/services' },
                   { name: 'Hyperpigmentation Treatment', href: '/services' },
                   { name: 'OxyGeneo Facial', href: '/services' },
                   { name: 'Laser Skin-Tag Removal', href: '/services' },
@@ -283,22 +288,27 @@ export default function Home() {
                   <Link
                     key={index}
                     href={service.href}
-                    className="group relative p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-orange-500 hover:border-orange-600 hover:-translate-y-1"
+                    className="group p-3 bg-orange-50 rounded-lg hover:bg-orange-100 transition-all border border-orange-100 hover:border-orange-300"
                   >
-                    <div className="flex items-start justify-between mb-3">
-                      <h4 className="text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors pr-2">
-                        {service.name}
-                      </h4>
-                      <ArrowRight className="w-5 h-5 text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                    </div>
-                    <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-orange-500 to-orange-600 transition-all duration-300 rounded-full"></div>
+                    <h4 className="text-sm font-medium text-gray-800 group-hover:text-orange-700 transition-colors leading-tight">
+                      {service.name}
+                    </h4>
                   </Link>
                 ))}
+              </div>
+              <div className="flex justify-end mt-4">
+                <Link 
+                  href="/services#general-facial-aesthetics"
+                  className="flex items-center gap-2 px-4 py-2 bg-orange-50 hover:bg-orange-100 text-orange-700 rounded-lg transition-all group"
+                >
+                  <span className="text-sm font-medium">View More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-16">
+          <div className="text-center mt-10">
             <Link 
               href="/services"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-full hover:from-primary-700 hover:to-primary-800 transition-all font-medium shadow-lg hover:shadow-xl"
@@ -312,25 +322,110 @@ export default function Home() {
       {/* About Doctor Section */}
       <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">About Dr. Aparana Ghosh</h2>
-            <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
-              <p>
-                Dr. Aparana Ghosh is an experienced gynecologist in Chembur, Mumbai, with <strong className="text-primary-600">23 years of experience</strong> in gynecology and Obstetrics. She completed her MBBS from <strong className="text-primary-600">RGMC (Rajiv Gandhi Medical College)</strong> in <strong className="text-primary-600">1998</strong> and MD from the prestigious <strong className="text-primary-600">KEM Hospital</strong> in <strong className="text-primary-600">2002</strong>.
-              </p>
-              <p>
-                With extensive experience in world-class hospitals, Dr. Aparana Ghosh specializes in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex issues. She is an expert in <strong className="text-primary-600">high-risk pregnancy and deliveries</strong>, <strong className="text-primary-600">hysterectomy</strong> (notably removing a <strong className="text-primary-600">3.8 kg fibroid</strong> at Surya Hospital), and <strong className="text-primary-600">urinary incontinence treatment</strong> using advanced HIFU technology.
-              </p>
-              <p>
-                She also offers cosmetic gynecology, HIFU for vaginal tightening and skin tightening, and laser treatments. Throughout her career at reputed hospitals including Surya Hospital, Chembur, she has made her one of the most trusted gynecologists in the area.
-              </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Dr. Aparana Ghosh</h2>
+              <p className="text-lg text-gray-600">Expert Gynecologist & Obstetrician</p>
             </div>
-            <div className="text-center mt-8">
+            
+            {/* Key Highlights */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 text-white shadow-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <Award className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold">23+</div>
+                    <div className="text-sm text-blue-100">Years Experience</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 text-white shadow-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <Users className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold">MBBS</div>
+                    <div className="text-sm text-green-100">MD Qualified</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-6 text-white shadow-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <Stethoscope className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold">Expert</div>
+                    <div className="text-sm text-purple-100">Surgeon</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Main Content */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Left Column - Education */}
+              <div className="lg:col-span-1">
+                <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 sticky top-8 h-full flex flex-col">
+                  <h3 className="text-xl font-bold text-gray-900 mb-8 flex items-center gap-2">
+                    <GraduationCap className="w-6 h-6 text-primary-600" />
+                    Education
+                  </h3>
+                  <div className="space-y-6 flex-grow">
+                    <div className="border-l-4 border-blue-500 pl-5 py-2">
+                      <div className="font-semibold text-gray-900 text-base mb-1">MBBS</div>
+                      <div className="text-sm text-gray-600">RGMC, 1998</div>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-5 py-2">
+                      <div className="font-semibold text-gray-900 text-base mb-1">MD - Obstetrics & Gynecology</div>
+                      <div className="text-sm text-gray-600">KEM Hospital, 2002</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right Column - About */}
+              <div className="lg:col-span-2">
+                <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                  <div className="space-y-5 text-gray-700">
+                    <p className="text-base leading-relaxed">
+                      Dr. Aparana Ghosh is an experienced gynecologist in Chembur, Mumbai, with <span className="text-primary-600 font-semibold">23 years of experience</span> in gynecology and Obstetrics. She completed her MBBS from <span className="text-primary-600 font-semibold">RGMC (Rajiv Gandhi Medical College)</span> in <span className="text-primary-600 font-semibold">1998</span> and MD from the prestigious <span className="text-primary-600 font-semibold">KEM Hospital</span> in <span className="text-primary-600 font-semibold">2002</span>.
+                    </p>
+                    
+                    <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-5 border-l-4 border-primary-500">
+                      <p className="text-base text-gray-700 leading-relaxed">
+                        With extensive experience in world-class hospitals, Dr. Aparana Ghosh specializes in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex issues. She is an expert in <span className="text-primary-600 font-semibold">high-risk pregnancy and deliveries</span>, <span className="text-primary-600 font-semibold">hysterectomy</span> (notably removing a <span className="text-primary-600 font-semibold">3.8 kg fibroid</span> at Surya Hospital), and <span className="text-primary-600 font-semibold">urinary incontinence treatment</span> using advanced HIFU technology.
+                      </p>
+                    </div>
+                    
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      She also offers cosmetic gynecology, HIFU for vaginal tightening and skin tightening, and laser treatments. Throughout her career at reputed hospitals including Surya Hospital, Chembur, she has made her one of the most trusted gynecologists in the area.
+                    </p>
+                  </div>
+                  
+                  <div className="mt-6 pt-4 border-t border-gray-200">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">High-Risk Pregnancy</span>
+                      <span className="px-3 py-1.5 bg-green-50 text-green-700 rounded-full text-xs font-medium">Hysterectomy</span>
+                      <span className="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-xs font-medium">HIFU Treatment</span>
+                      <span className="px-3 py-1.5 bg-pink-50 text-pink-700 rounded-full text-xs font-medium">Cosmetic Gynecology</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center mt-10">
               <Link 
                 href="/about"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-full hover:from-primary-700 hover:to-primary-800 transition-all font-medium shadow-lg hover:shadow-xl"
               >
-                Learn More About Dr. Aparana <ArrowRight className="w-4 h-4" />
+                Learn More About Dr. Aparana <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>

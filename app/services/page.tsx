@@ -32,7 +32,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto space-y-12">
             {/* Gynecology */}
-            <div>
+            <div id="gynecology">
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Gynecology</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
@@ -60,7 +60,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Preventive & Women's Health */}
-            <div>
+            <div id="preventive-womens-health">
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Preventive & Women&apos;s Health</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
@@ -85,7 +85,7 @@ export default function ServicesPage() {
             </div>
 
             {/* High-Risk Pregnancy (Obstetrics) */}
-            <div>
+            <div id="high-risk-pregnancy">
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">High-Risk Pregnancy (Obstetrics)</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
@@ -111,7 +111,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Cosmetic Gynecology */}
-            <div>
+            <div id="cosmetic-gynecology">
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Cosmetic Gynecology</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
@@ -136,7 +136,7 @@ export default function ServicesPage() {
             </div>
 
             {/* General Facial Aesthetics */}
-            <div>
+            <div id="general-facial-aesthetics">
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">General Facial Aesthetics</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
