@@ -209,9 +209,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-pink-50">
       {/* Header */}
-      <header className="border-b border-gray-200 bg-gradient-to-b from-white to-gray-50">
+      <header className="border-b border-pink-200 bg-gradient-to-b from-pink-50 to-pink-100">
         <div className="w-full px-4 py-7">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <Link href="/" className="flex items-center gap-2.5 font-bold tracking-wide">
@@ -233,7 +233,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
       </header>
 
       {/* Hero Section */}
-      <section className="border-b border-gray-200 bg-gradient-to-b from-white to-gray-50">
+      <section className="border-b border-pink-200 bg-gradient-to-b from-pink-50 to-pink-100">
         <div className="w-full px-4 py-6">
           <div className="mb-6 text-sm text-gray-600">
             <Link 
@@ -252,7 +252,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
             {post.excerpt}
           </p>
           <div className="flex items-center gap-2.5 flex-wrap mt-3.5 text-gray-600 text-sm">
-            <div className="border border-gray-200 bg-white px-2.5 py-1.5 rounded-full text-xs font-medium text-gray-700">
+            <div className="border border-pink-200 bg-pink-100 px-2.5 py-1.5 rounded-full text-xs font-medium text-gray-700">
               {post.category}
             </div>
             <div className="flex items-center gap-2">
@@ -268,9 +268,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
         <div className="w-full px-4">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-4.5 items-start max-w-[1400px] mx-auto">
             {/* Article */}
-            <article className="bg-white border border-gray-200 rounded-[14px] shadow-[0_10px_25px_rgba(2,6,23,.06)] p-5.5">
+            <article className="bg-pink-50 border border-pink-200 rounded-[14px] shadow-[0_10px_25px_rgba(2,6,23,.06)] p-5.5">
               {('image' in post && typeof post.image === 'string' && post.image) && (
-                <div className="w-full bg-white rounded-2xl overflow-hidden mb-6">
+                <div className="w-full bg-pink-50 rounded-2xl overflow-hidden mb-6">
                   <div className="relative w-full h-auto">
                     <Image
                       src={post.image}
@@ -292,7 +292,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                     prose-ul:text-gray-700 prose-ul:my-3 prose-ul:ml-4.5 prose-ul:pl-0 prose-ul:list-disc
                     prose-li:my-2 prose-li:leading-[1.65] prose-li:pl-0
                     prose-strong:text-gray-900 prose-strong:font-bold
-                    [&_h2]:text-[1.6rem] [&_h2]:mt-8 [&_h2]:mb-4 [&_h2]:leading-tight [&_h2]:font-extrabold [&_h2]:text-gray-900 [&_h2]:bg-gray-50 [&_h2]:px-4 [&_h2]:py-3 [&_h2]:rounded-lg [&_h2]:border-l-4 [&_h2]:border-blue-600 [&_h2]:tracking-tight
+                    [&_h2]:text-[1.6rem] [&_h2]:mt-8 [&_h2]:mb-4 [&_h2]:leading-tight [&_h2]:font-extrabold [&_h2]:text-gray-900 [&_h2]:bg-pink-50 [&_h2]:px-4 [&_h2]:py-3 [&_h2]:rounded-lg [&_h2]:border-l-4 [&_h2]:border-blue-600 [&_h2]:tracking-tight
                     [&_h2:first-child]:mt-0
                     [&_h3]:text-[1.25rem] [&_h3]:mt-6 [&_h3]:mb-3 [&_h3]:font-bold [&_h3]:text-gray-800"
                   dangerouslySetInnerHTML={{ __html: post.content }}
@@ -316,7 +316,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
 
             {/* Sidebar */}
             <aside className="lg:sticky lg:top-3.5 space-y-3.5">
-              <div className="bg-white border border-gray-200 rounded-[14px] shadow-[0_10px_25px_rgba(2,6,23,.06)] p-4">
+              <div className="bg-pink-50 border border-pink-200 rounded-[14px] shadow-[0_10px_25px_rgba(2,6,23,.06)] p-4">
                 <h3 className="text-[1.05rem] font-semibold mb-2.5 text-gray-900 m-0">Table of Contents</h3>
                 <nav className="space-y-1.5">
                   <a href="#what-is-menopause" className="block py-1.5 text-gray-600 font-semibold text-sm hover:text-gray-900 transition-colors">What Is Menopause?</a>
@@ -326,7 +326,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                   <a href="#management" className="block py-1.5 text-gray-600 font-semibold text-sm hover:text-gray-900 transition-colors">Management Options</a>
                 </nav>
               </div>
-              <div className="bg-white border border-gray-200 rounded-[14px] shadow-[0_10px_25px_rgba(2,6,23,.06)] p-4">
+              <div className="bg-pink-50 border border-pink-200 rounded-[14px] shadow-[0_10px_25px_rgba(2,6,23,.06)] p-4">
                 <h3 className="text-[1.05rem] font-semibold mb-2.5 text-gray-900 m-0">Quick Contact</h3>
                 <p className="text-sm text-gray-600 mb-0 leading-relaxed">Schedule your consultation today for expert menopause care.</p>
                 <Link 
@@ -342,7 +342,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 bg-white">
+      <footer className="border-t border-pink-200 bg-pink-50">
         <div className="w-full px-4 py-6">
           <div className="flex gap-4 items-start justify-between flex-wrap">
             <div>
