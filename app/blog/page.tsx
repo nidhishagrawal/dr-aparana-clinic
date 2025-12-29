@@ -48,10 +48,10 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: 'Hormone Replacement Therapy: What You Need to Know',
-    excerpt: 'Comprehensive guide to HRT treatment, benefits, and considerations for women.',
+    title: 'Common Cosmetic Gynecology Treatments',
+    excerpt: 'Learn about cosmetic gynecology procedures and how they can improve quality of life.',
     date: '2023-12-20',
-    category: 'Treatments',
+    category: 'Cosmetic Treatments',
   },
   {
     id: 6,

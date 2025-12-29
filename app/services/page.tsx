@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Services - Dr. Aparna Ghosh | Gynecologist Services in Chembur, Mumbai',
@@ -36,25 +35,24 @@ export default function ServicesPage() {
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Gynecology</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { name: 'Hysterectomy Specialist', href: '/services' },
-                  { name: 'Fibroid & Ovarian Cyst Surgery', href: '/services' },
-                  { name: 'Laparoscopic Gynec Surgery', href: '/services' },
-                  { name: 'Infertility & PCOS Management', href: '/services' },
-                  { name: 'Menstrual & Hormonal Disorders', href: '/services' },
-                  { name: 'Uterus Removal (Hysterectomy)', href: '/services' },
+                  { name: 'Hysterectomy Specialist', description: 'Expert surgical removal of uterus for various gynecological conditions with minimal complications.' },
+                  { name: 'Fibroid & Ovarian Cyst Surgery', description: 'Advanced surgical techniques for removal of fibroids and ovarian cysts with precision and care.' },
+                  { name: 'Laparoscopic Gynec Surgery', description: 'Minimally invasive laparoscopic procedures for faster recovery and reduced scarring.' },
+                  { name: 'Infertility & PCOS Management', description: 'Comprehensive treatment plans for infertility and Polycystic Ovary Syndrome management.' },
+                  { name: 'Menstrual & Hormonal Disorders', description: 'Expert diagnosis and treatment of menstrual irregularities and hormonal imbalances.' },
+                  { name: 'Uterus Removal (Hysterectomy)', description: 'Safe and effective uterus removal procedures tailored to individual patient needs.' },
                 ].map((service, index) => (
-                  <Link
+                  <div
                     key={index}
-                    href={service.href}
                     className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
                   >
-                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3">
                       {service.name}
                     </h4>
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
-                      Learn More <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </Link>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -64,22 +62,21 @@ export default function ServicesPage() {
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Preventive & Women&apos;s Health</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { name: 'Pap Smear & Cervical Cancer Screening', href: '/services' },
-                  { name: 'HPV Vaccination', href: '/services' },
-                  { name: 'Breast Health Examination', href: '/services' },
+                  { name: 'Pap Smear & Cervical Cancer Screening', description: 'Regular screening tests for early detection and prevention of cervical cancer.' },
+                  { name: 'HPV Vaccination', description: 'Vaccination against Human Papillomavirus to prevent cervical cancer and related conditions.' },
+                  { name: 'Breast Health Examination', description: 'Comprehensive breast examinations and screenings for early detection of breast health issues.' },
                 ].map((service, index) => (
-                  <Link
+                  <div
                     key={index}
-                    href={service.href}
                     className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
                   >
-                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3">
                       {service.name}
                     </h4>
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
-                      Learn More <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </Link>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -89,23 +86,22 @@ export default function ServicesPage() {
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">High-Risk Pregnancy (Obstetrics)</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
-                  { name: 'Antenatal Care for High-Risk Pregnancies', href: '/services' },
-                  { name: 'Normal Vaginal Delivery', href: '/services' },
-                  { name: 'Cesarean Section (C-Section)', href: '/services' },
-                  { name: 'Medical & Surgical Abortion Services', href: '/services' },
+                  { name: 'Antenatal Care for High-Risk Pregnancies', description: 'Specialized care and monitoring for high-risk pregnancies to ensure safe delivery.' },
+                  { name: 'Normal Vaginal Delivery', description: 'Expert support and care for natural vaginal deliveries with minimal intervention.' },
+                  { name: 'Cesarean Section (C-Section)', description: 'Safe and professional cesarean delivery when medically necessary or preferred.' },
+                  { name: 'Medical & Surgical Abortion Services', description: 'Safe and confidential abortion services with compassionate care and support.' },
                 ].map((service, index) => (
-                  <Link
+                  <div
                     key={index}
-                    href={service.href}
                     className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
                   >
-                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3">
                       {service.name}
                     </h4>
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
-                      Learn More <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </Link>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -115,22 +111,21 @@ export default function ServicesPage() {
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Cosmetic Gynecology</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { name: 'HIFU for Urinary Incontinence & Vaginal Tightening', href: '/services' },
-                  { name: 'Vaginal Rejuvenation', href: '/services' },
-                  { name: 'Scar & Stretch-Mark Reduction', href: '/services' },
+                  { name: 'HIFU for Urinary Incontinence & Vaginal Tightening', description: 'Non-invasive HIFU treatment for urinary incontinence and vaginal tightening with no downtime.' },
+                  { name: 'Vaginal Rejuvenation', description: 'Advanced procedures to restore vaginal health, tone, and function for improved quality of life.' },
+                  { name: 'Scar & Stretch-Mark Reduction', description: 'Effective treatments to reduce the appearance of scars and stretch marks.' },
                 ].map((service, index) => (
-                  <Link
+                  <div
                     key={index}
-                    href={service.href}
                     className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
                   >
-                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3">
                       {service.name}
                     </h4>
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
-                      Learn More <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </Link>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -140,27 +135,44 @@ export default function ServicesPage() {
               <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">General Facial Aesthetics</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { name: 'Acne Treatment', href: '/services' },
-                  { name: 'Carbon Peel (Laser Facial)', href: '/services' },
-                  { name: 'Microneedling & PRP (Platelet-Rich Plasma)', href: '/services' },
-                  { name: 'Hyperpigmentation Treatment', href: '/services' },
-                  { name: 'OxyGeneo Facial', href: '/services' },
-                  { name: 'Laser Skin-Tag Removal', href: '/services' },
-                  { name: 'HIFU Skin Tightening', href: '/services' },
+                  { name: 'Acne Treatment', description: 'Effective treatments for acne and acne scars to achieve clear, healthy skin.' },
+                  { name: 'Carbon Peel (Laser Facial)', description: 'Deep cleansing facial treatment using carbon and laser technology for radiant skin.' },
+                  { name: 'Microneedling & PRP (Platelet-Rich Plasma)', description: 'Advanced skin rejuvenation using microneedling combined with PRP for natural collagen production.' },
+                  { name: 'Hyperpigmentation Treatment', description: 'Targeted treatments to reduce dark spots and uneven skin tone.' },
+                  { name: 'OxyGeneo Facial', description: 'Revolutionary facial treatment that exfoliates, infuses, and oxygenates the skin.' },
+                  { name: 'Laser Skin-Tag Removal', description: 'Quick and painless removal of skin tags using advanced laser technology.' },
+                  { name: 'HIFU Skin Tightening', description: 'Non-invasive HIFU treatment for facial and body skin tightening without surgery.' },
                 ].map((service, index) => (
-                  <Link
+                  <div
                     key={index}
-                    href={service.href}
                     className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
                   >
-                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3">
                       {service.name}
                     </h4>
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
-                      Learn More <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </Link>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Contact Us Section */}
+            <div>
+              <div className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200">
+                <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3">
+                  Need More Information?
+                </h4>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  Contact us to learn more about our services or schedule a consultation with Dr. Aparna Ghosh.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-block text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
+                >
+                  Contact Us →
+                </Link>
               </div>
             </div>
           </div>

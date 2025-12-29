@@ -27,7 +27,7 @@ export default function CaseStoryImage({ src, alt }: CaseStoryImageProps) {
       src={src}
       alt={alt}
       fill
-      className="object-cover rounded-xl"
+      className="object-contain rounded-xl"
       sizes="(max-width: 768px) 100vw, 50vw"
       unoptimized
       onError={() => setImageError(true)}
