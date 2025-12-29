@@ -117,37 +117,142 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
             <p className="text-lg text-gray-600">Comprehensive gynecological and cosmetic services</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              { name: 'High-Risk Pregnancy Care', desc: 'Expert care for high-risk pregnancies and deliveries', href: '/services', primary: true },
-              { name: 'Hysterectomy & Fibroid Removal', desc: 'Expert surgical procedures including large fibroids (up to 3.8 kg)', href: '/services', primary: true },
-              { name: 'HIFU for Urinary Incontinence', desc: 'Non-invasive treatment for incontinence and vaginal tightening', href: '/services', primary: true },
-              { name: 'HIFU for Skin Tightening', desc: 'Tightening sagging skin of face, neck, underarms, belly', href: '/services', primary: true },
-              { name: 'General Gynecology', desc: 'Complete women\'s health care', href: '/services', primary: true },
-              { name: 'HRT Treatment', desc: 'Hormone replacement therapy', href: '/services', primary: false },
-              { name: 'Laser Hair Reduction', desc: 'Safe and effective hair removal', href: '/services/laser-hair-reduction', primary: false },
-              { name: 'Cosmetic Gynecology', desc: 'Advanced cosmetic procedures', href: '/services', primary: false },
-              { name: 'Maternal Care', desc: 'Complete pregnancy and delivery care', href: '/services', primary: false },
-            ].map((service, index) => (
-              <Link
-                key={index}
-                href={service.href}
-                className={`group p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border ${
-                  service.primary
-                    ? 'bg-gradient-to-br from-primary-50 to-primary-100 border-primary-200'
-                    : 'bg-white border-gray-100'
-                }`}
-              >
-                <h3 className={`text-xl font-bold mb-2 ${service.primary ? 'text-primary-700' : 'text-gray-900'} group-hover:text-primary-600 transition-colors`}>
-                  {service.name}
-                </h3>
-                <p className="text-gray-600 mb-4">{service.desc}</p>
-                <span className={`inline-flex items-center gap-2 text-sm font-medium ${service.primary ? 'text-primary-700' : 'text-primary-600'} group-hover:gap-3 transition-all`}>
-                  Learn More <ArrowRight className="w-4 h-4" />
-                </span>
-              </Link>
-            ))}
+          
+          <div className="max-w-6xl mx-auto space-y-12">
+            {/* Gynecology */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Gynecology</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'Hysterectomy Specialist', href: '/services' },
+                  { name: 'Fibroid & Ovarian Cyst Surgery', href: '/services' },
+                  { name: 'Laparoscopic Gynec Surgery', href: '/services' },
+                  { name: 'Infertility & PCOS Management', href: '/services' },
+                  { name: 'Menstrual & Hormonal Disorders', href: '/services' },
+                  { name: 'Uterus Removal (Hysterectomy)', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Preventive & Women's Health */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Preventive & Women&apos;s Health</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'Pap Smear & Cervical Cancer Screening', href: '/services' },
+                  { name: 'HPV Vaccination', href: '/services' },
+                  { name: 'Breast Health Examination', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* High-Risk Pregnancy (Obstetrics) */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">High-Risk Pregnancy (Obstetrics)</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { name: 'Antenatal Care for High-Risk Pregnancies', href: '/services' },
+                  { name: 'Normal Vaginal Delivery', href: '/services' },
+                  { name: 'Cesarean Section (C-Section)', href: '/services' },
+                  { name: 'Medical & Surgical Abortion Services', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Cosmetic Gynecology */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Cosmetic Gynecology</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'HIFU for Urinary Incontinence & Vaginal Tightening', href: '/services' },
+                  { name: 'Vaginal Rejuvenation', href: '/services' },
+                  { name: 'Scar & Stretch-Mark Reduction', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* General Facial Aesthetics */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">General Facial Aesthetics</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'Acne Treatment', href: '/services' },
+                  { name: 'Carbon Peel (Laser Facial)', href: '/services' },
+                  { name: 'Microneedling & PRP (Platelet-Rich Plasma)', href: '/services' },
+                  { name: 'Hyperpigmentation Treatment', href: '/services' },
+                  { name: 'OxyGeneo Facial', href: '/services' },
+                  { name: 'Laser Skin-Tag Removal', href: '/services' },
+                  { name: 'HIFU Skin Tightening', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
+
           <div className="text-center mt-12">
             <Link 
               href="/services"
@@ -166,19 +271,13 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">About Dr. Aparana Ghosh</h2>
             <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
               <p>
-                Dr. Aparana Ghosh (MBBS, MD - Obstetrics & Gynecology) is an experienced gynecologist in Chembur, Mumbai, with <strong className="text-primary-600">23 years of experience</strong> in the field of gynecology and Obstetrics. She takes care of all related health concerns at every stage for women.
+                Dr. Aparana Ghosh is an experienced gynecologist in Chembur, Mumbai, with <strong className="text-primary-600">23 years of experience</strong> in gynecology and Obstetrics. She completed her MBBS from <strong className="text-primary-600">RGMC (Rajiv Gandhi Medical College)</strong> in <strong className="text-primary-600">1998</strong> and MD from the prestigious <strong className="text-primary-600">KEM Hospital</strong> in <strong className="text-primary-600">2002</strong>.
               </p>
               <p>
-                Dr. Aparana Ghosh passed out MBBS from <strong className="text-primary-600">RGMC (Rajiv Gandhi Medical College)</strong> in <strong className="text-primary-600">1998</strong>. She completed her post-graduation (MD) from the prestigious <strong className="text-primary-600">KEM Hospital (King Edward Memorial Hospital)</strong> in <strong className="text-primary-600">2002</strong>, one of Mumbai&apos;s most renowned medical institutions.
+                With extensive experience in world-class hospitals, Dr. Aparana Ghosh specializes in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex issues. She is an expert in <strong className="text-primary-600">high-risk pregnancy and deliveries</strong>, <strong className="text-primary-600">hysterectomy</strong> (notably removing a <strong className="text-primary-600">3.8 kg fibroid</strong> at Surya Hospital), and <strong className="text-primary-600">urinary incontinence treatment</strong> using advanced HIFU technology.
               </p>
               <p>
-                With over two decades of experience, Dr. Aparana Ghosh has worked in world-class hospitals and has extensive experience in treating patients with gynecological issues. She is extremely passionate about <strong className="text-primary-600">women&apos;s health and gynecology</strong>, and is an expert in treating all gynecological conditions including HRT, HIFU treatments, hormonal imbalances, and other complex gynaecological issues. She also offers cosmetic gynecology and laser treatments as additional services.
-              </p>
-              <p>
-                Dr. Aparana Ghosh has extensive expertise in dealing with <strong className="text-primary-600">high-risk pregnancy and deliveries</strong>, ensuring the best outcomes for both mother and baby. She is also an expert in <strong className="text-primary-600">hysterectomy</strong>, specializing in the removal of uterus with huge fibroids. Her notable achievement includes successfully removing a massive <strong className="text-primary-600">3.8 kg (23 cm) fibroid</strong> in a swift <strong className="text-primary-600">50-minute procedure</strong> at Surya Hospital, Chembur in September 2023, demonstrating exceptional surgical expertise.
-              </p>
-              <p>
-                Dr. Aparana Ghosh is an expert in <strong className="text-primary-600">urinary incontinence treatment</strong> using advanced HIFU technology. HIFU is used for vaginal tightening and incontinence treatment, as well as for tightening sagging skin of face, neck, underarms, and belly fat. Throughout her career, she has worked at many reputed hospitals and clinics in Chembur, including Surya Hospital, making her one of the most trusted gynecologists in the area.
+                She also offers cosmetic gynecology, HIFU for vaginal tightening and skin tightening, and laser treatments. Throughout her career at reputed hospitals including Surya Hospital, Chembur, she has made her one of the most trusted gynecologists in the area.
               </p>
             </div>
             <div className="text-center mt-8">

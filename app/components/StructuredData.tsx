@@ -37,7 +37,7 @@ export default function StructuredData() {
     url: 'https://draparana.com', // Update with your actual domain
     image: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
     telephone: '+919876543210', // Update with actual phone number
-    email: 'info@draparana.com', // Update with actual email
+    email: 'aparnagosh67@yahoo.co.in',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Clinic Address, Chembur', // Update with actual address

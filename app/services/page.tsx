@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Award } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Services - Dr. Aparana Ghosh | Gynecologist Services in Chembur, Mumbai',
@@ -16,153 +16,152 @@ export const metadata: Metadata = {
   },
 }
 
-const services = [
-  // Primary Gynecology Services
-  {
-    id: 'general-gynecology',
-    title: 'General Gynecology',
-    description: 'Comprehensive gynecological consultations, routine check-ups, PCOD/PCOS treatment, and treatment for all women\'s health concerns.',
-    keywords: 'gynecologist Chembur, women health clinic Mumbai, gynecology consultation',
-    primary: true,
-  },
-  {
-    id: 'hrt-treatment',
-    title: 'HRT Treatment',
-    description: 'Hormone Replacement Therapy for managing menopause symptoms, hormonal imbalances, and improving overall gynecological health.',
-    keywords: 'HRT treatment Mumbai, hormone replacement therapy Chembur',
-    primary: true,
-  },
-  {
-    id: 'hifu-incontinence',
-    title: 'HIFU for Urinary Incontinence',
-    description: 'Non-invasive gynecological treatment for urinary incontinence and vaginal tightening using advanced HIFU technology. Effective solution without surgery.',
-    keywords: 'HIFU urinary incontinence Mumbai, vaginal tightening Chembur, treatment for urine leakage',
-    primary: true,
-  },
-  {
-    id: 'hifu-skin-tightening',
-    title: 'HIFU for Skin Tightening',
-    description: 'Advanced HIFU treatment for tightening sagging skin of face, neck, underarms, and belly fat. Non-invasive cosmetic procedure for firmer, younger-looking skin.',
-    keywords: 'HIFU skin tightening Mumbai, face tightening Chembur, belly fat reduction',
-    primary: true,
-  },
-  {
-    id: 'high-risk-pregnancy',
-    title: 'High-Risk Pregnancy Care',
-    description: 'Expert care for high-risk pregnancies and deliveries, ensuring best outcomes for both mother and baby. Comprehensive monitoring and management.',
-    keywords: 'high risk pregnancy Mumbai, expert obstetrician Chembur, pregnancy care',
-    primary: true,
-  },
-  {
-    id: 'hysterectomy-fibroid',
-    title: 'Hysterectomy & Fibroid Removal',
-    description: 'Expert surgical procedures including hysterectomy and removal of large fibroids. Notable achievement: Successfully removed 3.8 kg (23 cm) fibroid in a 50-minute procedure at Surya Hospital, Chembur.',
-    keywords: 'hysterectomy Mumbai, fibroid removal Chembur, large fibroid surgery, myomectomy',
-    primary: true,
-  },
-  // Secondary Cosmetic Services
-  {
-    id: 'cosmetic-gynecology',
-    title: 'Cosmetic Gynecology',
-    description: 'Advanced cosmetic procedures to enhance feminine wellness, confidence, and aesthetic appearance.',
-    keywords: 'cosmetic gynecology Mumbai, cosmetic gynecologist Chembur',
-    primary: false,
-  },
-  {
-    id: 'laser-hair-reduction',
-    title: 'Laser Hair Reduction',
-    description: 'Permanent hair removal using advanced laser technology. Safe, effective, and long-lasting results for smooth, hair-free skin.',
-    keywords: 'laser hair reduction Mumbai, permanent hair removal Chembur',
-    primary: false,
-  },
-  {
-    id: 'scar-reduction',
-    title: 'Scar & Stretch Mark Reduction',
-    description: 'Advanced treatments to reduce scars and stretch marks using cutting-edge technology for smoother, more even skin.',
-    keywords: 'scar reduction Mumbai, stretch mark treatment Chembur',
-    primary: false,
-  },
-]
-
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h1>
-          <p className="text-xl text-gray-600">Comprehensive <strong className="text-primary-600">gynecological care</strong> and advanced treatments</p>
+          <p className="text-xl text-gray-600">Comprehensive gynecological and cosmetic services</p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-gradient-to-br from-cyan-50 via-blue-50 to-indigo-50">
+      <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
         <div className="container mx-auto px-4">
-          {/* Primary Gynecology Services */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <span className="w-1 h-8 bg-primary-600 rounded"></span>
-              Primary Gynecology Services
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.filter(s => s.primary).map((service) => (
-                <Link
-                  key={service.id}
-                  href={`/services/${service.id}`}
-                  className="group bg-gradient-to-br from-primary-50 to-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-2 border-primary-200"
-                >
-                  <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-700 transition-colors">
-                    <Award className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="inline-block px-2 py-1 bg-primary-600 text-white text-xs font-medium rounded mb-3">Primary Service</div>
-                  <h2 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-primary-600 transition-colors">
-                    {service.title}
-                  </h2>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  {service.id === 'hysterectomy-fibroid' && (
-                    <div className="bg-primary-100 rounded-lg p-3 mb-4 border border-primary-200">
-                      <p className="text-xs font-semibold text-primary-700 mb-1">📋 Notable Case Study:</p>
-                      <p className="text-xs text-gray-700">Successfully removed 3.8 kg (23 cm) fibroid in 50 minutes at Surya Hospital, Chembur (Sept 2023)</p>
-                    </div>
-                  )}
-                  <span className="text-primary-600 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
-                    Learn More <ArrowRight className="w-4 h-4" />
-                  </span>
-                </Link>
-              ))}
+          <div className="max-w-6xl mx-auto space-y-12">
+            {/* Gynecology */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Gynecology</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'Hysterectomy Specialist', href: '/services' },
+                  { name: 'Fibroid & Ovarian Cyst Surgery', href: '/services' },
+                  { name: 'Laparoscopic Gynec Surgery', href: '/services' },
+                  { name: 'Infertility & PCOS Management', href: '/services' },
+                  { name: 'Menstrual & Hormonal Disorders', href: '/services' },
+                  { name: 'Uterus Removal (Hysterectomy)', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Additional Services */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <span className="w-1 h-8 bg-gray-400 rounded"></span>
-              Additional Services
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.filter(s => !s.primary).map((service) => (
-                <Link
-                  key={service.id}
-                  href={`/services/${service.id}`}
-                  className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100"
-                >
-                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-gray-200 transition-colors">
-                    <Award className="w-8 h-8 text-gray-600" />
-                  </div>
-                  <div className="inline-block px-2 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded mb-3">Also Available</div>
-                  <h2 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-primary-600 transition-colors">
-                    {service.title}
-                  </h2>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <span className="text-primary-600 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
-                    Learn More <ArrowRight className="w-4 h-4" />
-                  </span>
-                </Link>
-              ))}
+            {/* Preventive & Women's Health */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Preventive & Women&apos;s Health</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'Pap Smear & Cervical Cancer Screening', href: '/services' },
+                  { name: 'HPV Vaccination', href: '/services' },
+                  { name: 'Breast Health Examination', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* High-Risk Pregnancy (Obstetrics) */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">High-Risk Pregnancy (Obstetrics)</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { name: 'Antenatal Care for High-Risk Pregnancies', href: '/services' },
+                  { name: 'Normal Vaginal Delivery', href: '/services' },
+                  { name: 'Cesarean Section (C-Section)', href: '/services' },
+                  { name: 'Medical & Surgical Abortion Services', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Cosmetic Gynecology */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">Cosmetic Gynecology</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'HIFU for Urinary Incontinence & Vaginal Tightening', href: '/services' },
+                  { name: 'Vaginal Rejuvenation', href: '/services' },
+                  { name: 'Scar & Stretch-Mark Reduction', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* General Facial Aesthetics */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-700 mb-6">General Facial Aesthetics</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'Acne Treatment', href: '/services' },
+                  { name: 'Carbon Peel (Laser Facial)', href: '/services' },
+                  { name: 'Microneedling & PRP (Platelet-Rich Plasma)', href: '/services' },
+                  { name: 'Hyperpigmentation Treatment', href: '/services' },
+                  { name: 'OxyGeneo Facial', href: '/services' },
+                  { name: 'Laser Skin-Tag Removal', href: '/services' },
+                  { name: 'HIFU Skin Tightening', href: '/services' },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    className="group p-5 bg-blue-50 rounded-xl shadow-sm hover:shadow-lg transition-all border border-blue-100 hover:border-blue-200"
+                  >
+                    <h4 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                      {service.name}
+                    </h4>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 group-hover:gap-3 transition-all">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
