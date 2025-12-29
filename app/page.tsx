@@ -120,7 +120,7 @@ export default function Home() {
           
           <div className="max-w-7xl mx-auto space-y-8">
             {/* Gynecology */}
-            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+            <div className="bg-white rounded-xl shadow-md p-6">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
                   <Stethoscope className="w-6 h-6 text-white" />
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
 
             {/* Preventive & Women's Health */}
-            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+            <div className="bg-white rounded-xl shadow-md p-6">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-md">
                   <Heart className="w-6 h-6 text-white" />
@@ -195,7 +195,7 @@ export default function Home() {
             </div>
 
             {/* High-Risk Pregnancy (Obstetrics) */}
-            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+            <div className="bg-white rounded-xl shadow-md p-6">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center shadow-md">
                   <Baby className="w-6 h-6 text-white" />
@@ -232,7 +232,7 @@ export default function Home() {
             </div>
 
             {/* Cosmetic Gynecology */}
-            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+            <div className="bg-white rounded-xl shadow-md p-6">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md">
                   <Sparkles className="w-6 h-6 text-white" />
@@ -268,7 +268,7 @@ export default function Home() {
             </div>
 
             {/* General Facial Aesthetics */}
-            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+            <div className="bg-white rounded-xl shadow-md p-6">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-md">
                   <Scissors className="w-6 h-6 text-white" />
