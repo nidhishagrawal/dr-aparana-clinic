@@ -450,14 +450,14 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Baby Treatment GIF 1 */}
+            {/* Maternal Care Image */}
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
               <div className="relative aspect-video bg-gradient-to-br from-pink-100 to-purple-100 overflow-hidden">
                 <BabyGifImage
-                  src="/images/baby-treatment-1.gif"
+                  src="/images/Maternal_Care.png"
                   alt="Maternal Care Treatment"
                   gradient="from-pink-200 to-purple-200"
-                  placeholder="Baby Treatment GIF 1"
+                  placeholder="Maternal Care"
                 />
               </div>
               <div className="p-6">
