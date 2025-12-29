@@ -26,7 +26,7 @@ export default function BabyGifImage({ src, alt, gradient, placeholder }: BabyGi
       src={src}
       alt={alt}
       fill
-      className="object-cover group-hover:scale-105 transition-transform duration-300"
+      className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
       unoptimized
       onError={() => setImageError(true)}
     />
