@@ -466,14 +466,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Baby Treatment GIF 2 */}
+            {/* Prenatal Care Image */}
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
               <div className="relative aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 overflow-hidden">
                 <BabyGifImage
-                  src="/images/baby-treatment-2.gif"
+                  src="/images/prenatal_care.png"
                   alt="Prenatal Care Treatment"
                   gradient="from-blue-200 to-cyan-200"
-                  placeholder="Baby Treatment GIF 2"
+                  placeholder="Prenatal Care"
                 />
               </div>
               <div className="p-6">
