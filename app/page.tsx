@@ -30,7 +30,7 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-primary-50 via-white to-primary-100 py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-12 items-center">
-            <div>
+            <div className="order-2 md:order-1">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full mb-6">
                 <Award className="w-4 h-4" />
                 <span className="text-sm font-medium">Expert Gynecologist</span>
@@ -71,7 +71,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[500px] md:h-[600px] max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden border-0 bg-white">
+            <div className="relative w-full h-[400px] md:h-[600px] max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden border-0 bg-white shadow-lg order-1 md:order-2">
               <DoctorImage
                 src="/images/Aparna_Ghosh_Home_Page.jpeg"
                 alt="Dr. Aparna Ghosh - Expert Gynecologist in Chembur, Mumbai"
