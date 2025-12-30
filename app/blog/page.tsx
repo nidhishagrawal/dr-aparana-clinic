@@ -68,7 +68,7 @@ export default function BlogPage() {
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Health Tips & Blog</h1>
-          <p className="text-xl text-gray-600">Expert advice on women\'s health and wellness</p>
+          <p className="text-xl text-gray-600">Expert advice on women's health and wellness</p>
         </div>
       </section>
 

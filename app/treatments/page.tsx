@@ -46,14 +46,25 @@ export default function TreatmentsPage() {
               </div>
             </div>
 
-            {/* Treatment Result 2 */}
-            <div className="bg-gray-100 rounded-2xl overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                <span className="text-gray-500">Before & After Image 2</span>
+            {/* Fibroid 3.8 kg Removal */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+              <div className="relative w-full bg-white flex items-center justify-center py-4 px-4">
+                <div className="relative w-full max-w-full flex justify-center">
+                  <Image
+                    src="/images/treatments/treatment2.png"
+                    alt="Fibroid 3.8 kg Removal - Before & After"
+                    width={800}
+                    height={600}
+                    className="object-contain w-auto h-auto max-w-full"
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    unoptimized={process.env.NODE_ENV === 'development'}
+                  />
+                </div>
               </div>
               <div className="p-6">
-                <h3 className="font-bold text-lg mb-2">Treatment Result 2</h3>
-                <p className="text-gray-600 text-sm">Add actual before/after photos here</p>
+                <h3 className="font-bold text-lg mb-2">Fibroid 3.8 kg Removal</h3>
+                <p className="text-gray-600 text-sm">Real treatment results</p>
               </div>
             </div>
 
