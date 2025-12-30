@@ -116,13 +116,14 @@ export default function Footer() {
 
           {/* Address 1 */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Address 1</h4>
+            <h4 className="font-semibold text-lg mb-4">Address</h4>
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
               <div className="text-gray-400 text-sm">
                 <strong className="text-white">Main Clinic</strong><br />
-                Clinic Address, Chembur,<br />
-                Mumbai - 400071
+                501, PURE GOLD CHS, NG ACHARYA MARG,<br />
+                STATION ROAD, Chembur East,<br />
+                Mumbai, Maharashtra 400071
               </div>
             </div>
           </div>

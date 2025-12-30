@@ -81,9 +81,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Address</h3>
                     <p className="text-gray-600 text-lg">
-                      Clinic Address, Chembur,<br />
-                      Mumbai - 400071<br />
-                      Maharashtra, India
+                      501, PURE GOLD CHS, NG ACHARYA MARG,<br />
+                      STATION ROAD, Chembur East,<br />
+                      Mumbai, Maharashtra 400071
                     </p>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Clinic Hours</h3>
                     <p className="text-gray-600 text-lg">
-                      Monday - Saturday: 9:00 AM - 7:00 PM<br />
+                      Mon - Sat: 9:00 AM - 7:00 PM<br />
                       Sunday: Closed
                     </p>
                   </div>
@@ -126,9 +126,8 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Find Us on Map</h2>
               <div className="rounded-2xl overflow-hidden shadow-lg h-[500px] bg-gray-200">
-                {/* Google Maps Embed - Replace with actual embed code */}
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1234567890!2d72.9123456!3d19.0567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAzJzI0LjQiTiA3MsKwNTQnNDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  src="https://www.google.com/maps?q=19.0624,72.9017&hl=en&z=15&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -136,17 +135,11 @@ export default function ContactPage() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
+                  title="Dr. Aparna Ghosh Clinic Location"
                 ></iframe>
-                {/* 
-                  To get your actual Google Maps embed:
-                  1. Go to Google Maps
-                  2. Search for your clinic address
-                  3. Click "Share" → "Embed a map"
-                  4. Copy the iframe code and replace the src above
-                */}
               </div>
               <p className="text-sm text-gray-500 mt-4">
-                📍 Update the Google Maps embed code above with your actual clinic location
+                📍 501, PURE GOLD CHS, NG ACHARYA MARG, STATION ROAD, Chembur East, Mumbai, Maharashtra 400071
               </p>
             </div>
           </div>
