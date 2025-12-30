@@ -99,8 +99,13 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Call For Appointment</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+919876543210" className="text-primary-400 hover:text-white transition-colors text-lg font-medium">
-                  +91 98765 43210
+                <a href="tel:+919326579679" className="text-primary-400 hover:text-white transition-colors text-lg font-medium">
+                  +91 93265 79679
+                </a>
+              </li>
+              <li>
+                <a href="tel:+919224222600" className="text-primary-400 hover:text-white transition-colors text-lg font-medium">
+                  +91 92242 22600
                 </a>
               </li>
               <li className="flex items-start gap-3">

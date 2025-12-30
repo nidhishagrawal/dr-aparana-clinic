@@ -53,14 +53,14 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <a 
-              href="tel:+919876543210"
+              href="tel:+919326579679"
               className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
             >
               <Phone className="w-4 h-4" />
               Call Now
             </a>
             <a 
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919326579679"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
@@ -141,7 +141,7 @@ export default function Navbar() {
               </Link>
               <div className="flex gap-3 pt-4 border-t border-gray-200">
                 <a 
-                  href="tel:+919876543210"
+                  href="tel:+919326579679"
                   className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -149,7 +149,7 @@ export default function Navbar() {
                   Call Now
                 </a>
                 <a 
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919326579679"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"

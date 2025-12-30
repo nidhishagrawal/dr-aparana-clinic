@@ -17,7 +17,7 @@ export default function BookAppointment() {
     // Here you would typically send the form data to your backend
     // For now, we'll use WhatsApp or phone
     const message = `Appointment Request:\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nMessage: ${formData.message}`
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/919326579679?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
 
@@ -37,7 +37,7 @@ export default function BookAppointment() {
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Quick Contact</h3>
                 <div className="space-y-4">
                   <a 
-                    href="tel:+919876543210"
+                    href="tel:+919326579679"
                     className="flex items-center gap-3 p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
                   >
                     <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
@@ -50,7 +50,7 @@ export default function BookAppointment() {
                   </a>
                   
                   <a 
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/919326579679"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"

@@ -15,7 +15,7 @@ export default function StructuredData() {
       postalCode: '400071', // Update with actual postal code
       addressCountry: 'IN',
     },
-    telephone: '+919876543210', // Update with actual phone number
+    telephone: '+919326579679', // Update with actual phone number
     priceRange: '$$',
     openingHoursSpecification: [
       {
@@ -36,7 +36,7 @@ export default function StructuredData() {
     description: 'Expert gynecologist (MBBS from RGMC 1998, MD from KEM Hospital 2002) with 23 years of experience in gynecology and Obstetrics, specializing in comprehensive women\'s health care, cosmetic gynecology, and advanced treatments.',
     url: 'https://draparana.com', // Update with your actual domain
     image: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
-    telephone: '+919876543210', // Update with actual phone number
+    telephone: '+919326579679', // Update with actual phone number
     email: 'aparnagosh67@yahoo.co.in',
     address: {
       '@type': 'PostalAddress',
@@ -81,7 +81,7 @@ export default function StructuredData() {
     image: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
     '@id': 'https://draparana.com',
     url: 'https://draparana.com',
-    telephone: '+919876543210',
+    telephone: '+919326579679',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',

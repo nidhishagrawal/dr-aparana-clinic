@@ -48,14 +48,14 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="tel:+919876543210"
+                  href="tel:+919326579679"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
                 >
                   <Phone className="w-5 h-5" />
                   Call Now
                 </a>
                 <a 
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919326579679"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
@@ -741,14 +741,14 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="tel:+919876543210"
+              href="tel:+919326579679"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 rounded-full hover:bg-gray-100 transition-all font-medium"
             >
               <Phone className="w-5 h-5" />
               Call Now
             </a>
             <a 
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919326579679"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"

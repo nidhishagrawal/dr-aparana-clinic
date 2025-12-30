@@ -104,13 +104,13 @@ export default function LaserHairReductionPage() {
               <p className="text-gray-600 mb-6">Ready to start your journey to smooth, hair-free skin? Schedule a consultation today.</p>
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="tel:+919876543210"
+                  href="tel:+919326579679"
                   className="px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
                 >
                   Call: +91 98765 43210
                 </a>
                 <a 
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919326579679"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"

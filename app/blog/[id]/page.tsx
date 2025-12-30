@@ -927,7 +927,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
               <p className="text-sm text-gray-600 mb-0">Expert gynecologist in Chembur, Mumbai</p>
             </div>
             <div className="text-sm text-gray-600">
-              <p className="mb-1.5">Phone: <a href="tel:+919876543210" className="text-blue-600 hover:underline">+91-9876543210</a></p>
+              <p className="mb-1.5">Phone: <a href="tel:+919326579679" className="text-blue-600 hover:underline">+91-9326579679</a>, <a href="tel:+919224222600" className="text-blue-600 hover:underline">+91-9224222600</a></p>
               <p className="mb-0">Email: <a href="mailto:aparnagosh67@yahoo.co.in" className="text-blue-600 hover:underline">aparnagosh67@yahoo.co.in</a></p>
             </div>
           </div>

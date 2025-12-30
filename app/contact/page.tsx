@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Aparna Ghosh - Gynecologist Clinic in Chembur, Mumbai',
-  description: 'Contact Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai. Book your appointment via phone (+91-9876543210) or WhatsApp. Find our location, clinic hours, and contact information.',
+  description: 'Contact Dr. Aparana Ghosh\'s clinic in Chembur, Mumbai. Book your appointment via phone (+91-9326579679, +91-9224222600) or WhatsApp. Find our location, clinic hours, and contact information.',
   keywords: 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp',
   other: {
     'keywords': 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp'
@@ -39,9 +39,14 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Phone</h3>
-                    <a href="tel:+919876543210" className="text-primary-600 hover:text-primary-700 text-lg">
-                      +91 98765 43210
-                    </a>
+                    <div className="space-y-2">
+                      <a href="tel:+919326579679" className="block text-primary-600 hover:text-primary-700 text-lg">
+                        +91 93265 79679
+                      </a>
+                      <a href="tel:+919224222600" className="block text-primary-600 hover:text-primary-700 text-lg">
+                        +91 92242 22600
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -52,12 +57,12 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-lg mb-1">WhatsApp</h3>
                     <a 
-                      href="https://wa.me/919876543210"
+                      href="https://wa.me/919326579679"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary-600 hover:text-primary-700 text-lg"
                     >
-                      +91 98765 43210
+                      +91 93265 79679
                     </a>
                   </div>
                 </div>
@@ -104,14 +109,14 @@ export default function ContactPage() {
 
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="tel:+919876543210"
+                  href="tel:+919326579679"
                   className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
                 >
                   <Phone className="w-5 h-5" />
                   Call Now
                 </a>
                 <a 
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919326579679"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
