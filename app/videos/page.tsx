@@ -23,7 +23,7 @@ const treatmentVideos = [
     id: 1,
     title: 'Treatment Video 1',
     description: 'Watch Dr. Aparna Ghosh perform treatment procedures with expert care and precision.',
-    thumbnail: '/images/treatments/treatment1.png',
+    thumbnail: '/images/videos/doctor_v1_frame20.jpg',
     videoUrl: '/video/treatment_video/doctor_v1.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
@@ -33,7 +33,6 @@ const treatmentVideos = [
     id: 2,
     title: 'Treatment Video 2',
     description: 'Expert gynecological treatment performed by Dr. Aparna Ghosh showcasing advanced medical procedures.',
-    thumbnail: '/images/treatments/treatment2.png',
     videoUrl: '/video/treatment_video/doctor_v2.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
@@ -43,7 +42,6 @@ const treatmentVideos = [
     id: 3,
     title: 'Treatment Video 3',
     description: 'Comprehensive treatment demonstration by Dr. Aparna Ghosh highlighting patient care and medical expertise.',
-    thumbnail: '/images/treatments/treatment3.png',
     videoUrl: '/video/treatment_video/doctor_v3.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
@@ -86,7 +84,7 @@ export default function VideosPage() {
               {treatmentVideos.map((video) => (
                 <div key={video.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                   {/* Video Thumbnail/Player */}
-                  <div className="relative aspect-video bg-gray-100">
+                  <div className="relative aspect-video bg-gray-100 overflow-hidden">
                     {video.videoUrl ? (
                       video.videoType === 'youtube' ? (
                         <iframe
@@ -108,8 +106,9 @@ export default function VideosPage() {
                         <video
                           src={video.videoUrl}
                           controls
-                          className="w-full h-full object-cover"
-                          poster={video.thumbnail}
+                          className="w-full h-full object-contain"
+                          poster={video.thumbnail || undefined}
+                          preload="metadata"
                         >
                           Your browser does not support the video tag.
                         </video>

@@ -4,7 +4,6 @@ import DoctorImage from './components/DoctorImage'
 import BabyGifImage from './components/BabyGifImage'
 import StatsSection from './components/StatsSection'
 import BookAppointment from './components/BookAppointment'
-import VisionMission from './components/VisionMission'
 import PatientEducation from './components/PatientEducation'
 import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap, Play, Instagram } from 'lucide-react'
 
@@ -103,10 +102,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Award, title: 'Expert Care', desc: 'Experienced Gynecologist with advanced qualifications' },
-              { icon: CheckCircle, title: 'Premium Quality', desc: 'Handcrafted with finest materials' },
-              { icon: Clock, title: 'Lifetime Warranty', desc: 'Protected against defects' },
-              { icon: Users, title: 'Free Shipping', desc: 'On orders over ₹40,000' },
+              { icon: Heart, title: 'Women Wellness', desc: 'Comprehensive care for all your women\'s health needs' },
+              { icon: Stethoscope, title: 'Expert Gynecologist & Maternity care', desc: 'Experienced Gynecologist with advanced qualifications and expert maternity care' },
+              { icon: Sparkles, title: 'Cosmetic Gynecology', desc: 'Advanced cosmetic procedures for feminine wellness' },
+              { icon: Scissors, title: 'Facial aesthetics', desc: 'Expert facial treatments and aesthetic procedures' },
             ].map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
@@ -445,9 +444,6 @@ export default function Home() {
       {/* Statistics Section */}
       <StatsSection />
 
-      {/* Vision Mission Values */}
-      <VisionMission />
-
       {/* Pregnancy & Maternal Care Section */}
       <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50">
         <div className="container mx-auto px-4">
@@ -665,6 +661,7 @@ export default function Home() {
                   controls
                   className="w-full h-full object-contain"
                   playsInline
+                  preload="metadata"
                 >
                   Your browser does not support the video tag.
                 </video>
