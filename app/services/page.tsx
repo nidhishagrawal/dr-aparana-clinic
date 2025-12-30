@@ -40,7 +40,7 @@ export default function ServicesPage() {
                   { name: 'Laparoscopic Gynec Surgery', description: 'Minimally invasive laparoscopic procedures for faster recovery and reduced scarring.' },
                   { name: 'Infertility & PCOS Management', description: 'Comprehensive treatment plans for infertility and Polycystic Ovary Syndrome management.' },
                   { name: 'Menstrual & Hormonal Disorders', description: 'Expert diagnosis and treatment of menstrual irregularities and hormonal imbalances.' },
-                  { name: 'Uterus Removal (Hysterectomy)', description: 'Safe and effective uterus removal procedures tailored to individual patient needs.' },
+                  { name: 'Safe Abortion', description: 'Safe and confidential abortion services with compassionate care, professional medical support, and complete privacy. We provide both medical and surgical abortion options tailored to individual needs with expert guidance throughout the process.' },
                 ].map((service, index) => (
                   <div
                     key={index}

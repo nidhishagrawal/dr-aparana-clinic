@@ -6,7 +6,7 @@ import StatsSection from './components/StatsSection'
 import BookAppointment from './components/BookAppointment'
 import VisionMission from './components/VisionMission'
 import PatientEducation from './components/PatientEducation'
-import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap, Play } from 'lucide-react'
+import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap, Play, Instagram } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
@@ -33,7 +33,7 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full mb-6">
                 <Award className="w-4 h-4" />
-                <span className="text-sm font-medium">Expert Gynecologist</span>
+                <span className="text-sm font-medium">Expert Obstetrician & Gynecologist</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
                 Dr. Aparna Ghosh
@@ -44,7 +44,7 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-xl text-gray-600 mb-8">
-                An experienced <strong className="text-primary-600">gynecologist</strong> in Chembur, Mumbai, taking care of all women&apos;s health concerns at every stage of life. Specializing in comprehensive gynecological care, with expertise in cosmetic procedures and advanced treatments.
+                An experienced <strong className="text-primary-600">Gynecologist and Obstetrician</strong> in Chembur, Mumbai, taking care of all women&apos;s health concerns at every stage of life. Specializing in comprehensive gynecological care, with expertise in cosmetic procedures and advanced treatments.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
@@ -63,6 +63,16 @@ export default function Home() {
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp
                 </a>
+                <a 
+                  href="https://www.instagram.com/draparnaghosh445/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:from-purple-700 hover:to-pink-700 transition-all font-medium"
+                  title="View Instagram Reels"
+                >
+                  <Instagram className="w-5 h-5" />
+                  Instagram
+                </a>
                 <Link 
                   href="/contact"
                   className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-full hover:bg-primary-50 transition-all font-medium"
@@ -74,7 +84,7 @@ export default function Home() {
             <div className="relative w-full h-[400px] md:h-[600px] max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden border-0 bg-white shadow-lg order-1 md:order-2">
               <DoctorImage
                 src="/images/Aparna_Ghosh_Home_Page.jpeg"
-                alt="Dr. Aparna Ghosh - Expert Gynecologist in Chembur, Mumbai"
+                alt="Dr. Aparna Ghosh - Expert Obstetrician & Gynecologist in Chembur, Mumbai"
                 priority
                 sizes="(max-width: 768px) 100vw, 400px"
                 className="object-cover object-center"
@@ -93,7 +103,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Award, title: 'Expert Care', desc: 'Experienced gynecologist with advanced qualifications' },
+              { icon: Award, title: 'Expert Care', desc: 'Experienced Gynecologist with advanced qualifications' },
               { icon: CheckCircle, title: 'Premium Quality', desc: 'Handcrafted with finest materials' },
               { icon: Clock, title: 'Lifetime Warranty', desc: 'Protected against defects' },
               { icon: Users, title: 'Free Shipping', desc: 'On orders over ₹40,000' },
@@ -394,7 +404,7 @@ export default function Home() {
                 <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                   <div className="space-y-5 text-gray-700">
                     <p className="text-base leading-relaxed">
-                      Dr. Aparna Ghosh is an experienced gynecologist in Chembur, Mumbai, with <span className="text-primary-600 font-semibold">23 years of experience</span> in gynecology and Obstetrics. She completed her MBBS from <span className="text-primary-600 font-semibold">RGMC (Rajiv Gandhi Medical College)</span> in <span className="text-primary-600 font-semibold">1998</span> and MD from the prestigious <span className="text-primary-600 font-semibold">KEM Hospital</span> in <span className="text-primary-600 font-semibold">2002</span>.
+                      Dr. Aparna Ghosh is an experienced Gynecologist in Chembur, Mumbai, with <span className="text-primary-600 font-semibold">23 years of experience</span> in gynecology and Obstetrics. She completed her MBBS from <span className="text-primary-600 font-semibold">RGMC (Rajiv Gandhi Medical College)</span> in <span className="text-primary-600 font-semibold">1998</span> and MD from the prestigious <span className="text-primary-600 font-semibold">KEM Hospital</span> in <span className="text-primary-600 font-semibold">2002</span>.
                     </p>
                     
                     <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-5 border-l-4 border-primary-500">
@@ -404,7 +414,7 @@ export default function Home() {
                     </div>
                     
                     <p className="text-base text-gray-700 leading-relaxed">
-                      She also offers cosmetic gynecology, HIFU for vaginal tightening and skin tightening, and laser treatments. Throughout her career at reputed hospitals including Surya Hospital, Chembur, she has made her one of the most trusted gynecologists in the area.
+                      She also offers cosmetic gynecology, HIFU for vaginal tightening and skin tightening, and laser treatments. Throughout her career at reputed hospitals including Surya Hospital, Chembur, she has made her one of the most trusted Gynecologists in the area.
                     </p>
                   </div>
                   
