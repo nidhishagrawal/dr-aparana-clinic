@@ -134,7 +134,7 @@ export default function AboutPage() {
                     On <strong>September 21, 2023</strong>, a skilled surgical team made a Pfannensteil incision. The mass, weighing <strong className="text-primary-600">3.780 kg</strong> and described as posterior multilobulated, was meticulously extracted. The procedure utilized a strategic injection of vasopressin to avoid opening the uterine cavity.
                   </p>
                 </div>
-                <div className="relative w-full max-w-md mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg border-2 border-primary-200 bg-transparent">
+                <div className="relative w-full max-w-xs mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg border-2 border-primary-200 bg-transparent">
                   <CaseStoryImage
                     src="/images/case-story-myomectomy.jpg"
                     alt="Dr. Aparna Ghosh with 3.8 kg fibroid removed at Surya Hospital, Chembur"

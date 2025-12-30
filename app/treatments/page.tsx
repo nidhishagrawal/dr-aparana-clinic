@@ -46,18 +46,45 @@ export default function TreatmentsPage() {
               </div>
             </div>
 
-            {/* Placeholder for before/after images */}
-            {[2, 3, 4].map((item) => (
-              <div key={item} className="bg-gray-100 rounded-2xl overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                  <span className="text-gray-500">Before & After Image {item}</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-lg mb-2">Treatment Result {item}</h3>
-                  <p className="text-gray-600 text-sm">Add actual before/after photos here</p>
-                </div>
+            {/* Treatment Result 2 */}
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                <span className="text-gray-500">Before & After Image 2</span>
               </div>
-            ))}
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">Treatment Result 2</h3>
+                <p className="text-gray-600 text-sm">Add actual before/after photos here</p>
+              </div>
+            </div>
+
+            {/* Treatment Result 3 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+              <div className="relative aspect-video bg-white">
+                <Image
+                  src="/images/treatments/treatment3.png"
+                  alt="Skin Tightening with HIFU - Before & After Treatment Results"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={process.env.NODE_ENV === 'development'}
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">Skin Tightening with HIFU</h3>
+                <p className="text-gray-600 text-sm">Real treatment results</p>
+              </div>
+            </div>
+
+            {/* Treatment Result 4 */}
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                <span className="text-gray-500">Before & After Image 4</span>
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">Treatment Result 4</h3>
+                <p className="text-gray-600 text-sm">Add actual before/after photos here</p>
+              </div>
+            </div>
             
             {/* Treatment Result 5 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
