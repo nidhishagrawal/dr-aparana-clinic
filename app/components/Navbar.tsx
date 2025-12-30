@@ -39,6 +39,9 @@ export default function Navbar() {
             <Link href="/testimonials" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
               Testimonials
             </Link>
+            <Link href="/videos" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
+              Videos
+            </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">
               Health Tips
             </Link>
@@ -114,6 +117,13 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Testimonials
+              </Link>
+              <Link 
+                href="/videos" 
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Videos
               </Link>
               <Link 
                 href="/blog" 

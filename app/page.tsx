@@ -6,7 +6,7 @@ import StatsSection from './components/StatsSection'
 import BookAppointment from './components/BookAppointment'
 import VisionMission from './components/VisionMission'
 import PatientEducation from './components/PatientEducation'
-import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap } from 'lucide-react'
+import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap, Play } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
@@ -633,6 +633,84 @@ export default function Home() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
             >
               View All Testimonials <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Treatment Videos Preview */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-red-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Treatment Videos</h2>
+            <p className="text-lg text-gray-600">Watch real procedures and treatments performed by Dr. Aparna Ghosh</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+            {/* Video Preview 1 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+              <div className="relative aspect-video bg-gray-900">
+                <video
+                  src="/video/treatment_video/doctor_v1.mp4"
+                  controls
+                  className="w-full h-full object-contain"
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-semibold text-primary-600 bg-primary-100 px-2 py-1 rounded mb-2 inline-block">Treatment</span>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Treatment Video 1</h3>
+                <p className="text-gray-600 text-sm">Watch Dr. Aparna Ghosh perform treatment procedures with expert care</p>
+              </div>
+            </div>
+
+            {/* Video Preview 2 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+              <div className="relative aspect-video bg-gray-900">
+                <video
+                  src="/video/treatment_video/doctor_v2.mp4"
+                  controls
+                  className="w-full h-full object-contain"
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-semibold text-primary-600 bg-primary-100 px-2 py-1 rounded mb-2 inline-block">Treatment</span>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Treatment Video 2</h3>
+                <p className="text-gray-600 text-sm">Expert gynecological treatment showcasing advanced procedures</p>
+              </div>
+            </div>
+
+            {/* Video Preview 3 */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+              <div className="relative aspect-video bg-gray-900">
+                <video
+                  src="/video/treatment_video/doctor_v3.mp4"
+                  controls
+                  className="w-full h-full object-contain"
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-semibold text-primary-600 bg-primary-100 px-2 py-1 rounded mb-2 inline-block">Treatment</span>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Treatment Video 3</h3>
+                <p className="text-gray-600 text-sm">Comprehensive treatment demonstration highlighting patient care</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <Link 
+              href="/videos"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
+            >
+              View All Videos <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

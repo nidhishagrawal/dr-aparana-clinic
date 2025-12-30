@@ -17,28 +17,28 @@ export const metadata: Metadata = {
 
 const testimonials = [
   {
-    name: 'Priya Sharma',
-    treatment: 'Laser Hair Reduction',
+    name: 'Chetana Maske',
+    treatment: 'Pregnancy & Skincare',
     rating: 5,
-    text: 'Excellent experience with laser hair reduction. Dr. Aparna is very professional and the results are amazing. Highly recommended!',
+    text: 'Aparna Ghosh is an exceptional gynecologist and surgeon. From my pregnancy journey to my skincare journey, she has been the most result-oriented and supportive doctor I could ask for. During my delivery, even with three loops around my baby\'s neck, everything went smoothly without any complications, thanks to her expertise. She was patient, caring, and always available to address my queries and concerns throughout the process. I have also struggled with acne since my teenage years, which left me with severe breakouts and pits. Under her guidance and treatment, my skin has completely transformed—today it is clear, bright, and naturally glowing. I no longer feel the need to wear makeup as my skin looks healthy on its own. I am truly grateful to Dr. Aparna Ghosh for her constant support and for helping me through both my pregnancy and my skin concerns.',
   },
   {
-    name: 'Anita Desai',
-    treatment: 'Cosmetic Gynecology',
+    name: 'Saba Khan',
+    treatment: 'Copper T Removal',
     rating: 5,
-    text: 'Dr. Aparna provided exceptional care throughout my treatment. She is knowledgeable, compassionate, and the clinic is well-equipped.',
+    text: 'I recently visited Dr. Aparna Ghosh for my mother\'s treatment, and I\'m truly grateful for her expertise and care ❤️💫 We were earlier told that the Copper T had gone too deep and would require surgical removal in Somaiya hospital and they have done so many test as well. Before going ahead, we decided to consult Dr. Aparna Ghosh at Sai Hospital. To our surprise and relief, she removed it safely and completely in just 2 minutes, without any surgery. My mother felt so comfortable and confident throughout the procedure. Dr. Aparna Ghosh is not only highly skilled but also extremely kind, patient, and understanding. She listens carefully and makes her patients feel at ease, which is so important. I feel truly thankful for her help, and I would highly recommend her to anyone facing any gynecological issues. She is an expert and truly a blessing for her patients! ❤️',
   },
   {
-    name: 'Sunita Patel',
-    treatment: 'HIFU Treatment',
+    name: 'Yasmeen',
+    treatment: 'General Gynecology Care',
     rating: 5,
-    text: 'The HIFU treatment for incontinence has changed my life. Dr. Aparna explained everything clearly and the procedure was comfortable.',
+    text: 'I had a truly positive experience with Dr. Aparna Ghosh Shinde. She is not only highly knowledgeable and experienced in her field but also incredibly kind, patient, and attentive. From the very first consultation, she made me feel comfortable and heard, taking the time to explain everything in detail and answer all my questions with clarity and compassion. Her calm and reassuring nature, combined with her professionalism, gave me complete confidence throughout my treatment. Whether it was routine care or addressing specific concerns, Dr. Aparna handled everything with great care and precision. I would highly recommend her to anyone looking for a reliable and empathetic gynaecologist. Thank you, Dr. Aparna, for your excellent care and dedication! 🙏',
   },
   {
-    name: 'Meera Joshi',
-    treatment: 'HRT Treatment',
+    name: 'Nasreen Syad',
+    treatment: 'Weight Loss Treatment',
     rating: 5,
-    text: 'Dr. Aparna helped me manage my menopause symptoms effectively. Her approach is holistic and she takes time to understand patient concerns.',
+    text: 'Hii i ve been taking treatment for weight loss from Dr aparna.... since last 4 /5 months first time wen i went to consult abt the problem i was facing due to weight i though its impossible i was planning for surgery but Dr aparna explained me things so well Dat i made up my mind n did as she said n today everyone one is worried looking at me it\'s all bcoz of Dr aparna n my hardwork i was 95+ n before now i am 78 🧿 thx u so much Dr aparna for helping me n special thx 🙏for attending calls anytime even if ur busy u call back GOD bless u madam 🙏🙏🙏',
   },
   {
     name: 'Rekha Nair',
@@ -47,10 +47,10 @@ const testimonials = [
     text: 'Amazing results with scar reduction treatment. The clinic is clean, staff is friendly, and Dr. Aparna is an expert in her field.',
   },
   {
-    name: 'Kavita Rao',
-    treatment: 'General Consultation',
+    name: 'Mrs Shetty',
+    treatment: 'Hysterectomy - Cancerous Fibroid',
     rating: 5,
-    text: 'Best gynecologist in Chembur! Dr. Aparna is patient, listens carefully, and provides excellent medical advice. Very satisfied with the care.',
+    text: 'My heartfelt thanks to Dr.Aparns Ghosh for the successful uterus removal surgery for a cancerous fibroid. Her skill, patience, and clear explanation made a very difficult time much easier. I truly appreciate the excellent medical care.',
   },
 ]
 
