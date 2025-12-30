@@ -576,16 +576,16 @@ export default function Home() {
                 <Quote className="w-8 h-8 text-primary-200 mb-4" />
                 <p className="text-gray-700 mb-4 leading-relaxed">Watch our patient share their experience</p>
                 <div className="border-t border-gray-100 pt-4">
-                  <p className="font-bold text-gray-900">Patient Review</p>
+                  <p className="font-bold text-gray-900">Chetna Mhaske</p>
                 </div>
               </div>
             </div>
 
-            {/* Video Testimonial 3 - Priya Sharma */}
+            {/* Video Testimonial 3 - Inicia */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               <div className="relative aspect-video bg-gray-900">
                 <video
-                  src="/video/customer_review.mp4"
+                  src="/video/review3.mp4"
                   controls
                   className="w-full h-full object-contain"
                   playsInline
@@ -602,8 +602,8 @@ export default function Home() {
                 <Quote className="w-8 h-8 text-primary-200 mb-4" />
                 <p className="text-gray-700 mb-4 leading-relaxed">Watch our patient share their experience</p>
                 <div className="border-t border-gray-100 pt-4">
-                  <p className="font-bold text-gray-900">Priya Sharma</p>
-                  <p className="text-sm text-gray-600">Laser Hair Reduction</p>
+                  <p className="font-bold text-gray-900">Inicia</p>
+                  <p className="text-sm text-gray-600">Laparoscopic Hysterectomy</p>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -109,10 +109,21 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-3">
+                <MessageCircle className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
+                <div className="space-y-2">
+                  <a href="https://wa.me/919326579679" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                    WhatsApp: +91 93265 79679
+                  </a>
+                  <a href="https://wa.me/919224222600" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white transition-colors text-sm">
+                    WhatsApp: +91 92242 22600
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="mailto:aparnagosh67@yahoo.co.in" className="text-gray-400 hover:text-white transition-colors text-sm">
-                    aparnagosh67@yahoo.co.in
+                  <a href="mailto:aparnaghosh67@yahoo.co.in" className="text-gray-400 hover:text-white transition-colors text-sm">
+                    aparnaghosh67@yahoo.co.in
                   </a>
                 </div>
               </li>
@@ -133,15 +144,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Address 2 */}
+          {/* Attached With */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Address 2</h4>
+            <h4 className="font-semibold text-lg mb-4">Attached With</h4>
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
               <div className="text-gray-400 text-sm">
-                <strong className="text-white">Consultation Center</strong><br />
-                Additional Location, Chembur,<br />
-                Mumbai - 400071
+                <strong className="text-white">Surya Hospital</strong>, <strong className="text-white">Apollo Spectra</strong>, <strong className="text-white">Savala Hospital</strong>, <strong className="text-white">Sai Hospital Chembur</strong>
               </div>
             </div>
             <div className="mt-4 flex items-start gap-3">

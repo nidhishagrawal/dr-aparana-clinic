@@ -56,14 +56,24 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">WhatsApp</h3>
-                    <a 
-                      href="https://wa.me/919326579679"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary-600 hover:text-primary-700 text-lg"
-                    >
-                      +91 93265 79679
-                    </a>
+                    <div className="space-y-2">
+                      <a 
+                        href="https://wa.me/919326579679"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-primary-600 hover:text-primary-700 text-lg"
+                      >
+                        +91 93265 79679
+                      </a>
+                      <a 
+                        href="https://wa.me/919224222600"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-primary-600 hover:text-primary-700 text-lg"
+                      >
+                        +91 92242 22600
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -73,8 +83,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Email</h3>
-                    <a href="mailto:aparnagosh67@yahoo.co.in" className="text-primary-600 hover:text-primary-700 text-lg">
-                      aparnagosh67@yahoo.co.in
+                    <a href="mailto:aparnaghosh67@yahoo.co.in" className="text-primary-600 hover:text-primary-700 text-lg">
+                      aparnaghosh67@yahoo.co.in
                     </a>
                   </div>
                 </div>
@@ -122,7 +132,7 @@ export default function ContactPage() {
                   className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all font-medium"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  WhatsApp Appointment
+                  WhatsApp
                 </a>
               </div>
             </div>
@@ -132,7 +142,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Find Us on Map</h2>
               <div className="rounded-2xl overflow-hidden shadow-lg h-[500px] bg-gray-200">
                 <iframe
-                  src="https://www.google.com/maps?q=19.0624,72.9017&hl=en&z=15&output=embed"
+                  src="https://www.google.com/maps?q=19.0621,72.9008&hl=en&z=15&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

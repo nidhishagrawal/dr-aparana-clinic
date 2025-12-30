@@ -45,7 +45,7 @@ export default function BookAppointment() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">Call Now</p>
-                      <p className="text-sm text-gray-600">+91 98765 43210</p>
+                      <p className="text-sm text-gray-600">+91 93265 79679</p>
                     </div>
                   </a>
                   
@@ -60,7 +60,22 @@ export default function BookAppointment() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">WhatsApp</p>
-                      <p className="text-sm text-gray-600">Chat with us</p>
+                      <p className="text-sm text-gray-600">+91 93265 79679</p>
+                    </div>
+                  </a>
+                  
+                  <a 
+                    href="https://wa.me/919224222600"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
+                  >
+                    <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                      <MessageCircle className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-gray-900">WhatsApp</p>
+                      <p className="text-sm text-gray-600">+91 92242 22600</p>
                     </div>
                   </a>
                 </div>
@@ -113,7 +128,7 @@ export default function BookAppointment() {
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 93265 79679"
                     />
                   </div>
                 </div>

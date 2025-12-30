@@ -87,13 +87,20 @@ export default function TreatmentsPage() {
             </div>
 
             {/* Treatment Result 4 */}
-            <div className="bg-gray-100 rounded-2xl overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                <span className="text-gray-500">Before & After Image 4</span>
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+              <div className="relative aspect-video bg-white">
+                <Image
+                  src="/images/treatments/treatment4.png"
+                  alt="Laser Skin Mole Removal - Before & After"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={process.env.NODE_ENV === 'development'}
+                />
               </div>
               <div className="p-6">
-                <h3 className="font-bold text-lg mb-2">Treatment Result 4</h3>
-                <p className="text-gray-600 text-sm">Add actual before/after photos here</p>
+                <h3 className="font-bold text-lg mb-2">Laser Skin Mole Removal</h3>
+                <p className="text-gray-600 text-sm">Real treatment results</p>
               </div>
             </div>
             

@@ -37,7 +37,7 @@ export default function StructuredData() {
     url: 'https://draparana.com', // Update with your actual domain
     image: 'https://draparana.com/images/dr-aparana-ghosh.jpg',
     telephone: '+919326579679', // Update with actual phone number
-    email: 'aparnagosh67@yahoo.co.in',
+    email: 'aparnaghosh67@yahoo.co.in',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Clinic Address, Chembur', // Update with actual address
@@ -93,8 +93,8 @@ export default function StructuredData() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 19.0596, // Update with actual coordinates
-      longitude: 72.8985, // Update with actual coordinates
+      latitude: 19.0621,
+      longitude: 72.9008,
     },
     openingHoursSpecification: [
       {
