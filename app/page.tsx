@@ -83,7 +83,7 @@ export default function Home() {
             <div className="relative w-full h-[400px] md:h-[600px] max-w-md mx-auto md:mx-0 rounded-2xl overflow-hidden border-0 bg-white shadow-lg order-1 md:order-2">
               <DoctorImage
                 src="/images/Aparna_Ghosh_Home_Page.jpeg"
-                alt="Dr. Aparna Ghosh - Expert Obstetrician & Gynecologist in Chembur, Mumbai"
+                alt="Dr Aparna Ghosh Gynecologist in Chembur"
                 priority
                 sizes="(max-width: 768px) 100vw, 400px"
                 className="object-cover object-center"
@@ -461,7 +461,7 @@ export default function Home() {
               <div className="relative aspect-video bg-gradient-to-br from-pink-100 to-purple-100 overflow-hidden">
                 <BabyGifImage
                   src="/images/Maternal_Care.png"
-                  alt="Maternal Care Treatment"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   gradient="from-pink-200 to-purple-200"
                   placeholder="Maternal Care"
                 />
@@ -477,7 +477,7 @@ export default function Home() {
               <div className="relative aspect-video bg-gradient-to-br from-blue-100 to-cyan-100 overflow-hidden">
                 <BabyGifImage
                   src="/images/prenatal_care.png"
-                  alt="Prenatal Care Treatment"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   gradient="from-blue-200 to-cyan-200"
                   placeholder="Prenatal Care"
                 />
@@ -493,7 +493,7 @@ export default function Home() {
               <div className="relative aspect-video bg-gradient-to-br from-yellow-100 to-orange-100 overflow-hidden">
                 <BabyGifImage
                   src="/images/postpartum_care.png"
-                  alt="Postpartum Care Treatment"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   gradient="from-yellow-200 to-orange-200"
                   placeholder="Postpartum Care"
                 />

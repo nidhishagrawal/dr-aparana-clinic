@@ -763,7 +763,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                   <div className="relative w-full h-auto">
                     <Image
                       src={post.image}
-                      alt={post.title}
+                      alt="Dr Aparna Ghosh Gynecologist in Chembur"
                       width={1200}
                       height={1600}
                       className="w-full h-auto object-contain"

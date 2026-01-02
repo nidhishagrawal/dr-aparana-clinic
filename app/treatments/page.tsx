@@ -33,7 +33,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/treatment1.png"
-                  alt="Baby Delivery - Before & After"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -52,7 +52,7 @@ export default function TreatmentsPage() {
                 <div className="relative w-full max-w-full flex justify-center">
                   <Image
                     src="/images/treatments/treatment2.png"
-                    alt="Fibroid 3.8 kg Removal - Before & After"
+                    alt="Dr Aparna Ghosh Gynecologist in Chembur"
                     width={800}
                     height={600}
                     className="object-contain w-auto h-auto max-w-full"
@@ -73,7 +73,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/treatment3.png"
-                  alt="Skin Tightening with HIFU - Before & After Treatment Results"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -91,7 +91,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/treatment4.png"
-                  alt="Laser Skin Mole Removal - Before & After"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -109,7 +109,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/beforeandafter_treatment5.png"
-                  alt="GLUTATHIONE + CARBON PEEL FACIAL - Before & After Treatment Results"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -127,7 +127,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/beforeandafter_treatment6.png"
-                  alt="Laser Scar Reduction - Before & After Treatment Results"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"

@@ -40,7 +40,7 @@ export default function AboutPage() {
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-200 shadow-xl">
                 <DoctorImage
                   src="/images/dr-aparana-ghosh.jpg"
-                  alt="Dr. Aparna Ghosh - Expert Gynecologist Surgeon & Obstetrician, Cosmetic Gynecologist"
+                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 <div className="relative w-full max-w-xs mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg border-2 border-primary-200 bg-transparent">
                   <CaseStoryImage
                     src="/images/case-story-myomectomy.jpg"
-                    alt="Dr. Aparna Ghosh with 3.8 kg fibroid removed at Surya Hospital, Chembur"
+                    alt="Dr Aparna Ghosh Gynecologist in Chembur"
                   />
                 </div>
               </div>
