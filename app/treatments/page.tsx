@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function TreatmentsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
+    <div className="min-h-screen bg-white">
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Treatments', path: '/treatments' }]} />
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
@@ -30,7 +30,7 @@ export default function TreatmentsPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Baby Delivery */}

@@ -24,7 +24,7 @@ export default function PatientEducation() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">

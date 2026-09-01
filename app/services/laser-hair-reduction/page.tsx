@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function LaserHairReductionPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Laser Hair Reduction</h1>
@@ -28,7 +28,7 @@ export default function LaserHairReductionPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">What is Laser Hair Reduction?</h2>

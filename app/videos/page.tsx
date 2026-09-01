@@ -105,7 +105,7 @@ const videoSchema = treatmentVideos
 
 export default function VideosPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50">
+    <div className="min-h-screen bg-white">
       {videoSchema.map((schema, i) => (
         <script
           key={i}
@@ -121,7 +121,7 @@ export default function VideosPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           {treatmentVideos.length === 0 || treatmentVideos.every(v => !v.videoUrl) ? (
             <div className="text-center py-20">

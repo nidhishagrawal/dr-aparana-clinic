@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
+    <div className="min-h-screen bg-white">
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Services', path: '/services' }]} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
@@ -32,7 +32,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto space-y-12">
             {/* Gynecology */}

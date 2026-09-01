@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
+      <section className="py-16 bg-primary-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Our Services</h2>
@@ -334,7 +334,7 @@ export default function Home() {
       </section>
 
       {/* About Doctor Section */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -450,7 +450,7 @@ export default function Home() {
       <StatsSection />
 
       {/* Pregnancy & Maternal Care Section */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50">
+      <section className="py-20 bg-primary-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
@@ -522,7 +522,7 @@ export default function Home() {
       </section>
 
       {/* Patient Testimonials Preview */}
-      <section className="py-20 bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Patients Say</h2>
@@ -650,7 +650,7 @@ export default function Home() {
       </section>
 
       {/* Treatment Videos Preview */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-red-50">
+      <section className="py-20 bg-primary-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Treatment Videos</h2>
