@@ -9,10 +9,10 @@ export default function StructuredData() {
     description: 'Expert gynecologist Dr. Aparna Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Clinic Address, Chembur', // Update with actual address
+      streetAddress: '501, Pure Gold CHS, NG Acharya Marg, Station Road, Chembur East',
       addressLocality: 'Chembur',
       addressRegion: 'Maharashtra',
-      postalCode: '400071', // Update with actual postal code
+      postalCode: '400071',
       addressCountry: 'IN',
     },
     telephone: '+919326579679', // Update with actual phone number
@@ -40,10 +40,10 @@ export default function StructuredData() {
     email: 'aparnaghosh67@yahoo.co.in',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Clinic Address, Chembur', // Update with actual address
+      streetAddress: '501, Pure Gold CHS, NG Acharya Marg, Station Road, Chembur East',
       addressLocality: 'Chembur',
       addressRegion: 'Maharashtra',
-      postalCode: '400071', // Update with actual postal code
+      postalCode: '400071',
       addressCountry: 'IN',
     },
     medicalSpecialty: [
@@ -85,10 +85,10 @@ export default function StructuredData() {
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Clinic Address, Chembur', // Update with actual address
+      streetAddress: '501, Pure Gold CHS, NG Acharya Marg, Station Road, Chembur East',
       addressLocality: 'Chembur',
       addressRegion: 'Maharashtra',
-      postalCode: '400071', // Update with actual postal code
+      postalCode: '400071',
       addressCountry: 'IN',
     },
     geo: {
@@ -105,9 +105,7 @@ export default function StructuredData() {
       },
     ],
     sameAs: [
-      // Add your social media profiles here
-      // 'https://www.facebook.com/draparana',
-      // 'https://www.instagram.com/draparana',
+      'https://www.instagram.com/draparnaghosh445/',
     ],
   }
 

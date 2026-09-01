@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
+import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Aparna Ghosh - Gynecologist Clinic in Chembur, Mumbai',
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }]} />
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
