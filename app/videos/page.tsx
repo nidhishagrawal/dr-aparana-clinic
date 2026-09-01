@@ -47,6 +47,24 @@ const treatmentVideos = [
     category: 'Treatment',
     duration: '',
   },
+  {
+    id: 4,
+    title: 'Treatment Video 4',
+    description: 'Watch Dr. Aparna Ghosh perform treatment procedures with expert care and precision.',
+    videoUrl: '/video/treatment_video/doctor_v4.mp4',
+    videoType: 'self-hosted',
+    category: 'Treatment',
+    duration: '',
+  },
+  {
+    id: 5,
+    title: 'Treatment Video 5',
+    description: 'Expert gynecological treatment performed by Dr. Aparna Ghosh showcasing advanced medical procedures.',
+    videoUrl: '/video/treatment_video/doctor_v5.mp4',
+    videoType: 'self-hosted',
+    category: 'Treatment',
+    duration: '',
+  },
 ]
 
 export default function VideosPage() {
