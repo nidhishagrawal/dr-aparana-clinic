@@ -5,9 +5,9 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Patient Testimonials - Dr. Aparna Ghosh Clinic',
   description: 'Read real patient reviews of laser hair reduction, cosmetic gynecology, and other treatments at Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
-  keywords: 'Dr. Aparna Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur',
+  keywords: 'Dr. Aparna Ghosh reviews, gynaecologist testimonials Chembur, gynecologist testimonials Chembur, patient reviews Mumbai, gynaecologist feedback, clinic reviews Chembur',
   other: {
-    'keywords': 'Dr. Aparna Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur'
+    'keywords': 'Dr. Aparna Ghosh reviews, gynaecologist testimonials Chembur, gynecologist testimonials Chembur, patient reviews Mumbai, gynaecologist feedback, clinic reviews Chembur'
   },
   alternates: {
     canonical: '/testimonials',

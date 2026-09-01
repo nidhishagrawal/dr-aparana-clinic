@@ -5,9 +5,9 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Gynecologist Services in Chembur - Dr. Aparna Ghosh',
   description: 'Gynecological services including laser hair reduction, cosmetic gynecology, HIFU, HRT, and scar reduction in Chembur, Mumbai. Book your appointment today.',
-  keywords: 'gynecologist services Chembur, laser hair reduction Mumbai, cosmetic gynecology, HIFU treatment, HRT treatment Mumbai, women health services, gynecological treatments',
+  keywords: 'gynaecologist services Chembur, gynecologist services Chembur, laser hair reduction Mumbai, cosmetic gynecology, HIFU treatment, HRT treatment Mumbai, women health services, gynaecological treatments',
   other: {
-    'keywords': 'gynecologist services Chembur, laser hair reduction Mumbai, cosmetic gynecology, HIFU treatment, HRT treatment Mumbai, women health services, gynecological treatments'
+    'keywords': 'gynaecologist services Chembur, gynecologist services Chembur, laser hair reduction Mumbai, cosmetic gynecology, HIFU treatment, HRT treatment Mumbai, women health services, gynaecological treatments'
   },
   alternates: {
     canonical: '/services',

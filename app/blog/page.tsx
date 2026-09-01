@@ -6,9 +6,9 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Women\'s Health Blog - Dr. Aparna Ghosh',
   description: 'Read health tips and articles about women\'s health, gynecology, menopause, laser treatments, and wellness from Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
-  keywords: 'women health tips, gynecology blog, health articles Mumbai, women wellness tips, gynecologist health advice',
+  keywords: 'women health tips, gynaecology blog, gynecology blog, health articles Mumbai, women wellness tips, gynaecologist health advice',
   other: {
-    'keywords': 'women health tips, gynecology blog, health articles Mumbai, women wellness tips, gynecologist health advice'
+    'keywords': 'women health tips, gynaecology blog, gynecology blog, health articles Mumbai, women wellness tips, gynaecologist health advice'
   },
   alternates: {
     canonical: '/blog',

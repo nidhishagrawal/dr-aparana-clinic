@@ -7,9 +7,9 @@ import { Award, GraduationCap, Users, Heart, CheckCircle } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'About Dr. Aparna Ghosh - Gynecologist in Chembur, Mumbai',
   description: 'Dr. Aparna Ghosh (MBBS, MD - KEM Hospital) has 23 years of experience in gynecology and obstetrics, cosmetic gynecology, and HIFU treatments in Chembur, Mumbai.',
-  keywords: 'Dr. Aparna Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications',
+  keywords: 'Dr. Aparna Ghosh, gynaecologist Chembur, gynecologist Chembur, MBBS MD gynaecologist Mumbai, women health specialist, obstetrician Chembur, gynaecologist qualifications',
   other: {
-    'keywords': 'Dr. Aparna Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications'
+    'keywords': 'Dr. Aparna Ghosh, gynaecologist Chembur, gynecologist Chembur, MBBS MD gynaecologist Mumbai, women health specialist, obstetrician Chembur, gynaecologist qualifications'
   },
   alternates: {
     canonical: '/about',
