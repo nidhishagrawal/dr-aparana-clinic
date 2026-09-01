@@ -7,12 +7,14 @@ import StructuredData from './components/StructuredData'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bestgynecologistchembur.in'),
   title: {
-    default: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
+    default: 'Dr. Aparna Ghosh - Best Gynaecologist in Chembur, Mumbai',
     template: '%s | Dr. Aparna Ghosh'
   },
-  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers women\'s health care, laser hair reduction, cosmetic gynecology, and HIFU treatment in Chembur, Mumbai.',
+  description: 'Expert gynaecologist (gynecologist) Dr. Aparna Ghosh (MBBS, MD) offers women\'s health care, laser hair reduction, cosmetic gynecology, and HIFU treatment in Chembur, Mumbai.',
   keywords: [
+    'gynaecologist Chembur',
     'gynecologist Chembur',
+    'best gynaecologist Mumbai',
     'best gynecologist Mumbai',
     'Dr. Aparna Ghosh',
     'women health clinic Chembur',
@@ -21,16 +23,18 @@ export const metadata: Metadata = {
     'HIFU urinary incontinence treatment',
     'HRT treatment Mumbai',
     'obstetrician Chembur',
+    'gynaecologist near me',
     'gynecologist near me',
-    'women specialist chemburMumbai',
+    'women specialist chembur Mumbai',
     'pregnancy care Chembur',
     'maternal care Mumbai',
+    'gynaecological surgery Mumbai',
     'gynecological surgery Mumbai',
     'safe abortions Mumbai',
     'safe abortion Chembur',
   ],
   other: {
-    'keywords': 'gynecologist Chembur, best gynecologist Mumbai, Dr. Aparna Ghosh, women health clinic Chembur, laser hair reduction Mumbai, cosmetic gynecology Mumbai, HIFU urinary incontinence treatment, HRT treatment Mumbai, obstetrician Chembur, gynecologist near me, women specialist chemburMumbai, pregnancy care Chembur, maternal care Mumbai, gynecological surgery Mumbai'
+    'keywords': 'gynaecologist Chembur, gynecologist Chembur, best gynaecologist Mumbai, best gynecologist Mumbai, Dr. Aparna Ghosh, women health clinic Chembur, laser hair reduction Mumbai, cosmetic gynecology Mumbai, HIFU urinary incontinence treatment, HRT treatment Mumbai, obstetrician Chembur, gynaecologist near me, gynecologist near me, women specialist chembur Mumbai, pregnancy care Chembur, maternal care Mumbai, gynaecological surgery Mumbai, gynecological surgery Mumbai'
   },
   authors: [{ name: 'Dr. Aparna Ghosh' }],
   creator: 'Dr. Aparna Ghosh',

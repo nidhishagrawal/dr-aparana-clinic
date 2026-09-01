@@ -6,7 +6,7 @@ export default function StructuredData() {
     url: 'https://www.bestgynecologistchembur.in',
     logo: 'https://www.bestgynecologistchembur.in/images/dr-aparana-ghosh.jpg',
     image: 'https://www.bestgynecologistchembur.in/images/dr-aparana-ghosh.jpg',
-    description: 'Expert gynecologist Dr. Aparna Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
+    description: 'Expert gynaecologist (gynecologist) Dr. Aparna Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '501, Pure Gold CHS, NG Acharya Marg, Station Road, Chembur East',
@@ -32,8 +32,8 @@ export default function StructuredData() {
     '@type': 'Physician',
     name: 'Dr. Aparna Ghosh',
     alternateName: 'Dr. Aparna Ghosh',
-    jobTitle: 'Gynecologist',
-    description: 'Expert gynecologist (MBBS from RGMC 1998, MD from KEM Hospital 2002) with 23 years of experience in gynecology and Obstetrics, specializing in comprehensive women\'s health care, cosmetic gynecology, and advanced treatments.',
+    jobTitle: 'Gynaecologist',
+    description: 'Expert gynaecologist (gynecologist) (MBBS from RGMC 1998, MD from KEM Hospital 2002) with 23 years of experience in gynecology and Obstetrics, specializing in comprehensive women\'s health care, cosmetic gynecology, and advanced treatments.',
     url: 'https://www.bestgynecologistchembur.in',
     image: 'https://www.bestgynecologistchembur.in/images/dr-aparana-ghosh.jpg',
     telephone: '+919326579679', // Update with actual phone number

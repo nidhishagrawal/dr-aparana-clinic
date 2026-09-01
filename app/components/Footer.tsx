@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4">Dr. Aparna Ghosh</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Expert gynecologist providing comprehensive women&apos;s health care and cosmetic gynecology services in Chembur, Mumbai.
+              Expert gynaecologist (gynecologist) providing comprehensive women&apos;s health care and cosmetic gynecology services in Chembur, Mumbai.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

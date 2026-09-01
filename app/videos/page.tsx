@@ -6,9 +6,9 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Treatment Videos - Dr. Aparna Ghosh, Chembur',
   description: 'Watch real patient treatment videos covering gynecology, cosmetic procedures, and women\'s health care at Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
-  keywords: 'gynecologist treatment videos, patient treatment videos Mumbai, gynecology procedure videos, Dr. Aparna Ghosh videos',
+  keywords: 'gynaecologist treatment videos, gynecologist treatment videos, patient treatment videos Mumbai, gynaecology procedure videos, Dr. Aparna Ghosh videos',
   other: {
-    'keywords': 'gynecologist treatment videos, patient treatment videos Mumbai, gynecology procedure videos, Dr. Aparna Ghosh videos'
+    'keywords': 'gynaecologist treatment videos, gynecologist treatment videos, patient treatment videos Mumbai, gynaecology procedure videos, Dr. Aparna Ghosh videos'
   },
   alternates: {
     canonical: '/videos',

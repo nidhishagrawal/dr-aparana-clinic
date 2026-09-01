@@ -5,9 +5,9 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Contact Dr. Aparna Ghosh - Chembur, Mumbai',
   description: 'Contact Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai. Book your appointment by phone or WhatsApp. Find our location, hours, and contact details.',
-  keywords: 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp',
+  keywords: 'contact gynaecologist Chembur, contact gynecologist Chembur, book appointment Mumbai, gynaecologist phone number, clinic address Chembur, gynaecologist WhatsApp',
   other: {
-    'keywords': 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp'
+    'keywords': 'contact gynaecologist Chembur, contact gynecologist Chembur, book appointment Mumbai, gynaecologist phone number, clinic address Chembur, gynaecologist WhatsApp'
   },
   alternates: {
     canonical: '/contact',

@@ -10,18 +10,18 @@ import { faqSchema } from './components/faqData'
 import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap, Play, Instagram } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
-  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers women\'s health care, laser hair reduction, cosmetic gynecology, and maternal care in Chembur, Mumbai.',
-  keywords: 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai',
+  title: 'Dr. Aparna Ghosh - Best Gynaecologist in Chembur, Mumbai',
+  description: 'Expert gynaecologist (gynecologist) Dr. Aparna Ghosh (MBBS, MD) offers women\'s health care, laser hair reduction, and maternal care in Chembur, Mumbai.',
+  keywords: 'best gynaecologist Chembur, gynecologist Chembur, gynaecologist Mumbai, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai',
   other: {
-    'keywords': 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai'
+    'keywords': 'best gynaecologist Chembur, gynecologist Chembur, gynaecologist Mumbai, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai'
   },
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
-    description: 'Expert gynecologist offering comprehensive women\'s health care in Chembur, Mumbai.',
+    title: 'Dr. Aparna Ghosh - Best Gynaecologist in Chembur, Mumbai',
+    description: 'Expert gynaecologist offering comprehensive women\'s health care in Chembur, Mumbai.',
     type: 'website',
     images: ['/images/Aparna_Ghosh_Home_Page.jpeg'],
   },
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full mb-6">
                 <Award className="w-4 h-4" />
-                <span className="text-sm font-medium">Expert Obstetrician & Gynecologist</span>
+                <span className="text-sm font-medium">Expert Gynaecologist & Obstetrician in Chembur</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
                 Dr. Aparna Ghosh

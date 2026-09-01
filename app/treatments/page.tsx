@@ -5,9 +5,9 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Before & After Treatments - Dr. Aparna Ghosh',
   description: 'See real before and after results from laser hair reduction, cosmetic gynecology, and HIFU procedures at Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
-  keywords: 'before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur',
+  keywords: 'before after gynaecology treatments, before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur',
   other: {
-    'keywords': 'before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur'
+    'keywords': 'before after gynaecology treatments, before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur'
   },
   alternates: {
     canonical: '/treatments',
