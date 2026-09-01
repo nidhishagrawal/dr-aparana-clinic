@@ -5,7 +5,8 @@ import BabyGifImage from './components/BabyGifImage'
 import StatsSection from './components/StatsSection'
 import BookAppointment from './components/BookAppointment'
 import PatientEducation from './components/PatientEducation'
-import FAQSection, { faqSchema } from './components/FAQSection'
+import FAQSection from './components/FAQSection'
+import { faqSchema } from './components/faqData'
 import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap, Play, Instagram } from 'lucide-react'
 
 export const metadata: Metadata = {
