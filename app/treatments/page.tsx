@@ -3,11 +3,14 @@ import Image from 'next/image'
 import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Before & After Treatments - Dr. Aparna Ghosh | Treatment Results Gallery',
-  description: 'View before and after photos of treatments performed by Dr. Aparna Ghosh. See real results from laser hair reduction, cosmetic gynecology, HIFU, and other procedures at our clinic in Chembur, Mumbai.',
+  title: 'Before & After Treatments - Dr. Aparna Ghosh',
+  description: 'See real before and after results from laser hair reduction, cosmetic gynecology, and HIFU procedures at Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
   keywords: 'before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur',
   other: {
     'keywords': 'before after gynecology treatments, laser hair reduction results, cosmetic gynecology results Mumbai, treatment gallery Chembur'
+  },
+  alternates: {
+    canonical: '/treatments',
   },
   openGraph: {
     title: 'Before & After Treatments - Dr. Aparna Ghosh',
@@ -44,7 +47,7 @@ export default function TreatmentsPage() {
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-2">Baby Delivery</h3>
-                <p className="text-gray-600 text-sm">Real treatment results</p>
+                <p className="text-gray-600 text-sm">A safe, successful delivery under Dr. Aparna Ghosh's care</p>
               </div>
             </div>
 
@@ -66,7 +69,7 @@ export default function TreatmentsPage() {
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-2">Fibroid 3.8 kg Removal</h3>
-                <p className="text-gray-600 text-sm">Real treatment results</p>
+                <p className="text-gray-600 text-sm">A 3.8 kg fibroid successfully removed via myomectomy</p>
               </div>
             </div>
 
@@ -84,7 +87,7 @@ export default function TreatmentsPage() {
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-2">Skin Tightening with HIFU</h3>
-                <p className="text-gray-600 text-sm">Real treatment results</p>
+                <p className="text-gray-600 text-sm">Non-surgical HIFU treatment for firmer, tighter skin</p>
               </div>
             </div>
 
@@ -102,7 +105,7 @@ export default function TreatmentsPage() {
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-2">Laser Skin Mole Removal</h3>
-                <p className="text-gray-600 text-sm">Real treatment results</p>
+                <p className="text-gray-600 text-sm">Precise, scar-free mole removal using laser treatment</p>
               </div>
             </div>
             
@@ -145,9 +148,9 @@ export default function TreatmentsPage() {
           
           <div className="mt-12 text-center">
             <p className="text-gray-600 mb-6">
-              📸 Add your actual before/after treatment photos here. Ensure you have patient consent before publishing.
+              Want to see if these treatments are right for you? Book a consultation to discuss your options.
             </p>
-            <a 
+            <a
               href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all font-medium"
             >

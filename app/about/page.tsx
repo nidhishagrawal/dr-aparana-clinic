@@ -5,11 +5,14 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema'
 import { Award, GraduationCap, Users, Heart, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Dr. Aparna Ghosh - Expert Gynecologist in Chembur, Mumbai',
-  description: 'Learn about Dr. Aparna Ghosh (MBBS from RGMC 1998, MD from KEM Hospital 2002), a renowned gynecologist with 23 years of experience in gynecology and Obstetrics, specializing in cosmetic gynecology, laser treatments, HIFU, and comprehensive women\'s health care in Chembur, Mumbai.',
+  title: 'About Dr. Aparna Ghosh - Gynecologist in Chembur, Mumbai',
+  description: 'Dr. Aparna Ghosh (MBBS, MD - KEM Hospital) has 23 years of experience in gynecology and obstetrics, cosmetic gynecology, and HIFU treatments in Chembur, Mumbai.',
   keywords: 'Dr. Aparna Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications',
   other: {
     'keywords': 'Dr. Aparna Ghosh, gynecologist Chembur, MBBS MD gynecologist Mumbai, women health specialist, obstetrician Chembur, gynecologist qualifications'
+  },
+  alternates: {
+    canonical: '/about',
   },
   openGraph: {
     title: 'About Dr. Aparna Ghosh - Expert Gynecologist in Chembur, Mumbai',

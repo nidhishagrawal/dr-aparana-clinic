@@ -4,11 +4,14 @@ import { Play, ArrowRight } from 'lucide-react'
 import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Treatment Videos - Dr. Aparna Ghosh | Patient Treatment Videos',
-  description: 'Watch videos of treatments and procedures performed by Dr. Aparna Ghosh. See real patient treatment videos covering gynecology, cosmetic procedures, and women\'s health care.',
+  title: 'Treatment Videos - Dr. Aparna Ghosh, Chembur',
+  description: 'Watch real patient treatment videos covering gynecology, cosmetic procedures, and women\'s health care at Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
   keywords: 'gynecologist treatment videos, patient treatment videos Mumbai, gynecology procedure videos, Dr. Aparna Ghosh videos',
   other: {
     'keywords': 'gynecologist treatment videos, patient treatment videos Mumbai, gynecology procedure videos, Dr. Aparna Ghosh videos'
+  },
+  alternates: {
+    canonical: '/videos',
   },
   openGraph: {
     title: 'Treatment Videos - Dr. Aparna Ghosh',
@@ -82,7 +85,7 @@ const treatmentVideos = [
   },
 ]
 
-const baseUrl = 'https://draparana.com' // Update with your actual domain
+const baseUrl = 'https://www.bestgynecologistchembur.in'
 
 const videoSchema = treatmentVideos
   .filter((v) => v.videoType === 'self-hosted')

@@ -3,11 +3,14 @@ import { Star, Quote } from 'lucide-react'
 import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Patient Testimonials - Dr. Aparna Ghosh | Reviews from Satisfied Patients',
-  description: 'Read testimonials and reviews from patients who have received treatment from Dr. Aparna Ghosh. Real experiences from laser hair reduction, cosmetic gynecology, and other treatments at our clinic in Chembur, Mumbai.',
+  title: 'Patient Testimonials - Dr. Aparna Ghosh Clinic',
+  description: 'Read real patient reviews of laser hair reduction, cosmetic gynecology, and other treatments at Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
   keywords: 'Dr. Aparna Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur',
   other: {
     'keywords': 'Dr. Aparna Ghosh reviews, gynecologist testimonials Chembur, patient reviews Mumbai, gynecologist feedback, clinic reviews Chembur'
+  },
+  alternates: {
+    canonical: '/testimonials',
   },
   openGraph: {
     title: 'Patient Testimonials - Dr. Aparna Ghosh Clinic',
@@ -58,7 +61,7 @@ const testimonials = [
 const reviewSchema = {
   '@context': 'https://schema.org',
   '@type': 'MedicalBusiness',
-  '@id': 'https://draparana.com',
+  '@id': 'https://www.bestgynecologistchembur.in',
   name: 'Dr. Aparna Ghosh Clinic',
   aggregateRating: {
     '@type': 'AggregateRating',

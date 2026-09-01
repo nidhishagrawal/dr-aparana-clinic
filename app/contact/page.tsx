@@ -3,11 +3,14 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Contact Dr. Aparna Ghosh - Gynecologist Clinic in Chembur, Mumbai',
-  description: 'Contact Dr. Aparana Ghosh\'s clinic in Chembur, Mumbai. Book your appointment via phone (+91-9326579679, +91-9224222600) or WhatsApp. Find our location, clinic hours, and contact information.',
+  title: 'Contact Dr. Aparna Ghosh - Chembur, Mumbai',
+  description: 'Contact Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai. Book your appointment by phone or WhatsApp. Find our location, hours, and contact details.',
   keywords: 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp',
   other: {
     'keywords': 'contact gynecologist Chembur, book appointment Mumbai, gynecologist phone number, clinic address Chembur, gynecologist WhatsApp'
+  },
+  alternates: {
+    canonical: '/contact',
   },
   openGraph: {
     title: 'Contact Dr. Aparna Ghosh - Gynecologist Clinic in Chembur, Mumbai',

@@ -1,4 +1,4 @@
-const baseUrl = 'https://draparana.com' // Update with your actual domain
+const baseUrl = 'https://www.bestgynecologistchembur.in'
 
 export default function BreadcrumbSchema({
   items,
