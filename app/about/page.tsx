@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import DoctorImage from '../components/DoctorImage'
 import CaseStoryImage from '../components/CaseStoryImage'
+import BreadcrumbSchema from '../components/BreadcrumbSchema'
 import { Award, GraduationCap, Users, Heart, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50">
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
@@ -40,7 +42,7 @@ export default function AboutPage() {
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-200 shadow-xl">
                 <DoctorImage
                   src="/images/dr-aparana-ghosh.jpg"
-                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                  alt="Dr. Aparna Ghosh, gynecologist and obstetrician in Chembur, Mumbai"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -137,7 +139,7 @@ export default function AboutPage() {
                 <div className="relative w-full max-w-xs mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg border-2 border-primary-200 bg-transparent">
                   <CaseStoryImage
                     src="/images/case-story-myomectomy.jpg"
-                    alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                    alt="Case study: 3.8 kg fibroid removed by Dr. Aparna Ghosh during a myomectomy at Surya Hospitals, Chembur"
                   />
                 </div>
               </div>

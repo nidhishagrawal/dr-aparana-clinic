@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Star, Quote } from 'lucide-react'
+import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Patient Testimonials - Dr. Aparna Ghosh | Reviews from Satisfied Patients',
@@ -54,9 +55,41 @@ const testimonials = [
   },
 ]
 
+const reviewSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalBusiness',
+  '@id': 'https://draparana.com',
+  name: 'Dr. Aparna Ghosh Clinic',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: (
+      testimonials.reduce((sum, t) => sum + t.rating, 0) / testimonials.length
+    ).toFixed(1),
+    reviewCount: testimonials.length,
+  },
+  review: testimonials.map((t) => ({
+    '@type': 'Review',
+    author: {
+      '@type': 'Person',
+      name: t.name,
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: t.rating,
+      bestRating: 5,
+    },
+    reviewBody: t.text,
+  })),
+}
+
 export default function TestimonialsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Testimonials', path: '/testimonials' }]} />
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Patient Testimonials</h1>

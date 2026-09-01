@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Before & After Treatments - Dr. Aparna Ghosh | Treatment Results Gallery',
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 export default function TreatmentsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Treatments', path: '/treatments' }]} />
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Before & After Treatments</h1>
@@ -33,7 +35,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/treatment1.png"
-                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                  alt="Baby delivery treatment result by Dr. Aparna Ghosh"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -52,7 +54,7 @@ export default function TreatmentsPage() {
                 <div className="relative w-full max-w-full flex justify-center">
                   <Image
                     src="/images/treatments/treatment2.png"
-                    alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                    alt="3.8 kg fibroid removal treatment result by Dr. Aparna Ghosh"
                     width={800}
                     height={600}
                     className="object-contain w-auto h-auto max-w-full"
@@ -73,7 +75,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/treatment3.png"
-                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                  alt="Skin tightening with HIFU treatment result by Dr. Aparna Ghosh"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -91,7 +93,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/treatment4.png"
-                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                  alt="Laser skin mole removal treatment result by Dr. Aparna Ghosh"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -109,7 +111,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/beforeandafter_treatment5.png"
-                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                  alt="Glutathione and carbon peel facial before and after result"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -127,7 +129,7 @@ export default function TreatmentsPage() {
               <div className="relative aspect-video bg-white">
                 <Image
                   src="/images/treatments/beforeandafter_treatment6.png"
-                  alt="Dr Aparna Ghosh Gynecologist in Chembur"
+                  alt="Laser scar reduction before and after result"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Play, ArrowRight } from 'lucide-react'
+import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Treatment Videos - Dr. Aparna Ghosh | Patient Treatment Videos',
@@ -27,7 +28,9 @@ const treatmentVideos = [
     videoUrl: '/video/treatment_video/doctor_v5.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
-    duration: '',
+    duration: '0:45',
+    durationSeconds: 45,
+    uploadDate: '2026-08-31',
   },
   {
     id: 2,
@@ -37,7 +40,9 @@ const treatmentVideos = [
     videoUrl: '/video/treatment_video/doctor_v4.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
-    duration: '',
+    duration: '0:26',
+    durationSeconds: 26,
+    uploadDate: '2026-08-18',
   },
   {
     id: 3,
@@ -47,7 +52,9 @@ const treatmentVideos = [
     videoUrl: '/video/treatment_video/doctor_v1.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
-    duration: '',
+    duration: '0:54',
+    durationSeconds: 54,
+    uploadDate: '',
   },
   {
     id: 4,
@@ -57,7 +64,9 @@ const treatmentVideos = [
     videoUrl: '/video/treatment_video/doctor_v2.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
-    duration: '',
+    duration: '1:09',
+    durationSeconds: 69,
+    uploadDate: '',
   },
   {
     id: 5,
@@ -67,13 +76,41 @@ const treatmentVideos = [
     videoUrl: '/video/treatment_video/doctor_v3.mp4',
     videoType: 'self-hosted',
     category: 'Treatment',
-    duration: '',
+    duration: '5:39',
+    durationSeconds: 339,
+    uploadDate: '',
   },
 ]
+
+const baseUrl = 'https://draparana.com' // Update with your actual domain
+
+const videoSchema = treatmentVideos
+  .filter((v) => v.videoType === 'self-hosted')
+  .map((v) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: v.title,
+    description: v.description,
+    thumbnailUrl: `${baseUrl}${v.thumbnail}`,
+    contentUrl: `${baseUrl}${v.videoUrl}`,
+    duration:
+      v.durationSeconds >= 60
+        ? `PT${Math.floor(v.durationSeconds / 60)}M${v.durationSeconds % 60}S`
+        : `PT${v.durationSeconds}S`,
+    ...(v.uploadDate ? { uploadDate: v.uploadDate } : {}),
+  }))
 
 export default function VideosPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50">
+      {videoSchema.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Videos', path: '/videos' }]} />
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Treatment Videos</h1>

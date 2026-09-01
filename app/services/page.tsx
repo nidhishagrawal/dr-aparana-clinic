@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Services - Dr. Aparna Ghosh | Gynecologist Services in Chembur, Mumbai',
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Services', path: '/services' }]} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
         <div className="container mx-auto px-4">
