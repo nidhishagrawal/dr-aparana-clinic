@@ -560,8 +560,11 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   }
 
   return {
-    title: `${post.title} - Dr. Aparna Ghosh Blog`,
+    title: `${post.title} | Dr. Aparna Ghosh`,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.id}`,
+    },
   }
 }
 

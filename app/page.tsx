@@ -10,11 +10,14 @@ import { faqSchema } from './components/faqData'
 import { ArrowRight, Phone, MessageCircle, CheckCircle, Award, Users, Clock, Star, Quote, Baby, Heart, Stethoscope, Sparkles, Scissors, GraduationCap, Play, Instagram } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
-  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and maternal care in Chembur, Mumbai. Book your appointment today.',
+  title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
+  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers women\'s health care, laser hair reduction, cosmetic gynecology, and maternal care in Chembur, Mumbai.',
   keywords: 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai',
   other: {
     'keywords': 'best gynecologist Chembur, gynecologist Mumbai, women health specialist, laser hair reduction, cosmetic gynecology, HIFU treatment, maternal care Mumbai'
+  },
+  alternates: {
+    canonical: '/',
   },
   openGraph: {
     title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',

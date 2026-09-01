@@ -4,11 +4,14 @@ import { Calendar, ArrowRight } from 'lucide-react'
 import BreadcrumbSchema from '../components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Health Tips & Blog - Dr. Aparna Ghosh | Women\'s Health Articles',
+  title: 'Women\'s Health Blog - Dr. Aparna Ghosh',
   description: 'Read health tips and articles about women\'s health, gynecology, menopause, laser treatments, and wellness from Dr. Aparna Ghosh\'s clinic in Chembur, Mumbai.',
   keywords: 'women health tips, gynecology blog, health articles Mumbai, women wellness tips, gynecologist health advice',
   other: {
     'keywords': 'women health tips, gynecology blog, health articles Mumbai, women wellness tips, gynecologist health advice'
+  },
+  alternates: {
+    canonical: '/blog',
   },
   openGraph: {
     title: 'Health Tips & Blog - Dr. Aparna Ghosh',

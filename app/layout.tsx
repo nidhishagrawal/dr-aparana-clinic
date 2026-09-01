@@ -5,12 +5,12 @@ import Footer from './components/Footer'
 import StructuredData from './components/StructuredData'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://draparana.com'), // Update with your actual domain
+  metadataBase: new URL('https://www.bestgynecologistchembur.in'),
   title: {
-    default: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai | Expert Women\'s Health Care',
+    default: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
     template: '%s | Dr. Aparna Ghosh'
   },
-  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, HIFU treatment, and more in Chembur, Mumbai. Book your appointment today.',
+  description: 'Expert gynecologist Dr. Aparna Ghosh (MBBS, MD) offers women\'s health care, laser hair reduction, cosmetic gynecology, and HIFU treatment in Chembur, Mumbai.',
   keywords: [
     'gynecologist Chembur',
     'best gynecologist Mumbai',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://draparana.com', // Update with your actual domain
+    url: 'https://www.bestgynecologistchembur.in',
     siteName: 'Dr. Aparna Ghosh Clinic',
     title: 'Dr. Aparna Ghosh - Best Gynecologist in Chembur, Mumbai',
     description: 'Expert gynecologist Dr. Aparna Ghosh offers comprehensive women\'s health care, laser hair reduction, cosmetic gynecology, and more in Chembur, Mumbai.',
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     // google: 'your-verification-code-from-search-console',
   },
   alternates: {
-    canonical: 'https://draparana.com', // Update with your actual domain
+    canonical: 'https://www.bestgynecologistchembur.in',
   },
 }
 
