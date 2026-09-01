@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, MessageCircle
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-primary-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* About */}
@@ -164,7 +164,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-primary-800 pt-8 mt-8 text-center text-gray-400 text-sm">
           <p>&copy; {new Date().getFullYear()} Dr. Aparna Ghosh. All rights reserved.</p>
         </div>
       </div>

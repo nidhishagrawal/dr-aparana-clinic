@@ -576,129 +576,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
     notFound()
   }
 
-  // Different themes for each blog post
-  const themes: Record<number, {
-    bg: string
-    heroBg: string
-    heroBorder: string
-    articleBg: string
-    articleBorder: string
-    sidebarBg: string
-    sidebarBorder: string
-    ctaBg: string
-    ctaBorder: string
-    ctaButton: string
-    h2Bg: string
-    h2Border: string
-    categoryBg: string
-    categoryBorder: string
-    fontFamily: string
-  }> = {
-    1: {
-      bg: 'bg-pink-50',
-      heroBg: 'bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100',
-      heroBorder: 'border-pink-200',
-      articleBg: 'bg-white',
-      articleBorder: 'border-pink-200',
-      sidebarBg: 'bg-pink-50',
-      sidebarBorder: 'border-pink-200',
-      ctaBg: 'bg-pink-100',
-      ctaBorder: 'border-pink-300',
-      ctaButton: 'bg-pink-600 hover:bg-pink-700',
-      h2Bg: 'bg-pink-50',
-      h2Border: 'border-pink-500',
-      categoryBg: 'bg-pink-100',
-      categoryBorder: 'border-pink-200',
-      fontFamily: 'font-sans'
-    },
-    2: {
-      bg: 'bg-blue-50',
-      heroBg: 'bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100',
-      heroBorder: 'border-blue-200',
-      articleBg: 'bg-white',
-      articleBorder: 'border-blue-200',
-      sidebarBg: 'bg-blue-50',
-      sidebarBorder: 'border-blue-200',
-      ctaBg: 'bg-blue-100',
-      ctaBorder: 'border-blue-300',
-      ctaButton: 'bg-blue-600 hover:bg-blue-700',
-      h2Bg: 'bg-blue-50',
-      h2Border: 'border-blue-500',
-      categoryBg: 'bg-blue-100',
-      categoryBorder: 'border-blue-200',
-      fontFamily: 'font-serif'
-    },
-    3: {
-      bg: 'bg-purple-50',
-      heroBg: 'bg-gradient-to-br from-purple-50 via-violet-50 to-purple-100',
-      heroBorder: 'border-purple-200',
-      articleBg: 'bg-white',
-      articleBorder: 'border-purple-200',
-      sidebarBg: 'bg-purple-50',
-      sidebarBorder: 'border-purple-200',
-      ctaBg: 'bg-purple-100',
-      ctaBorder: 'border-purple-300',
-      ctaButton: 'bg-purple-600 hover:bg-purple-700',
-      h2Bg: 'bg-purple-50',
-      h2Border: 'border-purple-500',
-      categoryBg: 'bg-purple-100',
-      categoryBorder: 'border-purple-200',
-      fontFamily: 'font-sans'
-    },
-    4: {
-      bg: 'bg-green-50',
-      heroBg: 'bg-gradient-to-br from-green-50 via-emerald-50 to-green-100',
-      heroBorder: 'border-green-200',
-      articleBg: 'bg-white',
-      articleBorder: 'border-green-200',
-      sidebarBg: 'bg-green-50',
-      sidebarBorder: 'border-green-200',
-      ctaBg: 'bg-green-100',
-      ctaBorder: 'border-green-300',
-      ctaButton: 'bg-green-600 hover:bg-green-700',
-      h2Bg: 'bg-green-50',
-      h2Border: 'border-green-500',
-      categoryBg: 'bg-green-100',
-      categoryBorder: 'border-green-200',
-      fontFamily: 'font-serif'
-    },
-    5: {
-      bg: 'bg-orange-50',
-      heroBg: 'bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100',
-      heroBorder: 'border-orange-200',
-      articleBg: 'bg-white',
-      articleBorder: 'border-orange-200',
-      sidebarBg: 'bg-orange-50',
-      sidebarBorder: 'border-orange-200',
-      ctaBg: 'bg-orange-100',
-      ctaBorder: 'border-orange-300',
-      ctaButton: 'bg-orange-600 hover:bg-orange-700',
-      h2Bg: 'bg-orange-50',
-      h2Border: 'border-orange-500',
-      categoryBg: 'bg-orange-100',
-      categoryBorder: 'border-orange-200',
-      fontFamily: 'font-sans'
-    },
-    6: {
-      bg: 'bg-rose-50',
-      heroBg: 'bg-gradient-to-br from-rose-50 via-pink-50 to-rose-100',
-      heroBorder: 'border-rose-200',
-      articleBg: 'bg-white',
-      articleBorder: 'border-rose-200',
-      sidebarBg: 'bg-rose-50',
-      sidebarBorder: 'border-rose-200',
-      ctaBg: 'bg-rose-100',
-      ctaBorder: 'border-rose-300',
-      ctaButton: 'bg-rose-600 hover:bg-rose-700',
-      h2Bg: 'bg-rose-50',
-      h2Border: 'border-rose-500',
-      categoryBg: 'bg-rose-100',
-      categoryBorder: 'border-rose-200',
-      fontFamily: 'font-serif'
-    }
+  // Single consistent theme for every blog post
+  const theme = {
+    bg: 'bg-white',
+    heroBg: 'bg-gradient-to-br from-primary-50 to-primary-100',
+    heroBorder: 'border-primary-200',
+    articleBg: 'bg-white',
+    articleBorder: 'border-primary-200',
+    sidebarBg: 'bg-primary-50',
+    sidebarBorder: 'border-primary-200',
+    ctaBg: 'bg-primary-100',
+    ctaBorder: 'border-primary-300',
+    ctaButton: 'bg-primary-600 hover:bg-primary-700',
+    h2Bg: 'bg-primary-50',
+    h2Border: 'border-primary-500',
+    categoryBg: 'bg-primary-100',
+    categoryBorder: 'border-primary-200',
+    fontFamily: 'font-sans'
   }
-
-  const theme = themes[post.id] || themes[1]
 
   return (
     <div className={`min-h-screen ${theme.bg}`}>

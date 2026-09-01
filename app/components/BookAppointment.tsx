@@ -22,7 +22,7 @@ export default function BookAppointment() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <section className="py-20 bg-primary-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
